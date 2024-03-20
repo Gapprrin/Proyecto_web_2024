@@ -1,0 +1,6 @@
+Para guardar cambios:
+    git add .
+    git commit -m "nombre_de_la_actualización"
+    git push
+Para cargar cambios:
+    git pull
