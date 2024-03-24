@@ -28,7 +28,7 @@ a{
 }
 
 #fondo{
-    background-image: url(Images/audi3.jpg);
+    background-image: url(../Images/audi3.jpg);
     height: 88vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -85,7 +85,7 @@ a{
    
 #banner2{
     
-        background-image: url(Images/aaaaaa.jpg);
+        background-image: url(../Images/aaaaaa.jpg);
         height: 50vh;
         background-repeat: no-repeat;
         background-size: cover;
