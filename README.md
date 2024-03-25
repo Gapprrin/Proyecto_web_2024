@@ -20,9 +20,10 @@ de la empresa.
 
 
 1.- Creacaión de cuentas
-    1.5.- Inicio de sesión (no es necesario una nueva página)
-2.- Carrito
-3.- Accesorios
-4.- Autos disponibles
-5.- Acerda de nosotros
+    1.5.- Inicio de sesión (no es necesario una nueva página) (mateo)
+2.- Carrito (mateo)
+3.- HOME (javi)
+4.- Accesorios (luis)
+5.- Autos disponibles (javi)
+6.- Acerda de nosotros(luis)
 6.- Pág. principal
