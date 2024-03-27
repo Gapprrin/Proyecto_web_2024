@@ -14,7 +14,7 @@
 nav{
 	background-color: #000000; 
 	display: flex; 
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
 	height: 12vh;		
 }
@@ -98,15 +98,27 @@ a{
 
 #content{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 70vh;
     width: 100%;
-    height: 70%;
+    height: 100%;
 }
 
-#wrapper{
-    border-color: #000000;
-    border-bottom: thin;
-    border-top: thin;
-    border-left: thin;
-    border-right: thin;
+.wrapper{
+    border: #000000;
+    border-style: outset;
+    height: 60vh;
+    width: 25vw
+}
+
+#login-words{
+    color: #000000;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+#login-words:hover{
+    text-decoration: underline;
+    transition-duration: 0.5s;
 }
