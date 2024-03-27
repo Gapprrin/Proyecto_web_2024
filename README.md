@@ -25,5 +25,4 @@ de la empresa.
 3.- HOME (javi)
 4.- Accesorios (luis)
 5.- Autos disponibles (javi)
-6.- Acerda de nosotros(luis)
-6.- Pág. principal
+6.- Acerca de nosotros(luis)

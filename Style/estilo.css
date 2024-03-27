@@ -96,5 +96,17 @@ a{
       
     }  
 
+#content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+}
 
-
+#wrapper{
+    border-color: #000000;
+    border-bottom: thin;
+    border-top: thin;
+    border-left: thin;
+    border-right: thin;
+}
