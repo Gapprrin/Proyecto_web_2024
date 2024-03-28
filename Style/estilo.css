@@ -129,7 +129,8 @@ a{
 
 #final2{
     height: 50vh;
-    background-image: url(../Images/backgrounds/Home/camino.jpg);
+    /* background-image: url(../Images/backgrounds/Home/camino.jpg); */
+    background-color: #161616;
     padding-top: 50px;
     display: flex;
     list-style-type: none; /* Elimina el marcador de lista */
@@ -142,25 +143,32 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../Images/Backgrounds/login/login-banner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../Images/Backgrounds/login/login-banner.jpg);
     min-height: 70vh;
     width: 100%;
     height: 88vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .wrapper{
-    background: #2a2a2a75;
+    background: #0d0d0d75;
+    border: 2px solid rgba(53, 75, 92, 0.2);
+    backdrop-filter: blur(10px);
     color: #ffffff;
-    height: 60vh;
+    height: 50vh;
     width: 25vw;
     filter: blur(40);
+    border-radius: 10px;
+    padding: 30px 40px;
 }
 
 .wrapper h1{
     text-align: center;
     font-size: 36px;
+    cursor: default;
+    user-select: none;
 }
 
 .wrapper .input-box{
@@ -185,8 +193,15 @@ a{
 }
 
 .input-box > input::placeholder{
-    color: #ffffff;
+    color: #727272;
 }
+
+/* 
+No sé como cambiar el color del mostrar contraseña
+::-ms-reveal{
+    color
+}
+*/
 
 .input-box > img{
     position: absolute;
@@ -195,13 +210,46 @@ a{
     transform: translateY(-30%);
 }
 
-#login-words{
-    color: #ffffff;
+.wrapper .remember-me{
+    color: #888888;
+    display: flex;
+    justify-content: flex-end;
     font-size: 13px;
+    margin: 15px 5px 15px;
+}
+
+.remember-me label input{
+    accent-color: #fff;
+    margin: 3px;
+}
+
+#login-words{
+    color: #7d7d7d;
+    font-size: 11.5px;
     text-decoration: none;
 }
 
 #login-words:hover{
     text-decoration: underline;
     transition-duration: 0.5s;
+}
+
+.wrapper .login-button{
+    width: 100%;
+    height: 45px;
+    background-color: #cecece;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .dont-have-acount{
+    text-align: center;
+    margin: 15px 0px 15px;
+    font-weight: 600;
 }
