@@ -70,7 +70,7 @@ a{
  #fondo{
     height: 600px;
     display: flex;
-    background-image: url(../Images/Backgrounds/camino.jpg);
+    background-image: url(../Images/Backgrounds/Home/camino.jpg);
     background-size: cover;
 }
 
@@ -103,7 +103,7 @@ a{
 }
 
 #final{
-    background-image: url(../Images/backgrounds/fondoblanco.jpg);
+    background-image: url(../Images/backgrounds/Home/fondoblanco.jpg);
     height: 52vh;
     background-color: #ffffff;
     background-size: cover;
@@ -129,7 +129,7 @@ a{
 
 #final2{
     height: 50vh;
-    background-image: url(../Images/backgrounds/camino.jpg);
+    background-image: url(../Images/backgrounds/Home/camino.jpg);
     padding-top: 50px;
     display: flex;
     list-style-type: none; /* Elimina el marcador de lista */
@@ -142,7 +142,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../Images/Backgrounds/login-banner.jpg);
+    background-image: url(../Images/Backgrounds/login/login-banner.jpg);
     min-height: 70vh;
     width: 100%;
     height: 88vh;
