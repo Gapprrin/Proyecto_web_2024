@@ -253,3 +253,11 @@ No sé como cambiar el color del mostrar contraseña
     margin: 15px 0px 15px;
     font-weight: 600;
 }
+
+/* Página de creación de cuentas */
+
+
+#wrapper-create-account{
+    height: 56vh;
+    width: 25vw;
+}
