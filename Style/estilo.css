@@ -1,22 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/*Página principal*/
 *{
     font-family: "Open Sans", sans-serif; 
     margin: 0; 
 }
 
 #logo{
-    height: 80px;
-    width: auto;
+    width: 130px;
+    height: 70px;
+   
+}
 
+#logo>img{
+    width: 120px;
+    height: 40px;
+    margin-top: 15px;
+   
 }
 
 nav{
 	background-color: #000000; 
 	display: flex; 
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
-	height: 12vh;		
+	height: 12vh;
 }
 
 a{
@@ -24,96 +32,171 @@ a{
 	text-transform: uppercase;
 	text-decoration: none;
     font-size: 13px;
+}
+
+
+#carrusel_principal{
+    height: 100vh;
+}
+
+.carousel-caption>h2{
+    font-size: 30px;
+    color: #FFFFFF;
+    float: left;
+    display: flex;
+    margin-left: -70px;
+    margin-top: -400px;
+}
+
+.carousel-caption>h3{
+    font-size: 20px;
+    color: #de5e08;
+    float: left;
+    display: flex;
+    margin-top: -360px;
+    margin-left: -70px;
+}
+
+.carousel-caption>h1{
+    font-size: 8vh;
+    color: #ffffff;
+    margin-top: -400px;
+    margin-left: 700px;
+    text-shadow: 6px 2px 2px #000000;
+    text-align: left;
+    display: flex;
+  }
+
+ #fondo{
+    height: 600px;
+    display: flex;
+    background-image: url(../Images/Backgrounds/camino.jpg);
+    background-size: cover;
+}
+
+#fondo>h2{
+    color: #FFFFFF;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 30px; 
+    width: 500px;
+    height: 35px;
+    margin-top: 40px;
+}
+
+#modelosAutos{
+    width: 1700px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    justify-content: space-between;
+    margin-top: 130px;
+    margin-left: -460px;
+}  
+
+
+#ver_mas{
+    display: flex;
+    margin-top: 400px;
+    margin-left: -230px;
+}
+
+#final{
+    background-image: url(../Images/backgrounds/fondoblanco.jpg);
+    height: 52vh;
+    background-color: #ffffff;
+    background-size: cover;
+}
+
+#final>h2{
+    margin-left: 25px;
+    padding-top: 20px;
   
 }
 
-#fondo{
-    background-image: url(../Images/audi3.jpg);
+#final h3{
+    font-size: 18px;
+    margin-left: 25px;
+}
+
+#final>img{
+    width: 80px;
+    height: 80px;
+    margin-left: 70px;
+    margin-top: -10px;
+}
+
+#final2{
+    height: 50vh;
+    background-image: url(../Images/backgrounds/camino.jpg);
+    padding-top: 50px;
+    display: flex;
+    list-style-type: none; /* Elimina el marcador de lista */
+}
+
+
+/* Diseño del login */
+
+#login_banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Images/Backgrounds/login-banner.jpg);
+    min-height: 70vh;
+    width: 100%;
     height: 88vh;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content:right;
-    align-items:center;
-    flex-direction: column;
-  
-}
-
-#fondo> h1{
-    color: #FFFFFF;
-    font-size: 3.2rem;
-    text-shadow: 6px 2px 2px #000000;
-    margin-left: 950px;
-    margin-top: 250px;
-}
-
-#fondo> h3{
-    color: #FFFFFF;
-    font-size: 1.5rem;
-    margin-left: -1040px;
-    margin-top: -300px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: normal;
-}
-
-
-
-#boton {
-      
-        color: #FFFFFF;
-        background-color: #ca5d0f;
-        width: fit-content;
-        padding: 10px 25px;
-        border-radius: 20px;
-        margin-top: 300px;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: bold ;
-        font-size: 19px;
-        margin-top: 260px;
-        margin-left: 850px;
-    }
-   
-
-#contenedor>img{
-    width: 474px;
-    height:270px;
-    margin-top: 10px;
-    border-radius: 20px;
-    padding: 0;
-    margin-left:10px ;
-}
-   
-#banner2{
-    
-        background-image: url(../Images/aaaaaa.jpg);
-        height: 50vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        justify-content:right;
-        align-items:center;
-        flex-direction: column;
-      
-    }  
-
-#content{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 70vh;
-    width: 100%;
-    height: 100%;
 }
 
 .wrapper{
-    border: #000000;
-    border-style: outset;
+    background: #2a2a2a75;
+    color: #ffffff;
     height: 60vh;
-    width: 25vw
+    width: 25vw;
+    filter: blur(40);
+}
+
+.wrapper h1{
+    text-align: center;
+    font-size: 36px;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 80%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box > input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 15px;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+.input-box > input::placeholder{
+    color: #ffffff;
+}
+
+.input-box > img{
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-30%);
 }
 
 #login-words{
-    color: #000000;
+    color: #ffffff;
     font-size: 13px;
     text-decoration: none;
 }

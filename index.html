@@ -4,43 +4,248 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audi Chile</title>
-    <link rel="stylesheet" href="Style/estilo.css">
+   <link rel="stylesheet"href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"><!--ENLACE BOOSTRAP-->
+    <link rel="stylesheet" href="Style/estilo.css"><!--ENLACE STYLE-->
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#">Lo más nuevo</a>
-            <a href="#">Todos los modelos</a>
+<body><!--COMIENZO BODY-->
+    <header><!--COMIENZO HEADER-->
+        <nav>     
+            <a href="../index.html">Home</a>
+            <a href="Sheets/modelos.html">Modelos</a>
+            <a href="#">Accesorios</a>
             <div id="logo">
-                <img src="Icons/logo audi.png">
+                <img src="../Icons/logotipo.png">
             </div>
-            <a href="#">Quienes somos</a>
-            <a href="#">Contáctanos</a>
-            <a href="#">Añadir al carrito</a>
-            <a href="Sheets/login.html">Iniciar sesión</a>
+            <a href="#">Acerca de </a>
+            <a href="Sheets/Carrito.html">Carrito</a>
+            <a href="Sheets/login.html">Iniciar Sesión</a>
         </nav>
-        <div id="fondo">
-            <h1>Conoce lo último <br>en tecnología......</h1>
-            <h3>Audi R8 2024<br>CLP39.990.990</h3>
-            <div id="boton">Vive la experiencia ahora</div>
-        </div>
-        <div id="contenedor">
+    </header><!--TÉRMINO HEADER-->
+        
+        
+        
+      <div id="carrusel_principal"><!--COMIENZO DIV PARA CARRUSEL_PRINCIPAL-->
+        
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              
+              
+              <div class="carousel-item active"><!--COMIENZO DIV PRIMERA IMAGEN DE CARRUSEL_PRINCIPAL-->
+                <img src="Images/img1_carruselPrincipal.jpg" class="d-block w-100" alt="imagen1">
+                <div class="carousel-caption"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
+                  <h2>Audi R8 2024</h2>
+                  <h3>$CLP $60.990.990</h3>
+                  <h1>Conoce lo último <br>en tecnología</h1>
+                  <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; margin-left:650px ; font-weight: bold;border: none;">Vive la experiencia ahora</button><!--BOTON-->
+                </div><!--TÉRMINO DIV PARA ALMACENAR TEXTO-->
+              </div><!--TÉRMINO DIV PRIMERA IMAGEN DE CARRUSEL_PRINCIPAL-->
 
-            <img src="Images/Re.jpeg">
-            <img src="Images/R8___Featured.jpg">
-            <img src="Images/glacier-white-metallic-audi-s3-suspension-upgrades-performance-exhaust-3.jpg">
-
-         <div id ="banner2"   >
-
+              <div class="carousel-item"><!--COMIENZO DIV SEGUNDA IMAGEN DE CARRUSEL_PRINCIPAL-->
+                <img src="Images/img2_carruselPrincipal.jpg" class="d-block w-100" alt="imagen2">
+                <div class="carousel-caption"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
+                    <h1 style="text-align: left; margin-left: -100px; margin-top: -520px;">Diseños únicos y exclusivos</h1> <!-- Alineación y margen del título -->
+                    <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; font-weight: bold; margin-left: -1000px;border: none;">Atrévete a marcar la diferencia</button> <!-- Estilos del botón -->
+                    <h2 style="margin-top: 200px">Audi R8 2024</h2>
+                    <h3 style="margin-top: -10px; margin-right: 900px">$CLP $60.990.990</h3>
+                </div><!--TÉRMINO DIV PARA ALMACENAR TEXTO-->
+            </div><!--TÉRMINO DIV SEGUNDA IMAGEN DE CARRUSEL_PRINCIPAL-->
+              
+            <div class="carousel-item"><!--COMIENZO DIV TERCERA IMAGEN DE CARRUSEL_PRINCIPAL-->
+                <img src="Images/img3_carruselPrincipal.jpg" class="d-block w-100" alt="imagen3">
+                <div class="carousel-caption"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
+                  <h1 style="text-align: left; margin-right: -160px; margin-top: -520px;">Descubre nuevas sensaciones</h1> <!-- Alineación y margen del título -->
+                  <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; font-weight: bold; margin-left: 430px;border: none;">Conocer más</button> <!-- Estilos del botón -->
+                  <h2 style="margin-top: 200px">Audi R8 2024</h2>
+                  <h3 style="margin-top: -10px; margin-right: 900px">$CLP $60.990.990</h3>
+              </div><!--TÉRMINO DIV PARA ALMACENAR TEXTO-->
+          </div><!--TÉRMINO DIV SEGUNDA IMAGEN DE CARRUSEL_PRINCIPAL-->
             
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
-         </div>
-
-</div>
+      </div><!--TÉRMINO DIV PARA CARRUSEL_PRINCIPAL-->
 
 
+
+        <div id="fondo"><!--COMIENZO DIV FONDO-->
+            <h2>Lo más nuevo...</h2>
+          <div id="modelosAutos"><!--COMIENZO DIV QUE CONTIENE CARD-->
+          
+          <div style="display: flex; justify-content: center;">
+            <div class="card" style="width: 20rem; background-color: black; margin-top: -20px; max-height: calc(60vh - 20px)">
+                <img src="Images/card1.jpg" class="card-img-top" alt="..." style="object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: white;">Audi R12 turbo 2024</h5>
+                    <p class="card-text" style="color: white;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="https://www.audi.es/es/web/es/modelos/r8/r8-coupe-v10-performance-rwd.html" class="btn btn-primary" style="background-color: #de5e08; border-color: #de5e08;">Conocer más</a>
+                </div>
+            </div>
         </div>
-    
-</body>
+     
+        <div style="display: flex; justify-content: center;">
+          <div class="card" style="width: 20rem; background-color: black; margin-top: -20px; max-height: calc(60vh - 20px);">
+              <img src="Images/card2.jpg" class="card-img-top" alt="..." style="object-fit: cover;">
+              <div class="card-body">
+                  <h5 class="card-title" style="color: white;">Audi R12 turbo 2024</h5>
+                  <p class="card-text" style="color: white;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://www.audi.es/es/web/es/modelos/r8/r8-coupe-v10-performance-rwd.html" class="btn btn-primary" style="background-color: #de5e08; border-color: #de5e08;">Conocer más</a>
+              </div>
+          </div>
+      </div>
+
+      <div style="display: flex; justify-content: center;">
+        <div class="card" style="width: 20rem; background-color: black; margin-top: -20px; max-height: calc(60vh - 20px);">
+            <img src="Images/card3.jpg" class="card-img-top" alt="..." style="object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title" style="color: white;">Audi R12 turbo 2024</h5>
+                <p class="card-text" style="color: white;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://www.audi.es/es/web/es/modelos/r8/r8-coupe-v10-performance-rwd.html" class="btn btn-primary" style="background-color: #de5e08; border-color: #de5e08;">Conocer más</a>
+            </div>
+        </div>
+    </div>
+  
+    <div style="display: flex; justify-content: center;">
+      <div class="card" style="width: 20rem; background-color: black; margin-top: -20px; max-height: calc(60vh - 20px);">
+          <img src="Images/card4.jpg" class="card-img-top" alt="..." style="object-fit: cover;">
+          <div class="card-body">
+              <h5 class="card-title" style="color: white;">Audi R12 turbo 2024</h5>
+              <p class="card-text" style="color: white;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="https://www.audi.es/es/web/es/modelos/r8/r8-coupe-v10-performance-rwd.html" class="btn btn-primary" style="background-color: #de5e08; border-color: #de5e08;">Conocer más</a>
+          </div>
+      </div>
+  </div>
+
+  <div id="ver_mas">
+    <a href="#">>> Ver todos los modelos</a>
+  </div>
+
+
+</div><!--TÉRMINO DIV QUE CONTIENE CARDS-->
+
+
+</div><!--TERMINO DIV FONDO-->
+
+<div id="final"><!--COMIENZO DIV FINAL-->
+
+  <h2>Asesórate con expertos...</h2>
+  <h3>Y encuentra el Audi perfecto para tí.</h3>
+
+       <img src="Icons/whatsap.png" alt="whatsap">
+
+        <button type="button" class="btn btn-outline-secondary" style="margin-top: 140px; background-color: #000000;color: #ffffff;margin-left: -120px;border: none">Asistencia virtual</button>
+        
+        <img src="Icons/cotizacion.png" alt="cotizacion">
+
+        <button type="button" class="btn btn-outline-secondary" style="margin-top: 140px; background-color: #000000;color: #ffffff;margin-left: -120px;border: none">Pide tu cotización</button>
+
+        <img src="Icons/buscar.png" alt="buscar">
+
+        <button type="button" class="btn btn-outline-secondary" style="margin-top: 140px; background-color: #000000;color: #ffffff;margin-left: -120px;border: none">Busca tu audi aquí</button>
+
+        
+        <img src="Icons/mantencion.png" alt="mantencion">
+
+        <button type="button" class="btn btn-outline-secondary" style="margin-top: 140px; background-color: #000000;color: #ffffff;margin-left: -120px;border: none">Agendar mantención</button>
+
+        
+
+
+</div><!--TÉRMINO DIV FINAL-->
+
+
+<div id="final2"><!--COMIENZO DIV FINAL 2-->
+
+  <ul>
+  
+  <li><a href="#">Modelos</a></li>
+  <li><a href="#">R8 2024</a></li>
+  <li><a href="#">R56</a></li>
+  <li><a href="#">R90</a></li>
+  <li><a href="#">R76</a></li>
+  <li><a href="#">R56</a></li>
+  <li><a href="#">R90</a></li>
+  <li><a href="#">R76</a></li>
+  <li><a href="#">R76</a></li>
+ 
+  
+</ul>
+  
+  
+  
+<ul>
+  
+  <li><a href="#">Accesorios</a></li>
+  <li><a href="#">R8 2024</a></li>
+  <li><a href="#">R56</a></li>
+  <li><a href="#">R90</a></li>
+  <li><a href="#">R76</a></li>
+  <li><a href="#">R8 2024</a></li>
+  <li><a href="#">R56</a></li>
+  <li><a href="#">R90</a></li>
+  <li><a href="#">R76</a></li>
+ 
+  
+</ul>
+<ul>
+  
+  <li><a href="#">Acerca de nosotros</a></li>
+  <li><a href="#">R8 2024</a></li>
+  <li><a href="#">R56</a></li>
+  <li><a href="#">R90</a></li>
+  <li><a href="#">R76</a></li>
+  <li><a href="#">R8 2024</a></li>
+  <li><a href="#">R56</a></li>
+  <li><a href="#">R90</a></li>
+  <li><a href="#">R76</a></li>
+ 
+  
+</ul>
+  
+
+<ul>
+  
+  <li><a href="#">Carrito</a></li>
+  <li><a href="#">R8 2024</a></li>
+  <li><a href="#">R56</a></li>
+  <li><a href="#">R90</a></li>
+  <li><a href="#">R76</a></li>
+  <li><a href="#">R8 2024</a></li>
+  <li><a href="#">R56</a></li>
+  <li><a href="#">R90</a></li>
+  <li><a href="#">R76</a></li>
+ 
+  
+</ul>
+
+<ul>
+  
+  <li><a href="#">Inicio de sesión</a></li>
+  <li><a href="#">R8 2024</a></li>
+  <li><a href="#">R56</a></li>
+  <li><a href="#">R90</a></li>
+  <li><a href="#">R76</a></li>
+  <li><a href="#">R8 2024</a></li>
+  <li><a href="#">R56</a></li>
+  <li><a href="#">R90</a></li>
+  <li><a href="#">R76</a></li>
+ 
+  
+</ul>
+
+
+
+
+</div><!--TÉRMINO DIV FINAL 2-->
+
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script><!--ENLACE BOOSTRAP-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script><!--ENLACE BOOSTRAP-->   
+</body><!--TÉRMINO BODY-->
 </html>
