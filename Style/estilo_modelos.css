@@ -62,10 +62,19 @@ height: 10vh;
 
 
 height: 88vh;
-margin-top: -640px;
+margin-top: -640px; /*afecta el espacio fuera del elemento, entre él y los elementos vecinos.*/
 
 
 }
+
+
+
+
+#barra{
+    height: 55px;
+  }
+  
+
 
 .navbar-brand{
     padding-left: 800px;
@@ -79,22 +88,72 @@ color: #ffffff;
 
 }
 
-.carousel-caption{
 
-margin-left: 800px;
-display: flex;
 
-flex-direction: column;
-margin-top: 100px;
-
-}
-
-#barra{
-  height: 55px;
-}
 
 #frase>h3{
     color: #ffffff;
     margin-left: 15px;
     font-size: 20px;
 }
+
+.carousel-caption {
+
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de los elementos flexibles a columna */
+
+    width: 417px;
+    height: 860px;
+    margin-left: 700px;
+    padding-top: 30px;
+
+}
+
+
+.carousel-caption>h3{
+
+width: 417px;
+
+display: flex;
+margin-top: 320px;
+font-size: 20px;
+padding-inline-start: 120px;
+
+
+
+
+}
+
+
+
+.carousel-caption>p{
+font-size: 14px;
+margin-top: 10px;
+text-align: justify;
+padding-left: 5px;
+width: 417px;
+
+}
+
+#carrusel2{
+
+
+    height: 88vh;
+  
+    
+    
+    }
+
+    #texto2{
+
+        display: flex;
+        flex-direction: column; /* Cambia la dirección de los elementos flexibles a columna */
+    
+        width: 417px;
+        height: 860px;
+        margin-left: -100px;
+        padding-top: 30px;
+    
+
+
+    }
