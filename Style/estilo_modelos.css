@@ -167,3 +167,22 @@ width: 417px;
 
     margin-top: -3px;
 }
+
+#carrusel5{
+
+    margin-top: -2px;
+}
+
+#carrusel6{
+
+    margin-top: -2px;
+}
+
+#final2{
+    height: 50vh;
+    /* background-image: url(../Images/backgrounds/Home/camino.jpg); */
+    background-color: #161616;
+    padding-top: 50px;
+    display: flex;
+    list-style-type: none; /* Elimina el marcador de lista */
+}
