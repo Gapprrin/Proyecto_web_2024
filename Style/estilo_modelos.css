@@ -179,10 +179,37 @@ width: 417px;
 }
 
 #final2{
-    height: 50vh;
-    /* background-image: url(../Images/backgrounds/Home/camino.jpg); */
+    height: 45vh;
+  
     background-color: #161616;
     padding-top: 50px;
     display: flex;
-    list-style-type: none; /* Elimina el marcador de lista */
+    padding-left: 50px;
+
+
+}
+
+
+#finalfinal{
+    height: 12vh;
+    background-color: #161616;
+  margin-top: -40px;
+
+}
+
+h6{
+    color: #FFFFFF;
+    margin-left: 350px;
+    font-size: 14px;
+    margin-top: 30px;
+
+}
+
+
+#finalfinal>img{
+
+    width: 40px;
+    height: 40px;
+margin-left: 850px;
+margin-top: -100px;
 }
