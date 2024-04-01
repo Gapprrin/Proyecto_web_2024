@@ -31,3 +31,43 @@
 	text-decoration: none;
     font-size: 13px;
 }
+
+section{
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../Images/Backgrounds/Carrito/Fondo_carrito.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.seccion-carrito{
+    display: flex;
+    height: 88vh;
+    width: 70%;
+    
+}
+
+.seccion-monto-total{
+    display: flex;
+    height: 88vh;
+    width: 30%
+}
+
+.carrito{
+    display: flex;
+    background-color: blueviolet;
+    height: 80vh;
+    width: 100%;
+    margin: 20px 20px 20px 10vw;
+    border: none;
+}
+
+.total{
+    display: flex;
+    background-color: coral;
+    height: 80vh;
+    width: 100%;
+    margin: 20px 10vw 20px 10px;
+    border: none;
+}
