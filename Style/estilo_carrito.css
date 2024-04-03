@@ -56,16 +56,37 @@ section{
 
 .carrito{
     display: flex;
-    background-color: blueviolet;
+    background-color: #b9b9b9;
     height: 80vh;
     width: 100%;
     margin: 20px 20px 20px 10vw;
     border: none;
 }
 
+.carrito > ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+#precios>a{
+    width: 7vw;
+    height: 40px;
+    margin-left: -50px;
+}
+
+.lista>a{
+    display: flex;
+    border-bottom: 1px solid #41414171;
+    width: 47vw;
+    height: 40px;
+    text-decoration: none;
+    color: #1a1a1b;
+}
+
 .total{
     display: flex;
-    background-color: coral;
+    background-color: #b9b9b9;
     height: 80vh;
     width: 100%;
     margin: 20px 10vw 20px 10px;
