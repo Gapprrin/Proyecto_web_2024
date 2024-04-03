@@ -51,7 +51,7 @@ section{
 .seccion-monto-total{
     display: flex;
     height: 88vh;
-    width: 30%
+    width: 30%;
 }
 
 .carrito{
@@ -91,4 +91,43 @@ section{
     width: 100%;
     margin: 20px 10vw 20px 10px;
     border: none;
+}
+
+div{
+    border-radius: 10px;
+}
+
+
+#monto-total{
+    margin-top: 25px;
+}
+#monto-total>a{
+    display: flex;
+    width: 14vw;
+    border: none;
+    user-select: none;
+}
+
+#monto-total>#linea-bonita{
+    border-top: 1px solid #41414171;
+    user-select: none;
+}
+
+#valor-total{
+    margin-top: 25px;
+}
+
+#valor-total>a{
+    width: fit-content;
+    border: none;
+    margin-left: -115px;
+    user-select: none;
+}
+
+.input-box{
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    width: 250px;
+    height: 60px;
 }
