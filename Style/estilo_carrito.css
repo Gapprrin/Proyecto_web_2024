@@ -34,30 +34,31 @@
 
 section{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../Images/Backgrounds/Carrito/Fondo_carrito.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 80vh;
 }
 
 .seccion-carrito{
     display: flex;
-    height: 88vh;
+    height: 100%;
     width: 70%;
-    
 }
 
 .seccion-monto-total{
     display: flex;
-    height: 88vh;
+    height: 100%;
     width: 30%;
+    flex-direction: column;
 }
 
 .carrito{
     display: flex;
     background-color: #b9b9b9;
-    height: 80vh;
+    height: 70vh;
     width: 100%;
     margin: 20px 20px 20px 10vw;
     border: none;
@@ -87,9 +88,15 @@ section{
 .total{
     display: flex;
     background-color: #b9b9b9;
-    height: 80vh;
-    width: 100%;
     margin: 20px 10vw 20px 10px;
+    border: none;
+    height: 70vh;
+    width: 67%;
+    flex-direction: column;
+}
+
+.total-valores{
+    display: flex;
     border: none;
 }
 
@@ -101,6 +108,7 @@ div{
 #monto-total{
     margin-top: 25px;
 }
+
 #monto-total>a{
     display: flex;
     width: 14vw;
@@ -125,9 +133,73 @@ div{
 }
 
 .input-box{
+    position: relative;
+    width: 14vw;
+    height: 7vh;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.input-box>input{
+    height: 60%;
+    width: 87%;
+    background-color: #ebebeb;
+    outline: none;
+    border: 1px solid #41414171;
+    padding-left: 10px;
+    padding-right: 15px;
+    border-radius: 10px;
+    color: #1a1a1b;
+}
+
+
+/**FOOTER**/
+footer>div{
+    border-radius: 0px;
+}
+
+#final2{
+    height: 45vh;
+    background-color: #161616;
+    padding-top: 50px;
     display: flex;
-    justify-content: center;
-    background-color: aquamarine;
-    width: 250px;
-    height: 60px;
+    padding-left: 50px;
+    align-content: space-around;
+}
+
+
+#finalfinal{
+    height: 12vh;
+    background-color: #161616;
+  margin-top: -40px;
+
+}
+
+h6{
+    color: #FFFFFF;
+    margin-left: 350px;
+    font-size: 14px;
+    margin-top: 30px;
+
+}
+
+
+#finalfinal>img{
+
+    width: 40px;
+    height: 40px;
+margin-left: 850px;
+margin-top: -100px;
+}
+
+a{
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-links{
+    display: flex;
+    flex-flow: column wrap;
 }
