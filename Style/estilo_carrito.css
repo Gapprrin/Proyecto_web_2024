@@ -32,6 +32,8 @@
     font-size: 13px;
 }
 
+/**Carrito**/
+
 section{
     display: flex;
     justify-content: space-around;
@@ -62,6 +64,35 @@ section{
     width: 100%;
     margin: 20px 20px 20px 10vw;
     border: none;
+    flex-direction: column;
+}
+
+.carrito-listas{
+    display: flex;
+    width: 100%;
+    height: 85%;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.button-container{
+    display: flex;
+    margin: 20px 20px 30px 20px;
+    justify-content: space-around;
+}
+
+.buttons{
+    width: 150px;
+    height: 40px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.buttons:hover{
+    background-color: #cecece;
+    transition-duration: .2s;
 }
 
 .carrito > ul{
@@ -150,6 +181,10 @@ div{
     padding-right: 15px;
     border-radius: 10px;
     color: #1a1a1b;
+}
+
+#paying-button{
+    padding-top: 250px;
 }
 
 

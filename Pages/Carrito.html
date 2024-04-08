@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audi Chile</title>
     <link rel="stylesheet" href="../Style/estilo_carrito.css">
+    <link rel="website icon" type="png"   href="../Icons/Home/audilogo.png" >
 </head>
 <body>
     <header>
@@ -17,33 +18,42 @@
             </div>
             <a class="menu" href="acerca_de.html">Acerca de </a>
             <a class="menu" href="Carrito.html">Carrito</a>
-            <a class="menu" href="Create_account.html">Iniciar Sesión</a>
+            <a class="menu" href="login.html">Iniciar Sesión</a>
         </nav>
     </header>
     <section>
         <div class="seccion-carrito">
             <div class="carrito">
-                <ul class="lista">
-                    <a href="#">Llantas 3x3</a>
-                    <a href="#">Lentes de sol</a>
-                    <a href="#">Funda de cuero para asientos</a>
-                    <a href="#">Lubricante para uniones</a>
-                    <a href="#">Liquido parabrisas</a>
-                    <a href="#">Liquido de frenos</a>
-                    <a href="#">Liquido refrigerante</a>
-                    <a href="#">Lustrador para interior</a>
-                </ul>
-                <ul class="lista" id="precios">
-                    <a >x 1 $150.000</a>
-                    <a >x 1 $8.000</a>
-                    <a >x 1 $100.000</a>
-                    <a >x 2 $6.000</a>
-                    <a >x 1 $5.000</a>
-                    <a >x 1 $13.000</a>
-                    <a >x 1 $18.000</a>
-                    <a >x 1 $9.000</a>
-                </ul>
+                <div class="carrito-listas">
+                  <ul class="lista">
+                      <a href="#">Llantas 3x3</a>
+                      <a href="#">Lentes de sol</a>
+                      <a href="#">Funda de cuero para asientos</a>
+                      <a href="#">Lubricante para uniones</a>
+                      <a href="#">Liquido parabrisas</a>
+                      <a href="#">Liquido de frenos</a>
+                      <a href="#">Liquido refrigerante</a>
+                      <a href="#">Lustrador para interior</a>
+                  </ul>
+                  <ul class="lista" id="precios">
+                      <a >x 1 $150.000</a>
+                      <a >x 1 $8.000</a>
+                      <a >x 1 $100.000</a>
+                      <a >x 2 $6.000</a>
+                      <a >x 1 $5.000</a>
+                      <a >x 1 $13.000</a>
+                      <a >x 1 $18.000</a>
+                      <a >x 1 $9.000</a>
+                  </ul>
+                </div>
+                <div class="button-container">
+                  <button type="button" class="buttons">Quitar elemento</button>
+                  <form action="/Pages/accesorios.html">
+                    <button type="submit" class="buttons">Agregar elementos</button>
+                  </form>                  
+                </div>
             </div>
+
         </div>
 
         <div class="seccion-monto-total">
@@ -63,6 +73,12 @@
  
                 <div class="input-box">
                     <input type="text" placeholder="Código de descuento" maxlength="7">
+                </div>
+
+                <div class="button-container" id="paying-button">
+                    <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                      <button type="submit" class="buttons">Pagar</button>
+                    </form>
                 </div>
 
             </div>
