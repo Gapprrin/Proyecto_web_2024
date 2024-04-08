@@ -309,6 +309,24 @@ No sé como cambiar el color del mostrar contraseña
 
 
 #wrapper-create-account{
-    height: 56vh;
+    height: 65vh;
     width: 25vw;
+}
+
+.user-info-container{
+    display: flex;
+    height: 5vh;
+    width: 80%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#nombre-usuario{
+    width: 35%;
+}
+
+#comuna-usuario{
+    width: 35%;
 }
