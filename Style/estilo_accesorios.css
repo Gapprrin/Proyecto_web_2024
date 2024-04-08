@@ -26,6 +26,7 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 150vh;
 }
 
 nav {
@@ -50,7 +51,7 @@ body, html {
 }
 .articulos{
     background-color: #e9e9e9ad;
-    height: 100vh;
+    height: 130vh;
     width: 100%;
     border-radius: 25px;
     margin-left: 30px;
@@ -230,3 +231,62 @@ h5 {
     border-radius: 10px; /* Bordes redondeados */
   }
     
+  #final2{
+    height: 40vh;
+  
+    background-color: #161616;
+    padding-top: 50px;
+    display: flex;
+    padding-left: 50px;
+
+
+}
+
+#final2>ul{
+
+    background-color: #161616;
+    padding-left: 2px;
+    margin-left: 80px;
+    height: 220px;
+
+   }
+
+#texto_ultimo{
+
+height: 12vh;
+background-color: #161616;
+align-items: center;
+display: flex;
+flex-direction: column;
+
+
+
+
+}
+
+#texto_ultimo>h6{
+    color: #cecece;
+    text-align: center;
+    display: flex;
+ font-size: 14px;
+    margin-top: 40px;
+}
+#instagram{
+
+   width: 40px;
+   height: 40px;
+   margin-left: 550px;
+   display: flex;
+   margin-top: -50px;
+    
+ }
+  
+ #whatsap{
+
+    width: 40px;
+    height: 40px;
+    margin-left: 650px;
+    display: flex;
+    margin-top: -40px;
+     
+  }
