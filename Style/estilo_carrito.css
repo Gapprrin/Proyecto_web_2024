@@ -124,6 +124,7 @@ section{
     height: 70vh;
     width: 67%;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .total-valores{
@@ -169,6 +170,7 @@ div{
     height: 7vh;
     margin-left: 40px;
     margin-top: 10px;
+    padding-bottom: 190px;
 }
 
 .input-box>input{
@@ -184,7 +186,7 @@ div{
 }
 
 #paying-button{
-    padding-top: 250px;
+    margin-bottom: 30px;
 }
 
 
