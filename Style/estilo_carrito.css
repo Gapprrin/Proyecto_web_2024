@@ -116,6 +116,7 @@ section{
     color: #1a1a1b;
 }
 
+
 .total{
     display: flex;
     background-color: #b9b9b9;
@@ -188,6 +189,24 @@ div{
 #paying-button{
     margin-bottom: 30px;
 }
+
+#eliminar{
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+}
+
+#eliminar>button{
+    width: 20px;
+    height: 20px;
+    border: none;
+    margin-left: -180px;
+    margin-top: 21px;
+    border-radius: 0%;
+    background-color: #ffffff00;
+    background-image: url(../Icons/Carrito/borrar-producto.png);
+}
+
 
 
 /**FOOTER**/
