@@ -99,18 +99,12 @@ width: 20vh ;
  
 
 
-  }
-
-  .neumatico{
-    margin-top: 10px;
-    height: 100px;
-    width: 100px;
-  }
-  
+  }  
   .producto img {
-    width: 100%;
-    height: auto;
-    display: block;
+    margin-top: 10px;
+    height: 30vh;
+    width: 30vh;
+    margin-left: 33px;
   }
   
   .informacion {
