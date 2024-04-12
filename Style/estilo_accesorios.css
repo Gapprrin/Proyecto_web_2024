@@ -21,8 +21,8 @@ display: flex;
     margin-top: 15px;
 }
 section{
-    background-color:  #434140 ;
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../Images/Accesorios/Asientos\ deportivos.webp);
+    background-color:  #000000 ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.781)), url(../Images/Accesorios/Asientos\ deportivos.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -48,9 +48,10 @@ a {
 body, html {
     margin: 0;
     padding: 0;
+    
 }
 .articulos{
-    background-color: #e9e9e9ad;
+    background-color: #000000de;
     height: 136vh;
     width: 100%;
     border-radius: 25px;
@@ -78,6 +79,7 @@ width: 20vh ;
     width: 100%;
     min-height: 100vh; 
     justify-content: space-between;
+    background-color: #b3000000
 }
 .accesorio{
     width: 450px;
@@ -88,7 +90,7 @@ width: 20vh ;
     border-radius: 20px;
 }
 .producto {
-    background-color: #ffffff73;
+    background-color: #000000d8;
     border: 1px solid #cccccc00;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -109,7 +111,7 @@ width: 20vh ;
   
   .informacion {
     padding: 15px;
-    background-color: #ffffff34;
+    background-color: #ffffff00;
   }
   
   .nombre {
@@ -209,8 +211,14 @@ label {
     align-items: center;
     justify-content: cent;
   }
-  
-  
+
+p{
+color: #ffffff  ;
+  }
+
+  h2{
+    color: #ffffff;
+}
   h3 {
   position: absolute;
   top: 50%;
@@ -252,7 +260,7 @@ h5 {
     margin-left: 45px;
     margin-top: 10px;
     text-decoration: none;
-    color: #3f3f3f;
+    color: #ffffff;
 
   }
     
