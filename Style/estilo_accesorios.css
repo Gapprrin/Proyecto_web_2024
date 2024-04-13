@@ -239,7 +239,7 @@ color: #0e0e0e;
 }
 h5 {
     position: absolute;
-    top: 16%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -252,6 +252,8 @@ h5 {
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
     border-radius: 10px; /* Bordes redondeados */
   }
+
+  
   h6{
     text-align: left;
     font-size: 36px;
@@ -261,10 +263,7 @@ h5 {
     color: #ffffff;
 
   }
-.titulo111{
-    border-bottom: 40px;
 
-}
   #final2{
     height: 40vh;
   
