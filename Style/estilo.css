@@ -330,3 +330,9 @@ No sé como cambiar el color del mostrar contraseña
 #comuna-usuario{
     width: 35%;
 }
+
+#error-comuna{
+    text-align: right;
+    background-color: #fff;
+    padding-left: 50px;
+}
