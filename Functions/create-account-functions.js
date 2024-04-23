@@ -1,6 +1,15 @@
+
+function capitalize(texto){
+    if(texto.classList =! String){
+        return;
+    }else{
+        null;
+    }
+}
+
 function validarComuna(){
-    let user = document.querySelector("#comuna-usuario");
-    var lista_comuna = ("Alhué",
+    let user = document.querySelector("#input-comuna");
+    var lista_comuna = ["Alhué",
         "Curacaví",
         "María Pinto",
         "Melipilla",
@@ -19,15 +28,15 @@ function validarComuna(){
         "La Reina",
         "Las Condes",
         "Lo Barnechea",
-        "Lo Espejo");
+        "Lo Espejo"];
     
     if(user.value in lista_comuna){
         user.classList.add("valido");
         user.classList.remove("invalido");
-        document.querySelector();
+        document.querySelector("#error-comuna").innerHTML = "";
     }else{
         user.classList.add("invalido");
         user.classList.remove("valido");
-        document.querySelector();
+        document.querySelector("#error-comuna").innerHTML = "No se ha encontrado la comuna.";
     }
 }

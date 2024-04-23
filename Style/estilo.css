@@ -332,7 +332,9 @@ No sé como cambiar el color del mostrar contraseña
 }
 
 #error-comuna{
-    text-align: right;
-    background-color: #fff;
-    padding-left: 50px;
+    text-align: left;
+    font-size: 13px;
+    color: #3978a5;
+    width: 150%;
+    margin-left: 13px;
 }
