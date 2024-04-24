@@ -1,11 +1,11 @@
 
-function capitalize(texto){
+/*function capitalize(texto){
     if(texto.classList =! String){
         return;
     }else{
         null;
     }
-}
+}*/
 
 function validarComuna(){
     let user = document.querySelector("#input-comuna");
@@ -30,7 +30,7 @@ function validarComuna(){
         "Lo Barnechea",
         "Lo Espejo"];
     
-    if(user.value in lista_comuna){
+    if(lista_comuna.includes(user.value) || user.value == "" || user.value == " "){
         user.classList.add("valido");
         user.classList.remove("invalido");
         document.querySelector("#error-comuna").innerHTML = "";

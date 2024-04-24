@@ -333,8 +333,13 @@ No sé como cambiar el color del mostrar contraseña
 
 #error-comuna{
     text-align: left;
-    font-size: 13px;
+    font-size: 10px;
     color: #3978a5;
     width: 150%;
     margin-left: 13px;
+    user-select: none;
+}
+
+.invalido{
+    border: 2px solid #e21d51 !important;
 }
