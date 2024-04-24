@@ -1,6 +1,6 @@
 
 /*function capitalize(texto){
-    if(texto.classList =! String){
+    if(typeof texto === String){
         return;
     }else{
         null;
