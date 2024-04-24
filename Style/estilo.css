@@ -327,18 +327,29 @@ No sé como cambiar el color del mostrar contraseña
     width: 35%;
 }
 
+
 #comuna-usuario{
     width: 35%;
 }
 
 #error-comuna{
     text-align: left;
-    font-size: 10px;
-    color: #3978a5;
+    font-size: 9px;
+    color: #4697d1;
     width: 150%;
     margin-left: 13px;
     user-select: none;
 }
+
+#error-usuario{
+    text-align: left;
+    font-size: 9px;
+    color: #4697d1;
+    width: 150%;
+    margin-left: 13px;
+    user-select: none;
+}
+
 
 .invalido{
     border: 2px solid #e21d51 !important;

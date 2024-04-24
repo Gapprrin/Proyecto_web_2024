@@ -29,26 +29,27 @@
                 <h1>Crear cuenta</h1>
                 <div class="user-info-container">
                     <div class="input-box" id="nombre-usuario">
-                        <input type="text" placeholder="Usuario" required>
+                        <input type="text" placeholder="Usuario*" id="input-nombre-usuario" onkeyup="validarNombre()" required>
                         <img src="../Icons/login/User-logo.png" alt="User logo icon">
+                        <p id="error-usuario"></p>
                     </div>
                     <div class="input-box" id="comuna-usuario">
-                        <input type="text" placeholder="Comuna" id="input-comuna" onkeyup="validarComuna()" required>
+                        <input type="text" placeholder="Comuna*" id="input-comuna" onkeyup="validarComuna()" required>
                         <p id="error-comuna"></p>
                         <img src="../Icons/login/comuna.png" alt="User commune">
                     </div>
                 </div>
                 
                 <div class="input-box">
-                    <input type="email" placeholder="Correo o Usuario" required>
+                    <input type="email" placeholder="Correo*" required>
                     <img src="../Icons/login/Mail-logo.png" alt="User icon">
                 </div>
                 <div class="input-box" id="Password">
-                    <input type="password" placeholder="Contraseña" maxlength="20" required>
+                    <input type="password" placeholder="Contraseña*" maxlength="20" required>
                     <img src="../Icons/login/Password-logo.png" alt="Password icon">
                 </div>
                 <div class="input-box">
-                    <input type="password" placeholder="Repetir Contraseña" maxlength="20" required>
+                    <input type="password" placeholder="Repetir Contraseña*" maxlength="20" required>
                     <img src="../Icons/login/Password-logo.png" alt="Password icon">
                 </div>
                 <button type="submit" class="login-button" >Crear cuenta</button>
