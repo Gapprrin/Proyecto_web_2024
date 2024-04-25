@@ -1,11 +1,34 @@
 
-/*function capitalize(texto){
-    if(typeof texto === String){
-        return;
+function capitalize(texto){
+    let palabras = "";
+    if(typeof texto === "string" && texto.trim().length > 0){
+        for (const iterator of texto.split(" ")) {
+            //console.log(iterator[0].toUpperCase());
+            for (const letra in iterator){
+                if (letra == 0){
+                    palabras += iterator[letra].toUpperCase();
+                }else{
+                    palabras += iterator[letra].toLowerCase();
+                }
+            }
+            palabras += " ";
+        }
+        return console.log(palabras);
     }else{
-        null;
+        return;
     }
-}*/
+}
+
+// listas medio raras que servirán para valdar xdd
+let usuario = {
+    userName: "Alfonso",
+    userEmail: "acerda@gmail.com",
+    userCommune: "Huechuraba",
+    userPassword: "12345_R",
+}
+
+console.log(usuario.userEmail);
+
 
 function validarComuna(){
     let user = document.querySelector("#input-comuna");
@@ -47,12 +70,19 @@ function validarComuna(){
 
 
 function validarNombre(){
+
     let user = document.querySelector("#input-nombre-usuario");
+    
+    console.log(capitalize(user.value));
 
     if(user.value.trim().length >= 5){
-        user.classList.add("valido");
-        user.classList.remove("invalido");
-        document.querySelector("#error-usuario").innerHTML = "";
+        if(capitalize(user.value) == usuario.userName){
+            document.querySelector("#error-usuario").innerHTML = "Usuario no disponible.";
+        }else{
+            user.classList.add("valido");
+            user.classList.remove("invalido");
+            document.querySelector("#error-usuario").innerHTML = "";
+        }
     }else if(user.value.trim() == ""){
         user.classList.remove("invalido");
         user.classList.remove("valido");
