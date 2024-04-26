@@ -95,5 +95,12 @@ function validarNombre(){
 }
 
 function validarContrasenia(){
-    
+    let user = document.querySelector("#pass");
+    if(user.vlue.trim().length >= 8){
+        user.classList.add("valido");
+        user.classList.remove("invalido");
+    }else{
+        user.classList.add("invalido");
+        user.classList.remove("valido");
+    }
 }
