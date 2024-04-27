@@ -7,15 +7,19 @@
 }
 
 #logo{
-    width: 130px;
-    height: 70px;
+    width: 100px;
+    height: 30px;
+
+
+
    
 }
 
 #logo>img{
-    width: 120px;
-    height: 40px;
-    margin-top: 15px;
+    width: 100px;
+    height: 30px;
+
+
    
 }
 
@@ -24,7 +28,7 @@ nav{
 	display: flex; 
 	justify-content: space-around;
 	align-items: center;
-	height: 12vh;
+height: 70px
 }
 
 a{
@@ -353,4 +357,71 @@ No sé como cambiar el color del mostrar contraseña
 
 .invalido{
     border: 2px solid #e21d51 !important;
+}
+
+
+
+/* Sitio responsivo */
+
+
+
+/*Medida número 1*/
+@media (max-width: 700px) {
+
+    nav{
+        height: 60px;
+    }
+
+ #logo > img {
+    margin-top: 2px;
+    margin-left: 12px;
+        width: 83px; /* Cambiado a un valor porcentual para que sea proporcional al tamaño del logo */
+        height: 25px; /* Usando 'auto' para mantener la proporción del logotipo */
+    
+       
+    }
+
+    a{font-size: 12px;}
+}
+
+/*Medida número 2*/
+@media (max-width: 600px) {
+
+    nav{
+        height: 60px;
+    }
+
+    #logo > img {
+        margin-top: 2px;
+        margin-left: 15px;
+            width: 70px; /* Cambiado a un valor porcentual para que sea proporcional al tamaño del logo */
+            height: 22px; /* Usando 'auto' para mantener la proporción del logotipo */
+   
+     
+   }
+
+   a{font-size: 10px;}
+}
+
+/*Medida número 3*/
+@media (max-width: 500px) {
+
+    nav{
+        height: 46px;
+    }
+
+
+    #logo > img {
+        margin-top: 1px;
+        margin-left: 23px;
+            width: 60px; /* Cambiado a un valor porcentual para que sea proporcional al tamaño del logo */
+            height: 20px; /* Usando 'auto' para mantener la proporción del logotipo */
+   
+     
+   }
+
+   a{font-size: 9px;
+padding-bottom:  10px;
+padding-top: 10px;
+}
 }
