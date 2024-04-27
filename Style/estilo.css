@@ -359,6 +359,14 @@ No sé como cambiar el color del mostrar contraseña
     border: 2px solid #e21d51 !important;
 }
 
+#error-contrasenia{
+    text-align: left;
+    font-size: 9px;
+    color: #4697d1;
+    width: 150%;
+    margin-left: 13px;
+    user-select: none;
+}
 
 
 /* Sitio responsivo */
