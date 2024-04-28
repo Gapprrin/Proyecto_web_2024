@@ -46,32 +46,39 @@ a{
     height: 100vh;
 }
 
-.carousel-caption>h2{
-    font-size: 30px;
-    color: #FFFFFF;
-    float: left;
-    display: flex;
-    margin-left: -70px;
-    margin-top: -400px;
-}
 
 .carousel-caption>h3{
-    font-size: 20px;
-    color: #de5e08;
-    float: left;
-    display: flex;
-    margin-top: -360px;
-    margin-left: -70px;
+    font-size: 25px;
+    color: #ffffff;
+    float: right;
+font-weight: bold;
+    margin-top: -110px;
+    margin-right: -10px;
 }
 
+.carousel-caption>h2{
+    font-size: 37px;
+    color: #ffffff;
+    float: right;
+margin-top: -150px;
+display: flex;
+margin-right: -130px;
+text-shadow: 2px 2px 2px #000000;
+
+}
+
+
+
+
 .carousel-caption>h1{
-    font-size: 8vh;
+    font-size: 45px;
     color: #ffffff;
     margin-top: -400px;
-    margin-left: 700px;
+    margin-left: 800px;
     text-shadow: 6px 2px 2px #000000;
     text-align: left;
     display: flex;
+    width: 500px;
   }
 
  #fondo{
@@ -136,9 +143,9 @@ a{
 
 #final2{
     height: 40vh;
-  
+ 
     background-color: #161616;
-    padding-top: 50px;
+
     display: flex;
     padding-left: 50px;
 
@@ -146,11 +153,13 @@ a{
 }
 
 #final2>ul{
-
+width: 1000px;
     background-color: #161616;
     padding-left: 2px;
-    margin-left: 80px;
+    margin-left: 40px;
     height: 220px;
+    padding-top: 30px;
+
 
    }
 
@@ -172,7 +181,8 @@ flex-direction: column;
     text-align: center;
     display: flex;
  font-size: 14px;
-    margin-top: 40px;
+    margin-top: 30px;
+    background-color: #161616;
 }
 #instagram{
 
@@ -193,7 +203,6 @@ flex-direction: column;
     margin-top: -40px;
      
   }
-
 
 
 /* Diseño del login */
@@ -371,6 +380,47 @@ No sé como cambiar el color del mostrar contraseña
     user-select: none;
 }
 
+/*Cambios para sitio responsivo*/
+
+.text_home{
+
+    margin-top: 5px; 
+    display: flex; 
+    margin-left: 1px;
+
+}
+
+.text_modelos{
+    margin-top: -15px;
+     display: flex; 
+     margin-left: 20px;
+}
+
+.text_accesorios{
+    margin-top: -17px;
+     display: flex; 
+     margin-left: 20px;
+}
+
+.text_acerca{
+    margin-top: -17px;
+     display: flex; 
+     margin-left: 20px;
+}
+
+.text_carrito{
+    margin-top: -17px;
+     display: flex; 
+     margin-left: 20px;
+}
+
+.text_sesion{
+    margin-top: -17px;
+     display: flex; 
+     margin-left: 20px;
+}
+
+
 
 
 /* Sitio responsivo */
@@ -378,7 +428,7 @@ No sé como cambiar el color del mostrar contraseña
 
 
 /*Medida número 1*/
-@media (max-width: 1000px) {
+@media (max-width: 1455px) {
 
     nav{
         height: 60px;
@@ -394,12 +444,28 @@ No sé como cambiar el color del mostrar contraseña
     }
 
     a{font-size: 12px;}
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
 
+
+
+
+
 /*Medida número 2*/
-@media (max-width: 900px) {
+@media (max-width: 830px) {
 
     nav{
         height: 60px;
