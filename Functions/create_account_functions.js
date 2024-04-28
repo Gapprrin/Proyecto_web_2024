@@ -13,7 +13,7 @@ function capitalize(texto){
             }
             palabras += " ";
         }
-        return console.log(palabras);
+        return palabras.trim();
     }else{
         return;
     }
@@ -27,7 +27,6 @@ let usuario = {
     userPassword: "12345_R",
 }
 
-console.log(usuario.userEmail);
 
 
 function validarComuna(){
@@ -72,12 +71,10 @@ function validarComuna(){
 function validarNombre(){
 
     let user = document.querySelector("#input-nombre-usuario");
-    
-    console.log(capitalize(user.value));
 
     if(user.value.trim().length >= 5){
         if(capitalize(user.value) == usuario.userName){
-            document.querySelector("#error-usuario").innerHTML = "Usuario no disponible.";
+            document.querySelector("#error-usuario").innerHTML = "Nombre de usuario no disponible.";
         }else{
             user.classList.add("valido");
             user.classList.remove("invalido");
@@ -96,11 +93,18 @@ function validarNombre(){
 
 function validarContrasenia(){
     let user = document.querySelector("#pass");
-    if(user.vlue.trim().length >= 8){
+    if(user.value.length >= 8){
         user.classList.add("valido");
         user.classList.remove("invalido");
+        document.querySelector("#error-contrasenia").innerHTML = "";
+    }else if(user.value.trim() == ""){
+        user.classList.remove("invalido");
+        user.classList.remove("valido");
+        document.querySelector("#error-contrasenia").innerHTML = "Debe rellenar el campo.";
     }else{
         user.classList.add("invalido");
         user.classList.remove("valido");
+        document.querySelector("#error-contrasenia").innerHTML = "Debe tener un largo mínimo de 8 caracteres.";
     }
 }
+
