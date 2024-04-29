@@ -47,39 +47,39 @@ a{
 }
 
 
-.carousel-caption>h3{
-    font-size: 25px;
-    color: #ffffff;
-    float: right;
-font-weight: bold;
-    margin-top: -110px;
-    margin-right: -10px;
-}
-
-.carousel-caption>h2{
-    font-size: 37px;
-    color: #ffffff;
-    float: right;
-margin-top: -150px;
-display: flex;
-margin-right: -130px;
-text-shadow: 2px 2px 2px #000000;
-
-}
-
-
-
-
 .carousel-caption>h1{
     font-size: 45px;
     color: #ffffff;
     margin-top: -400px;
-    margin-left: 800px;
+   text-align: left;
     text-shadow: 6px 2px 2px #000000;
-    text-align: left;
+float: right;
+margin-right: -200px;
     display: flex;
     width: 500px;
+
   }
+
+
+
+
+
+.carousel-caption>h2{
+    font-size: 24px;
+    color: #ffffff;
+    float: right;
+
+display: flex;
+margin-right: 60px;
+text-shadow: 2px 2px 2px #000000;
+margin-top: -200px;
+display: flex;
+
+}
+
+
+
+
 
  #fondo{
     height: 600px;
@@ -99,14 +99,14 @@ text-shadow: 2px 2px 2px #000000;
 }
 
 #modelosAutos{
-    width: 1700px;
+    width: 100%;
     height: 450px;
     display: flex;
     justify-content: space-between;
-    padding: 30px;
-    justify-content: space-between;
-    margin-top: 130px;
-    margin-left: -460px;
+   
+  float: none;
+ padding-top: 30px;
+   
 }  
 
 
@@ -118,9 +118,11 @@ text-shadow: 2px 2px 2px #000000;
 
 #final{
     background-image: url(../Images/backgrounds/Home/fondoblanco.jpg);
-    height: 52vh;
+    width: 100%;
+   height: 400px;
     background-color: #ffffff;
     background-size: cover;
+    margin-top: -100px;
 }
 
 #final>h2{
@@ -420,7 +422,21 @@ No sé como cambiar el color del mostrar contraseña
      margin-left: 20px;
 }
 
+#boton1{
+    width: 234px;
+    background-color:#de5e08;
+    color: #fff;
+    font-weight: bold;
+  float: right;
+  margin-right: 60px;
+    display: flex;
+    font-size: medium;
+    border:none;
+    text-align: center;
+    margin-top: -150px;
 
+  
+}
 
 
 /* Sitio responsivo */
@@ -445,26 +461,61 @@ No sé como cambiar el color del mostrar contraseña
 
     a{font-size: 12px;}
 
+}
+
+/*medida numero2*/
+@media (max-width: 1300px) {
+
+.carousel-caption>h1{
+    font-size: 35px;
+    margin-top: -380px;
+    float: right;
+margin-right: -30px;
+   width: 300px;
+   height: 200px;
+   
+}
+
+#boton1{
+    margin-right: 30px;
+   margin-top: -160px;
+   position: static;
+}
 
 
-
-
-
-
-
-
-
-
+.carousel-caption>h2{
+    margin-right: 30px;
+}
 
 }
 
 
 
+/*Medida número 3*/
+@media (max-width: 1200px) {
+
+    .carousel-caption>h2{
+        margin-right: -100px;
+        margin-top: -200px;
+        display: flex;
+    }
+
+
+    #boton1{
+        margin-right: -100px;
+       margin-top: -160px;
+     
+    }
+
+.carousel-caption>h1{
+    display: none;
+}
+
+}
 
 
 
-
-/*Medida número 2*/
+/*Medida número 4*/
 @media (max-width: 830px) {
 
     nav{
@@ -516,8 +567,31 @@ No sé como cambiar el color del mostrar contraseña
     }
 }
 
-
+.carousel-caption>h2{
+    display: none;
+}
+#boton1{
+    display: none;
+}
 
 }
 
+#lomasnuevo{
+    width: 100%;
+    height: 80px;
+    background-color: #0f0f0f;
+    text-align: center;
+    font-weight: bold;
+    align-items: center;
+}
 
+#lomasnuevo1{
+  font-size: 20px;
+    color: #cecece;
+    padding-top: 10px;
+}
+
+#lomasnuevo2{
+    font-size: 17px;
+      color: #de5e08
+  }
