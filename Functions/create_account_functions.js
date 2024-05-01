@@ -1,4 +1,6 @@
 
+// Funciones extras
+
 function capitalize(texto){
     let palabras = "";
     if(typeof texto === "string" && texto.trim().length > 0){
@@ -28,6 +30,7 @@ let usuario = {
 }
 
 
+// Funciones de validación
 
 function validarComuna(){
     let user = document.querySelector("#input-comuna");
