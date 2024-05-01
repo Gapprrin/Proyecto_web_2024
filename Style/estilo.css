@@ -369,6 +369,15 @@ No sé como cambiar el color del mostrar contraseña
 }
 
 
+#error-repcontrasenia{
+    text-align: left;
+    font-size: 9px;
+    color: #4697d1;
+    width: 150%;
+    margin-left: 13px;
+    user-select: none;
+}
+
 .invalido{
     border: 2px solid #e21d51 !important;
 }

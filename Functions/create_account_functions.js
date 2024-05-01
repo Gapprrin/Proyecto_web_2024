@@ -100,14 +100,38 @@ function validarContrasenia(){
         user.classList.add("valido");
         user.classList.remove("invalido");
         document.querySelector("#error-contrasenia").innerHTML = "";
-    }else if(user.value.trim() == ""){
+        document.querySelector("#repass").removeAttribute("disabled");
+    }else if(user.value == ""){
         user.classList.remove("invalido");
         user.classList.remove("valido");
         document.querySelector("#error-contrasenia").innerHTML = "Debe rellenar el campo.";
+        document.querySelector("#repass").value = "";
+        document.querySelector("#repass").setAttribute("disabled", "");
     }else{
         user.classList.add("invalido");
         user.classList.remove("valido");
+        document.querySelector("#repass").setAttribute("disabled", "");
         document.querySelector("#error-contrasenia").innerHTML = "Debe tener un largo mínimo de 8 caracteres.";
     }
 }
 
+
+function validarRepetirContrasenia(){
+    let userPass = document.querySelector("#pass");
+    let user = document.querySelector("#repass");
+
+    if(user.value == userPass.value){
+        user.classList.add("valido");
+        user.classList.remove("invalido");
+        document.querySelector("#error-repcontrasenia").innerHTML = "";
+    }else{
+        user.classList.add("invalido");
+        user.classList.remove("valido");
+        document.querySelector("#error-repcontrasenia").innerHTML = "Las contraseñas no son iguales.";
+    }
+}
+
+
+function validarCorreo(){
+    
+}

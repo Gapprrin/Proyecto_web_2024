@@ -49,9 +49,10 @@
                     <img src="../Icons/login/Password-logo.png" alt="Password icon">
                     <p id="error-contrasenia"></p>
                 </div>
-                <div class="input-box">
-                    <input type="password" placeholder="Repetir Contraseña*" maxlength="20" required>
+                <div class="input-box" id="val-pass">
+                    <input type="password" id="repass" placeholder="Repetir Contraseña*" maxlength="20" onkeyup="validarRepetirContrasenia()" disabled required>
                     <img src="../Icons/login/Password-logo.png" alt="Password icon">
+                    <p id="error-repcontrasenia"></p>
                 </div>
                 <button type="submit" class="login-button" >Crear cuenta</button>
                 <div class="dont-have-acount">
