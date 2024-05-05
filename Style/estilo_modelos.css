@@ -289,28 +289,7 @@ flex-direction: column;
 
 
 
-/*Medida número 1*/
-@media (max-width: 1455px) {
-
-    nav{
-        height: 60px;
-    }
-
- #logo > img {
-    margin-top: 2px;
-    margin-left: 12px;
-        width: 83px; /* Cambiado a un valor porcentual para que sea proporcional al tamaño del logo */
-        height: 25px; /* Usando 'auto' para mantener la proporción del logotipo */
-    
-       
-    }
-
-    a{font-size: 12px;}
-
-}
-
-/*Medida número 4*/
-@media (max-width: 900px) {
+@media (max-width: 870px) {
 
     nav{
         height: 60px;
@@ -359,5 +338,37 @@ flex-direction: column;
     .text_acerca{
         display: none;
     }
+}
+
+
+#barra{
+    height: 30px;
+ 
+}
+
+#frase>h3{
+    font-size: small;
+}
+
+.carousel-caption>p{
+  display: none;
+}
+
+#carrusel3{
+    margin-top: -460px;
+    display: flex;
+}
+#final2{
+    display: none;
+}
+
+#whatsap{
+    display: none;
+}
+#instagram{
+    display: none;
+}
+#texto_ultimo>h6{
+    font-size: 11px;
 }
 }
