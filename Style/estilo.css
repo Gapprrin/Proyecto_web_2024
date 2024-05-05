@@ -82,7 +82,7 @@ display: flex;
 
 
  #fondo{
-    height: 600px;
+    height: 540px;
     display: flex;
     background-image: url(../Images/Backgrounds/Home/camino.jpg);
     background-size: cover;
@@ -98,16 +98,6 @@ display: flex;
     margin-top: 40px;
 }
 
-#modelosAutos{
-    width: 100%;
-    height: 450px;
-    display: flex;
-    justify-content: space-between;
-   
-  float: none;
- padding-top: 30px;
-   
-}  
 
 
 #ver_mas{
@@ -119,7 +109,7 @@ display: flex;
 #final{
     background-image: url(../Images/backgrounds/Home/fondoblanco.jpg);
     width: 100%;
-   height: 400px;
+   height: 380px;
     background-color: #ffffff;
     background-size: cover;
     margin-top: -100px;
@@ -648,6 +638,7 @@ margin-top: 300px;
 
 .card-text{
     font-size: 12px;
+    text-align: justify;
 }
 
 #botonc{
@@ -705,12 +696,68 @@ display: none;
 
 #final{
     margin-top: 3px;
-    height: 500px;
+  height: 115px;
+
 }
 
 #final2{
-    width: 100%;
-    margin-top: 40px;
+  display: none;
+}
+#ver_mas{
+    display: flex;
+    margin-top: 310px;
+    margin-left: -160px;
+}
+#ver_mas>a{
+  font-size: 10px;
+}
+
+#final>h2{
+    font-size: medium;
+    margin-left: 12px;
+
+}
+#final>h3{
+    font-size: small;
+    margin-left: 12px;
+
+}
+
+#mantencion1{
+    display: none;
+}
+.boton_mantencion{
+    display: none;
+}
+
+#final>img{
+    width: 40px;
+    height: 40px;
+    margin: 35px;
+    margin-top: 20px;
+}
+
+.btn-outline-secondary{
+    width: 120px;
+    font-size: 10px;
+    margin: 20px;
+
+}
+#texto_ultimo{
+    margin-top: 160px;
+}
+
+#instagram{
+    display: none;
+
+}
+
+#whatsap{
+    display: none;
+}
+
+#texto_ultimo>h6{
+    font-size: 11px;
 }
 }
 
