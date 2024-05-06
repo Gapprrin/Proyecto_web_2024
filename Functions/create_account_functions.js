@@ -151,6 +151,7 @@ function validarFormulario(){
     let comuna = document.querySelector("#input-comuna");
     let correo = document.querySelector("#input-correo");
     let repcontrasenia = document.querySelector("#repass");
+    
     if(contrasenia.classList.contains("invalido") || usuario.classList.contains("invalido") || 
     comuna.classList.contains("invalido") || correo.classList.contains("invalido") || 
     repcontrasenia.classList.contains("invalido") ){
