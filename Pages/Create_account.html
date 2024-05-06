@@ -41,8 +41,9 @@
                 </div>
                 
                 <div class="input-box">
-                    <input type="email" placeholder="Correo*" required>
+                    <input type="email" id="input-correo" placeholder="Correo*" onkeyup="validarCorreo()" required>
                     <img src="../Icons/login/Mail-logo.png" alt="User icon">
+                    <p id="error-correo"></p>
                 </div>
                 <div class="input-box" id="Password">
                     <input type="password" id="pass" placeholder="Contraseña*" maxlength="20" onkeyup="validarContrasenia()" required>
@@ -54,7 +55,7 @@
                     <img src="../Icons/login/Password-logo.png" alt="Password icon">
                     <p id="error-repcontrasenia"></p>
                 </div>
-                <button type="submit" class="login-button" >Crear cuenta</button>
+                <button type="submit" class="login-button" onclick="return validarFormulario()" >Crear cuenta</button>
                 <div class="dont-have-acount">
                     <a id="login-words" href="login.html">Ya tengo una cuenta</a>
                 </div>

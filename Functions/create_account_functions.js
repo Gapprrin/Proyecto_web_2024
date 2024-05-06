@@ -133,5 +133,33 @@ function validarRepetirContrasenia(){
 
 
 function validarCorreo(){
-    
+    let correo = document.querySelector("#input-correo");
+    if(correo.value == usuario.userEmail){
+        correo.classList.add("invalido");
+        correo.classList.remove("valido");
+        document.querySelector("#error-correo").innerHTML = "El correo ya está en uso.";
+    }else{
+        correo.classList.add("valido");
+        correo.classList.remove("invalido");
+        document.querySelector("#error-correo").innerHTML = "";
+    }
+}
+
+function validarFormulario(){
+    let contrasenia = document.querySelector("#pass");
+    let usuario = document.querySelector("#input-nombre-usuario");
+    let comuna = document.querySelector("#input-comuna");
+    let correo = document.querySelector("#input-correo");
+    let repcontrasenia = document.querySelector("#repass");
+    if(contrasenia.classList.contains("invalido") || usuario.classList.contains("invalido") || 
+    comuna.classList.contains("invalido") || correo.classList.contains("invalido") || 
+    repcontrasenia.classList.contains("invalido") ){
+        return false;
+    }else if(contrasenia.value == "" || usuario.value == "" || 
+    comuna.value == "" || correo.value == "" || 
+    repcontrasenia.value == "" ){
+        return false;
+    }else{
+        return true;
+    }
 }

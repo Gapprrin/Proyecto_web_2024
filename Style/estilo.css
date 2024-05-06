@@ -381,6 +381,15 @@ No sé como cambiar el color del mostrar contraseña
     user-select: none;
 }
 
+#error-correo{
+    text-align: left;
+    font-size: 9px;
+    color: #4697d1;
+    width: 150%;
+    margin-left: 13px;
+    user-select: none;
+}
+
 /*Cambios para sitio responsivo*/
 
 .text_home{
