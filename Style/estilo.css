@@ -391,7 +391,7 @@ No sé como cambiar el color del mostrar contraseña
 }
 
 .input-box>select{
-    width: 12vw;
+    width: 170%;
     height: 100%;
     background-color: transparent;
     outline: none;
@@ -406,6 +406,7 @@ No sé como cambiar el color del mostrar contraseña
 .input-box>select:nth-child(1){
     background-color: #1b1c1f;
 }
+
 
 /*Cambios para sitio responsivo*/
 
