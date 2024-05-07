@@ -390,6 +390,23 @@ No sé como cambiar el color del mostrar contraseña
     user-select: none;
 }
 
+.input-box>select{
+    width: 12vw;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 15px;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.input-box>select:nth-child(1){
+    background-color: #1b1c1f;
+}
+
 /*Cambios para sitio responsivo*/
 
 .text_home{
