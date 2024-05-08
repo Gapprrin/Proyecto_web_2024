@@ -168,7 +168,7 @@ function validarFormulario(){
     repcontrasenia.classList.contains("invalido") ){
         return false;
     }else if(contrasenia.value == "" || usuario.value == "" || 
-    comuna.value == "" || correo.value == "" || 
+    comuna.value == 0 || correo.value == "" || 
     repcontrasenia.value == "" ){
         return false;
     }else{
