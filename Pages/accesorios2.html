@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=G1, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Style/estilo_accesorios2.css">
+    <script src="../Functions/funciones.js"></script>
+</head>
+<header>
+    <nav>
+  
+        <a href="../index.html" id="home" style="display: flex; align-items: center;">
+          <img src="../Icons/Home/home.png" alt="home" style="width: 15px; height: 15px; margin-right: 5px;"> <!-- Añadido margen a la derecha -->
+          <span class="text_home">Home</span>
+      </a>
+      <a href="../Pages/modelos.html" id="modelos">
+        <img src="../Icons/Home/auto.png" alt="home" style="width: 15px; height: 15px; margin-right: 5px;">
+        <span class="text_modelos">Modelos</span>
+      </a>
+          <a href="../Pages/accesorios.html" id="accesorios">
+            <img src="../Icons/Home/llanta.png" alt="home" style="width: 15px; height: 15px; margin-right: 5px;"> <!-- Añadido margen a la derecha -->
+            <span class="text_accesorios">Accesorios</span>
+          </a>
+          <div id="logotipo">
+            <a href="../index.html">
+              <img src="../Icons/logotipo.png" style="width: 100px; height: 30px;">
+            </a>
+          </div>
+          <a href="../Pages/acerca_de.html" id="acercade">
+            <img src="../Icons/Home/nosotros.png" alt="acerca de" style="width: 15px; height: 15px; margin-right: 5px;"> <!-- Añadido margen a la derecha -->
+            <span class="text_acerca">Acerca de nosotros</span>
+          </a>
+         
+          <a href="../Pages/Carrito.html" id="carrito">
+          <img src="../Icons/Home/carrito.png" alt="carrito" style="width: 15px; height: 15px; margin-right: 5px;">
+          <span class="text_carrito">Carrito</span>
+        </a>
+          <a href="../Pages/login.html" id="iniciarsesion">
+          <img src="../Icons/Home/sesion.png" alt="iniciarsesion" style="width: 15px; height: 15px;margin-right: 5px;">
+          <span class="text_sesion">Iniciar sesión</span></a> 
+        
+        </nav>
+
+</header>
+<section>
+  <div class="container">
+
+  <div class="sidebar">
+    <div class="lstp">
+      <h4><u>Filtros</u></h4>
+     
+    </div>
+    <!-- Opción 1 -->
+    <input type="checkbox" id="interior">
+    <label for="interior">Interior</label>
+    <div class="dropdown-content">
+      <a href="#">Asientos deportivos</a>
+      <a href="#">Volantes de alto rendimiento</a>
+      <a href="#">Paneles de fibra de carbono</a>
+      <a href="#">Iluminación interior LED</a>
+      <a href="#">Sistemas de sonido premium</a>
+    </div>
+
+    <!-- Opción 2 -->
+    <input type="checkbox" id="exterior">
+    <label for="exterior">Exterior</label>
+    <div class="dropdown-content">
+      <a href="#">Kits de carrocería aerodinámica</a>
+      <a href="#">Llantas de aleación ligera</a>
+      <a href="#">Spoilers y alerones</a>
+      <a href="#">Calcomanías y vinilos deportivos</a>
+      <a href="#">Parrillas deportivas</a>
+    </div>
+
+    <!-- Opción 3 -->
+    <input type="checkbox" id="rendimiento">
+    <label for="rendimiento">Rendimiento</label>
+    <div class="dropdown-content">
+      <a href="#">Filtros de aire de alto flujo</a>
+      <a href="#">Sistemas de escape deportivos</a>
+      <a href="#">Suspensión ajustable</a>
+      <a href="#">Kits de frenos de alto rendimiento</a>
+      <a href="#">Chiptuning y reprogramación de la ECU</a>
+    </div>
+
+    <!-- Opción 4 -->
+    <input type="checkbox" id="electronica">
+    <label for="electronica">Electrónica</label>
+    <div class="dropdown-content">
+      <a href="#">Sistemas de navegación GPS de última generación</a>
+      <a href="#">Cámaras de retroceso y sensores de estacionamiento</a>
+      <a href="#">Monitores de rendimiento del vehículo</a>
+      <a href="#">Alarmas y sistemas de seguridad avanzados</a>
+      <a href="#">Accesorios de conectividad Bluetooth y USB</a>
+    </div>
+    <div class="filtro">
+      <label for="minPrecio">Precio mínimo:</label>
+      <input type="number" id="minPrecio" name="minPrecio" min="0">
+  </div>
+  <div class="filtro">
+      <label for="maxPrecio">Precio máximo:</label>
+      <input type="number" id="maxPrecio" name="maxPrecio" min="0">
+  </div>
+  </div>
+
+
+
+<body onload="getproductos()">
+    
+    <section id="productos">
+      
+    </section>
+
+  </section>
+  </section>
+</body>
+</html>
