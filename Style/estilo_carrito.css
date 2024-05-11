@@ -77,12 +77,13 @@ section{
     flex-direction: column;
 }
 
-.carrito-listas{
+.objeto-carrito{
     display: flex;
     width: 100%;
     height: 85%;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 20px;
+    row-gap: 10px;
 }
 
 .button-container{
@@ -105,11 +106,6 @@ section{
     transition-duration: .2s;
 }
 
-.carrito > ul{
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-}
 
 #precios>a{
     width: 7vw;
@@ -217,6 +213,38 @@ div{
     background-image: url(../Icons/Carrito/borrar-producto.png);
 }
 
+
+.objeto{
+    display: flex;
+    height: 40px;
+    width: 90%;
+    align-items: center;
+    padding: 0px 20px;
+    margin: 0px 20px;
+    border-bottom: 2px solid #41414171;
+    border-radius: 0%;
+    color: #1a1a1b;
+}
+
+
+.div-precio{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    column-gap: 15px;
+    width: 30%;
+}
+
+.div-titulo{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    width: 70%;
+}
+
+.borrar{
+    cursor: pointer;
+}
 
 
 /**FOOTER**/
