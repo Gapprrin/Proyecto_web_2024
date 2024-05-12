@@ -47,6 +47,7 @@
         <div class="seccion-carrito">
             <div class="carrito">
                 <div class="objeto-carrito">
+                  
                     <div class="objeto">
                         <div class="div-titulo">
                           <h3 class="titulo">
@@ -119,7 +120,7 @@
         <div class="seccion-monto-total">
             <div class="total">
                 <div class="total-valores">
-                    <ul class="lista" id="monto-total">
+                    <ul class="lista" id="titulos">
                         <a>Subtotal:</a>
                         <a>Descuentos:</a>
                         <a id="linea-bonita">Total:</a>
@@ -127,12 +128,13 @@
                     <ul class="lista" id="valor-total">
                         <a>$309.000</a>
                         <a>$0</a>
-                        <a>$309.000</a>
+                        <a id="linea-bonita-monto" >$309.000</a>
                     </ul>
                 </div>
  
-                <div class="input-box">
+                <div class="input-box" id="codigo-descuento">
                     <input type="text" placeholder="Código de descuento" maxlength="7">
+                    <button type="submit" class="buttons" id="aplicar-codigo" >Aplicar código</button>
                 </div>
 
                 <div class="button-container" id="paying-button">

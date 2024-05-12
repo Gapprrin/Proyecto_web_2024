@@ -106,13 +106,6 @@ section{
     transition-duration: .2s;
 }
 
-
-#precios>a{
-    width: 7vw;
-    height: 40px;
-    margin-left: -50px;
-}
-
 .lista>a{
     display: flex;
     border-bottom: 1px solid #41414171;
@@ -136,7 +129,10 @@ section{
 
 .total-valores{
     display: flex;
-    border: none;
+    height: 170px;
+    width: 100%;
+    border-radius: 0px;
+    justify-content: space-between;
 }
 
 div{
@@ -144,31 +140,39 @@ div{
 }
 
 
-#monto-total{
+#titulos{
+    width: 50%;
+    height: 100%;
     margin-top: 25px;
 }
 
-#monto-total>a{
+
+#titulos>a{
     display: flex;
     width: 14vw;
     border: none;
     user-select: none;
 }
 
-#monto-total>#linea-bonita{
+#titulos>#linea-bonita{
+    width: 140%;
     border-top: 1px solid #41414171;
     user-select: none;
+    position: relative;
 }
 
 #valor-total{
+    width: 50%;
+    height: 100%;
     margin-top: 25px;
+    text-align: right;
 }
 
 #valor-total>a{
     width: fit-content;
     border: none;
-    margin-left: -115px;
     user-select: none;
+    margin-left: -40px;
 }
 
 .input-box{
@@ -190,6 +194,21 @@ div{
     padding-right: 15px;
     border-radius: 10px;
     color: #1a1a1b;
+}
+
+#codigo-descuento{
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    width: 70%;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#aplicar-codigo{
+    width: 100px;
+    height: 50px
 }
 
 #paying-button{
@@ -371,6 +390,23 @@ a{
 
 /* Sitio responsivo */
 
+@media only screen and (max-width: 1150px){
+    .total{
+        display: flex;
+        height: 70vh;
+        width: 75%;
+    }
+
+    #titulos{
+        padding-left: 15%;
+    }
+
+    #valor-total{
+        margin-left: 20px;
+        padding-left: 0%;
+    }
+}
+
 
 
 /*Medida número 1*/
@@ -380,13 +416,11 @@ a{
         height: 60px;
     }
 
- #logo > img {
-    margin-top: 2px;
-    margin-left: 12px;
+    #logo > img {
+        margin-top: 2px;
+        margin-left: 12px;
         width: 83px; /* Cambiado a un valor porcentual para que sea proporcional al tamaño del logo */
         height: 25px; /* Usando 'auto' para mantener la proporción del logotipo */
-    
-       
     }
 
     a{font-size: 12px;}
@@ -395,7 +429,7 @@ a{
 
 
 /*Medida número 4*/
-@media (max-width: 830px) {
+@media (max-width: 910px) {
 
     nav{
         height: 60px;
@@ -404,45 +438,174 @@ a{
     #logotipo > img {
         margin-top: 2px;
         margin-left: 15px;
-            width: 83px; /* Cambiado a un valor porcentual para que sea proporcional al tamaño del logo */
-            height: 25px; /* Usando 'auto' para mantener la proporción del logotipo */
-   
-     
+        width: 83px; /* Cambiado a un valor porcentual para que sea proporcional al tamaño del logo */
+        height: 25px; /* Usando 'auto' para mantener la proporción del logotipo */
    }
 
+    #home{
+        .text_home{
+            display: none;
+        }
+    }
 
-#home{
-    .text_home{
+    #carrito{
+        .text_carrito{
+            display: none;
+        }
+    }
+
+    #iniciarsesion{
+        .text_sesion{
+            display: none;
+        }
+    }
+
+    #modelos{
+        .text_modelos{
+            display: none;
+        }
+    }
+    #accesorios{
+        .text_accesorios{
+            display: none;
+        }
+    }
+
+    #acercade{
+        .text_acerca{
+            display: none;
+        }
+    }
+    #final2{
         display: none;
+    }
+
+    #final2 > ul{
+        display: none;
+    }
+
+    #final > ul> a{
+        display: none;
+    }
+
+    #texto-ultimo{
+        padding-top: 300px;
+    }
+
+    #instagram, #whatsap{
+        display: none;
+    }
+
+    #texto_ultimo{
+        display: flex;
+        height: 200px;
+        justify-content: center;
+    }
+
+    .total{
+        width: 200px;
+
+        #titulos{
+            padding-left: 10%;
+        }
+    
+        #valor-total{
+            margin-left: 30px;
+            padding-left: 0%;
+        }
+    }
+    
+    .seccion-carrito{
+        width: 650px;
+    }
+    .objeto{
+        width: 400px;
+    }
+
+}
+
+@media only screen and (max-width: 820px) {
+    section{
+        flex-direction: column;
+        height: 140vh;
+    }
+
+    .total, .seccion-monto-total{
+        width:100%;
+    }
+
+    .seccion-carrito{
+        width: 95%;
+        margin-left: -1%;
+    }
+
+    .seccion-monto-total{
+        display: flex;
+        width: 83%;
+        margin-left: 8%;
+    }
+
+    .total-valores{
+        justify-content: center;
+        align-content: center;
+    }
+
+    .total{
+        height: 400px;
+
+        #titulos{
+            padding-left: 10%;
+        }
+    
+        #valor-total{
+            margin-left: 55%;
+            padding: 0%;
+        }
+    }
+    #titulos>#linea-bonita{
+        width: 450%;
+    }
+
+    #codigo-descuento{
+        height: 30%;
+        width: 85%;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    #codigo-descuento>input{
+        height: 40px;
+    }
+
+    .objeto{
+        width: 85%;
     }
 }
 
-#carrito{
-    .text_carrito{
-        display: none;
+@media (max-width: 601px) {
+    .seccion-monto-total{
+        width: 87%;
+    }
+
+    .seccion-carrito{
+        width: 100%;
+    }
+
+    .objeto{
+        width: 83%;
     }
 }
 
-#iniciarsesion{
-    .text_sesion{
-        display: none;
+@media (max-width: 431px) {
+    .seccion-monto-total{
+        width: 327px;
     }
-}
 
-#modelos{
-    .text_modelos{
-        display: none;
+    .seccion-carrito{
+        width: 390px;
     }
-}
-#accesorios{
-    .text_accesorios{
-        display: none;
-    }
-}
 
-#acercade{
-    .text_acerca{
-        display: none;
+    .objeto{
+        width: 75%;
     }
-}
 }

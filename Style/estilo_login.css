@@ -335,7 +335,6 @@ No sé como cambiar el color del mostrar contraseña
             margin-left: 15px;
             width: 83px; /* Cambiado a un valor porcentual para que sea proporcional al tamaño del logo */
             height: 25px; /* Usando 'auto' para mantener la proporción del logotipo */
-
         }
         
         #home{
