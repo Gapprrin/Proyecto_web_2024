@@ -76,28 +76,39 @@ getProductos();
 //APY USUARIOS---------------------------------------------------------------------------------------------------------------------------
 
 
-const boton = document.querySelector('#boton');
-const nombre = document.querySelector('#nombre');
-
-const foto = document.querySelector('#foto');
-
-const generarUsuario = async () => {
-    //consultar a la API
-    const url = 'https://randomuser.me/api/';
-    const respuesta = await fetch(url);
-    const { results } = await respuesta.json();
-    const datos = results[0];
-
-    foto.src = datos.picture.medium;
-    nombre.textContent = datos.name.first;
-    correo.textContent = datos.email;
-    telefono.textContent = datos.phone;
+async function obtenerUsuarioAleatorio() {
+    var response = await fetch('https://randomuser.me/api/');
+    var data = await response.json();
+    return data.results[0];
 }
 
+// Función para obtener un testimonio aleatorio de la API
+async function obtenerTestimonioAleatorio() {
+    var response = await fetch('https://api.quotable.io/random');
+    var data = await response.json();
+    return data;
+}
 
-//crear un evento
-document.addEventListener('DOMContentLoaded', generarUsuario);
-boton.addEventListener('click', generarUsuario);
+// Función para mostrar los datos del usuario y el testimonio
+async function mostrarDatosUsuario() {
+    var usuario = await obtenerUsuarioAleatorio();
+    var testimonio = await obtenerTestimonioAleatorio();
+    document.getElementById("nombre").textContent = `${usuario.name.first} ${usuario.name.last}`;
+    document.getElementById("nacionalidad").textContent = `Nacionalidad: ${usuario.nat}`;
+    document.getElementById("testimonio").textContent = `"${testimonio.content}" `;
+    document.getElementById("foto").src = usuario.picture.large;
+    document.getElementById("foto").alt = `${usuario.name.first} ${usuario.name.last}`;
+}
+
+// Mostrar los datos del usuario y el testimonio cuando la página se carga por primera vez
+window.onload = function() {
+    mostrarDatosUsuario();
+};
+
+// Evento de clic en el botón para mostrar nuevos datos del usuario y testimonio
+document.getElementById("boton").addEventListener("click", function() {
+    mostrarDatosUsuario();
+});
 
 
 
