@@ -1,38 +1,89 @@
-async function getproductos() {
-    let response = await fetch("https://api.escuelajs.co/api/v1/products/");
-    let items = await response.json();
 
-let productos = document.querySelector("#productos");
+// APY DOLAR---------------------------------------------------------------------------------------------------------------------------
 
-    for(let item of items){
-        let producto = document.createElement("div");
-        producto.classList.add("producto");
+let accesorios = [
+    {
+        "nombre": "Neumático blabla",
+        "precio": "249000",
+        "imagen": "../neumatico3.jpg",
+    },
+    {
+        "nombre": "blabla",
+        "precio": "200000",
+        "imagen": "",
+    },
 
-        let url = item.images[0].replaceAll("[", "").replaceAll("]","").replaceAll("\"","")
+    {
+        "nombre": "Volante",
+        "precio": "249000",
+        "imagen": "",
+    },
+    {
+        "nombre": "Asiento",
+        "precio": "200000",
+        "imagen": "",
+    },
+];
 
-        let imagen = document.createElement("div");
-        imagen.classList.add("imagen");
-        imagen.style.backgroundImage = "url(" + url + ")";
-        producto.appendChild(imagen);
+function getProductos() {
+    let productos = document.querySelector(".productos");
 
+    // Hacer solicitud HTTP a la API de Mindicador para obtener el tipo de cambio de dólares
+    fetch('https://mindicador.cl/api')
+    .then(response => response.json())
+    .then(data => {
+        let dolarPrice = data.dolar.valor; // Obtener el valor del dólar en pesos chilenos
 
+        accesorios.forEach(t => {
+            let producto = document.createElement("div");
+            producto.classList.add("producto");
 
-         
-        
+            // Agregar imagen
+            let imagen = document.createElement("div");
+            imagen.classList.add("imagen");
+            imagen.style.backgroundImage = 'url(' + t.imagen + ')';
+            producto.appendChild(imagen);
 
-        let nombre = document.createElement("div");
-        imagen.classList.add("nombre");
-        nombre.innerHTML = item.title;
-        producto.appendChild(nombre);
+            // Calcular precio en dólares
+            let precioEnDolares = parseFloat(t.precio) / dolarPrice;
 
+            // Agregar precio en dólares
+            let precioDolares = document.createElement("div");
+            precioDolares.classList.add("precio");
+            precioDolares.innerHTML = `$${precioEnDolares.toFixed(2)} USD`; // Formatear el precio a 2 decimales
+            producto.appendChild(precioDolares);
 
-        let precio = document.createElement("div");
-        precio.classList.add("precio");
-        precio.innerHTML = item.price;
-        producto.appendChild(precio);
+            // Agregar precio en pesos chilenos
+            let precioPesos = document.createElement("div");
+            precioPesos.classList.add("precio");
+            precioPesos.innerHTML = `$${t.precio} CLP`;
+            producto.appendChild(precioPesos);
 
-        productos.appendChild(producto);
-       
+            // Agregar el nombre
+            let nombre = document.createElement("div");
+            nombre.classList.add("nombre");
+            nombre.innerHTML = t.nombre;
+            producto.appendChild(nombre);
 
-    }
+            productos.appendChild(producto);
+        });
+    })
+    .catch(error => console.error('Error fetching data:', error));
 }
+
+getProductos();
+
+//APY USUARIOS---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
