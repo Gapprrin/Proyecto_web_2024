@@ -43,201 +43,133 @@ a{
 }
 
 
-#header2{
-
-background-color: #000000;
-height: 10vh;
-}
-
-.btn-success {
-    background-color: #de5e08; /* Cambia el color del botón verde */
-    border-color: #484f4a; /* Cambia el color del borde del botón */
-  
-  }
-
-
-
-
-
-#carrusel1{
-
-
-height: 88vh;
-margin-top: -640px; /*afecta el espacio fuera del elemento, entre él y los elementos vecinos.*/
-
-
-}
-
-
-
-
-#barra{
-    height: 55px;
-  }
-  
-
 
 .navbar-brand{
-    padding-left: 800px;
-    font-size: 12px;
-}
-
-#buscar{
-
-background-color: #de5e08;
-color: #ffffff;
-
+    font-size: small;
+    margin-left: 12px;
 }
 
 
+.informacion_derecha {
 
-
-#frase>h3{
-    color: #ffffff;
-    margin-left: 15px;
-    font-size: 20px;
-}
-
-.carousel-caption {
-
-    display: flex;
-    flex-direction: column; /* Cambia la dirección de los elementos flexibles a columna */
-
-    width: 417px;
-    height: 860px;
-    margin-left: 700px;
-    padding-top: 30px;
-
-}
-
-
-.carousel-caption>h3{
-
-width: 417px;
-
-display: flex;
-margin-top: 320px;
-font-size: 20px;
-padding-inline-start: 120px;
-
-
+    width: 27%;
+    height: 70%;
+    position: absolute;
+    top: 4%; /* Ajusta la posición vertical según sea necesario */
+    right:10%; /* Ajusta la posición horizontal según sea necesario */
+    overflow: auto; /* Ajusta el desbordamiento según sea necesario */
 
 
 }
 
-
-
-.carousel-caption>p{
-font-size: 14px;
-margin-top: 10px;
-text-align: justify;
-padding-left: 5px;
-width: 417px;
-
-}
-
-#carrusel2{
-
-
-    height: 88vh;
-  
-    
-    
-    }
-
-    #texto2{
-
-        display: flex;
-        flex-direction: column; /* Cambia la dirección de los elementos flexibles a columna */
-    
-        width: 417px;
-        height: 860px;
-        margin-left: -100px;
-        padding-top: 30px;
-    
-
-
-    }
-
-#carrusel3{
-
-    margin-top: -70px;
-}
-
-#carrusel4{
-
-    margin-top: -3px;
-}
-
-#carrusel5{
-
-    margin-top: -2px;
-}
-
-#carrusel6{
-
-    margin-top: -2px;
-}
-
-#final2{
-    height: 40vh;
-  
-    background-color: #161616;
-    padding-top: 50px;
-    display: flex;
-    padding-left: 50px;
-
-
-}
-
-#final2>ul{
-
-    background-color: #161616;
-    padding-left: 2px;
-    margin-left: 80px;
-    height: 220px;
-
-   }
-
-#texto_ultimo{
-
-height: 12vh;
-background-color: #161616;
-align-items: center;
-display: flex;
-flex-direction: column;
-
-
-
-
-}
-
-#texto_ultimo>h6{
-    color: #cecece;
+.informacion_derecha>h5 {
     text-align: center;
-    display: flex;
- font-size: 14px;
-    margin-top: 40px;
+    color: #ffffff;
 }
-#instagram{
 
-   width: 40px;
-   height: 40px;
-   margin-left: 550px;
-   display: flex;
-   margin-top: -50px;
-    
- }
+.informacion_derecha>p {
+    text-align: justify;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 12px;
+
+ 
+}
+
+.informacion_derecha p:before {
+    content: 'olorfrd jsjfhr icjfhr icing ipsum dolorfrd jsjfhr icin olorfrd jsjfhr icing ipsum dolorfrd jsjfhr i olorfrd jsjfhr icing ipsum dolorfrd jsjfhr icing Lor olorfrd jsjfhr icing ipsum dolorfrd jsjfhr icing Lorcing Lor olorfrd jsjfhr icing ipsum dolorfrd jsjfhr icing Lorg Lor olorfrd jsjfhr icing ipsum dolorfrd jsjfhr icing Loripsum dolorfrd jsjfhr icing Lor Lorem ipsum dolorfrd jsjfhr icing ipsum dolorfrd jsjfhr icing Lorem isjdjhd Lorem ipsum dolorfrd jsjfhr icing ipsum dolorfrd jsjfhr icing Lorem isjdjhd Lorem ipsum dolorfrd jsjfhr icing ipsum dolorfrd jsjfhr icing Lorem isjdjhdjsjfhr icing ipsum dolorfrd jsjfhr icing Lorem isjdjhddkfd m, quisquam, ue illumksh Lorem ipsum dolor, sit amet consectetur adipisicing Lorem ipsum dolor, sidlfkdkfk djgkk fm dkf dkfd m, quisquam, ue illumksh Lorem ipsum dolor, sit amet consectetur adipisicing Lorem ipsum dolor, sidlfkdkfk djgkk fm dkf dkfd m, quisquam, ue illumksh Lorem ipsum dolor, sit amet consectetur adipisicing Lorem ipsum dolor, sidlfkdkfk djgkk fm dkf dkfd m, quisquam, ue illumksh Lorem ipsum dolor, sit amet consectetur adipisicing Lorem ipsum dolor, sidlfkdkfk djgkk fm ';
+}
+
+
+.botones {
+    width: 27%;
+    height: 14%;
   
- #whatsap{
-
-    width: 40px;
-    height: 40px;
-    margin-left: 650px;
+    position: absolute;
+    top: 79%; /* Ajusta la posición vertical según sea necesario */
+    right: 10%; /* Ajusta la posición horizontal según sea necesario */
+    overflow: auto;
     display: flex;
-    margin-top: -40px;
-     
+}
+
+.boton1{
+    width: 48%;
+    height: 40%;
+    background-color: rgb(209, 123, 25);
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 1%;
+    font-size: 12px;
+    font-weight: bold;
+  
+    
+}
+
+.boton2{
+    width: 48%;
+    height: 40%;
+    background-color: rgb(209, 123, 25);
+    margin-left: 3%;
+    border-radius: 5px;
+    text-align: center;
+    padding-top:1%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.boton3 {
+    width: 100%;
+    height: 40%;
+    background-color: rgb(209, 123, 25);
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 1%;
+    bottom: 0%; /* Ajusta la distancia vertical */
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   /*Cambios para sitio responsivo*/
 
@@ -280,12 +212,120 @@ flex-direction: column;
 }
 
 
+.contenedor_apy{
+    width: 100%;
+    height: 700px;
+    background-color: aquamarine;
+
+}
+
+#info{
+    width: 100%;
+    height: 20%;
+    background-color: bisque;
+}
+
+
+
+
+
 
 
 
 
 
   /* Sitio responsivo */
+
+
+
+
+  @media (max-width: 1130px) {
+
+    .boton1{
+  
+        font-size: 10px;
+
+      
+        
+    }
+    
+    .boton2{
+  font-size: 10px;
+    }
+    
+    
+    .boton3 {
+        font-size: 10px;
+      }
+
+
+
+  }
+
+
+  @media (max-width: 950px) {
+
+
+    .informacion_derecha p:before {
+        content: 'drd jsjfhr i dolorfjfhr icing iping  ipsum dolorfrd jsj icing iping  ipsum dolorfrd jsjfhr icing ipsum dolorfrdfhr icing ipsum dolorfrd  icing i icing iping  ipsum dolorfrd jsjfhr icing ipsum dolorfrdping  ipsum dolorfrd jsjfhr icing ipsum dolorfrdjsjfhrfhr rd jsjfhr icing  ipsum dolorfrd jsjfhr icing ipsum dolorfrd jsjfhr';
+    }
+
+    .informacion_derecha>h5 {
+       font-size: small;
+    }
+
+
+    .botones {
+        width: 27%;
+        height: 30%;
+        position: absolute;
+        top: 62%; /* Ajusta la posición vertical según sea necesario */
+        right: 10%; /* Ajusta la posición horizontal según sea necesario */
+        overflow: auto;
+        display: flex;
+    
+    }
+    
+    .boton1{
+        width: 100%;
+        height: 25%;
+        padding: 5px;
+  padding-left: 0px;
+      
+        font-size: 10px;
+      
+      
+        
+    }
+    
+    .boton2{
+  width: 100%;
+  height: 25%;
+  top: 36%;
+
+  position: absolute;
+
+  margin-left: 0;
+  padding: 5px;
+
+
+    
+    } 
+    .boton3{
+    width: 100%;
+    height: 25%;
+  }  
+}
+
+
+
+@media (max-width: 915px) {
+
+    .informacion_derecha p:before {
+        content: 'jjd djcn csum dolorfrdum jajsjdbfbj df dohrfhr icing  ipsum dolorfrd jsjfhr icing ipsum dolorr rd jsjfh r icing  ipsum dolorfrd jsjfhr icing ipsum dolorr icing  ipsum dolorfrd jsjfhr icing ipsum dolorfrd jsjfhr';
+    }
+ 
+}
 
 
 
@@ -341,34 +381,81 @@ flex-direction: column;
 }
 
 
-#barra{
-    height: 30px;
- 
 }
 
-#frase>h3{
-    font-size: small;
+@media (max-width: 870px) {
+
+ .informacion_derecha>p{
+    display: none;
+ }
+
+.informacion_derecha>h5{
+    margin-top: 30%;
+}
+.botones{
+   margin-top: -3%;
+}
 }
 
-.carousel-caption>p{
-  display: none;
+@media (max-width: 600px) {
+.boton1{
+    width: 70%;
+    height: 70%;
+    margin-left:15% ;
+
+
+   }
+
+   .boton2{
+    display: none;
+   }
+
+   .boton3{
+    display: none;
+   }
 }
 
-#carrusel3{
-    margin-top: -460px;
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+/*APY*/
+.productos{
     display: flex;
-}
-#final2{
-    display: none;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5%;
+    justify-content: space-evenly;
+    background-color: #2182be26;
 }
 
-#whatsap{
-    display: none;
+.producto{
+    height: 30vh;
+    width: 20vw;
+    border-radius: 10px;
+    border: 1px #c3c3c3 solid;
 }
-#instagram{
-    display: none;
+
+.imagen{
+    height: 25vh;
+    width: 100%;
+    background-size: cover;
 }
-#texto_ultimo>h6{
-    font-size: 11px;
+
+.nombre{
+
+text-align: center;
+font-weight: bold;
+height: 8vh;
+
+
 }
+
+.precio{
+    font-size: 1rem;
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+    height: 5vh;
+    margin-top: 20%;
 }

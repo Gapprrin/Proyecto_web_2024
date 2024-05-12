@@ -1,1072 +1,611 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audi Chile</title>
-    <link rel="stylesheet"href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"><!--ENLACE BOOSTRAP-->
-    <link rel="stylesheet" href="../Style/estilo_modelos.css"><!--ENLACE STYLE-->
-    <link rel="website icon" type="png"   href="../Icons/Home/audilogo.png" >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audi Chile</title>
+  <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!--ENLACE BOOSTRAP-->
+  <link rel="stylesheet" href="../Style/estilo_modelos.css"><!--ENLACE STYLE-->
+  <link rel="website icon" type="png" href="../Icons/Home/audilogo.png">
+
+
+
+
+
+
+
+
 </head>
-<body><!--COMIENZO BODY-->
+
+
+<body onload="getProductos()">
+  
+  
   <header><!--COMIENZO HEADER-->
     <nav>
-  
+
       <a href="../index.html" id="home" style="display: flex; align-items: center;">
-        <img src="../Icons/Home/home.png" alt="home" style="width: 15px; height: 15px; margin-right: 5px;"> <!-- Añadido margen a la derecha -->
+        <img src="../Icons/Home/home.png" alt="home" style="width: 15px; height: 15px; margin-right: 5px;">
+        <!-- Añadido margen a la derecha -->
         <span class="text_home">Home</span>
-    </a>
-    <a href="../Pages/modelos.html" id="modelos">
-      <img src="../Icons/Home/auto.png" alt="home" style="width: 15px; height: 15px; margin-right: 5px;">
-      <span class="text_modelos">Modelos</span>
-    </a>
-        <a href="../Pages/accesorios.html" id="accesorios">
-          <img src="../Icons/Home/llanta.png" alt="home" style="width: 15px; height: 15px; margin-right: 5px;"> <!-- Añadido margen a la derecha -->
-          <span class="text_accesorios">Accesorios</span>
+      </a>
+      <a href="../Pages/modelos.html" id="modelos">
+        <img src="../Icons/Home/auto.png" alt="home" style="width: 15px; height: 15px; margin-right: 5px;">
+        <span class="text_modelos">Modelos</span>
+      </a>
+      <a href="../Pages/accesorios.html" id="accesorios">
+        <img src="../Icons/Home/llanta.png" alt="home" style="width: 15px; height: 15px; margin-right: 5px;">
+        <!-- Añadido margen a la derecha -->
+        <span class="text_accesorios">Accesorios</span>
+      </a>
+      <div id="logotipo">
+        <a href="../index.html">
+          <img src="../Icons/logotipo.png" style="width: 100px; height: 30px;">
         </a>
-        <div id="logotipo">
-          <a href="../index.html">
-            <img src="../Icons/logotipo.png" style="width: 100px; height: 30px;">
-          </a>
-        </div>
-        <a href="../Pages/acerca_de.html" id="acercade">
-          <img src="../Icons/Home/nosotros.png" alt="acerca de" style="width: 15px; height: 15px; margin-right: 5px;"> <!-- Añadido margen a la derecha -->
-          <span class="text_acerca">Acerca de nosotros</span>
-        </a>
-       
-        <a href="../Pages/Carrito.html" id="carrito">
+      </div>
+      <a href="../Pages/acerca_de.html" id="acercade">
+        <img src="../Icons/Home/nosotros.png" alt="acerca de" style="width: 15px; height: 15px; margin-right: 5px;">
+        <!-- Añadido margen a la derecha -->
+        <span class="text_acerca">Acerca de nosotros</span>
+      </a>
+
+      <a href="../Pages/Carrito.html" id="carrito">
         <img src="../Icons/Home/carrito.png" alt="carrito" style="width: 15px; height: 15px; margin-right: 5px;">
         <span class="text_carrito">Carrito</span>
       </a>
-        <a href="../Pages/login.html" id="iniciarsesion">
+      <a href="../Pages/login.html" id="iniciarsesion">
         <img src="../Icons/Home/sesion.png" alt="iniciarsesion" style="width: 15px; height: 15px;margin-right: 5px;">
-        <span class="text_sesion">Iniciar sesión</span></a> 
-      
-      </nav>
-</header><!--TÉRMINO HEADER-->
-    
+        <span class="text_sesion">Iniciar sesión</span></a>
 
-<div id="header2"><!--INICIO HEADER2-->
+    </nav>
+  </header><!--TÉRMINO HEADER-->
 
-    <nav class="navbar navbar-dark bg-dark" id="barra">
-        <div class="container-fluid">
-<div id="frase">
-          <h3>Revisa aquí todos los modelos disponibles</h3>
+  
+
+
+
+
+
+
+
+<!--INICIO CATEGORIAS-->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Revisa aquí todos los modelos disponibles</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-          <a class="navbar-brand" href="#" >Buscar por categoría</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Categoría</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Acerca de nosotros</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Categorías
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Deportivo</a></li>
-                    <li><a class="dropdown-item" href="#">Familiar</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Otro</a></li>
-                  </ul>
-                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
-              <form class="d-flex mt-3" role="Buscar">
-                <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
-                <button class="btn" id ="buscar" type="submit">Buscar</button>
-              </form>
-            </div>
-          </div>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
         </div>
-      </nav>
+      </div>
+    </div>
+  </nav>
+<!--TÉRMINO CATEGORIAS-->
 
-</div><!--TÉRMINO HEADER2-->
 
 
-<div id="carrusel1"></div><!--INICIO CARRUSEL1-->
 
+
+<!--CARRUSEL 1-->
 <div id="carouselExampleFade" class="carousel slide carousel-fade">
   <div class="carousel-inner">
-      <div class="carousel-item active">
-          <img src="../Images/Modelos_auto/spyder.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
-             
-              <h3>Audi R8 Spyder</h3>
-              
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-                piente nihil hic odio, in, dicta perferendis laudantium quide
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-                piente nihil hic odio, in, dicta perferendis laudantium quide
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.
-                piente nihil hic odio, in, dicta perferendis laudantium quide
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.cupiditate quae est praesentiu
-                cupiditate quae esta
-                
-                
-
-                </p>
-              
-              
-              <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-left: 90px;">Especificaciones técnicas</button><!--BOTON-->
-              <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-top: 10px; margin-left: 90px;">Solicitar información</button><!--BOTON-->
-              <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px; margin-top: 10px; margin-left: 90px;">Cotizar vehículo</button><!--BOTON-->
-            </div><!--TÉRMINO DIV PARA ALMACENAR TEXTO-->
-      </div>
-      <div class="carousel-item">
-          <img src="../Images/Modelos_auto/spyder22.jpg" class="d-block w-100" alt="...">
-
-          <div class="carousel-caption"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
-             
-            <h3>Audi R8 Spyder</h3>
-            
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.cupiditate quae est praesentiu
-              cupiditate quae esta
-              
-              
-
-              </p>
-            
-            
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-left: 90px;">Especificaciones técnicas</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-top: 10px; margin-left: 90px;">Solicitar información</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px; margin-top: 10px; margin-left: 90px;">Cotizar vehículo</button><!--BOTON-->
-          </div><!--TÉRMINO DIV PARA ALMACENAR TEXTO-->
-
-
-      </div>
+    <div class="carousel-item active">
+  
+      <img src="../Images/Modelos_auto/spyder.jpg" class="d-block w-100" alt="...">
       
+      <div class="informacion_derecha">
+        <h5>Audi Spyder R8</h5>
+        <p></p>
+      </div>
+      <div class="botones">
+        <a href="#" class="boton1">Realizar cotización</a>
+        <a href="#" class="boton2">Descripción técnica</a>
+        <a href="#" class="boton3">Solicitar información</a>
+
       
-      <div class="carousel-item">
-          <img src="../Images/Modelos_auto/spyder222.jpg" class="d-block w-100" alt="...">
-
-          <div class="carousel-caption"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
-             
-            <h3>Audi R8 Spyder</h3>
-            
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.cupiditate quae est praesentiu
-              cupiditate quae esta
-              
-              
-
-              </p>
-            
-            
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-left: 90px;">Especificaciones técnicas</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-top: 10px; margin-left: 90px;">Solicitar información</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px; margin-top: 10px; margin-left: 90px;">Cotizar vehículo</button><!--BOTON-->
-          </div><!--TÉRMINO DIV PARA ALMACENAR TEXTO-->
-
-
-
 
       </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-  </button>
+
+
 </div>
 
-</div><!--TÉRMINO CARRUSEL 1-->
-
-
-
-<div id="carrusel2"><!--COMIENZO CARRUSEL2-->
-
-
-    <div id="carouselExampleFade2" class="carousel slide carousel-fade">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../Images/Modelos_auto/coupe.jpg" class="d-block w-100" alt="...">
 
 
 
 
-            <div class="carousel-caption" id="texto2"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
-             
-              <h3>Audi RS5 Coupé</h3>
-              
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-                piente nihil hic odio, in, dicta perferendis laudantium quide
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-                piente nihil hic odio, in, dicta perferendis laudantium quide
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.
-                piente nihil hic odio, in, dicta perferendis laudantium quide
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.cupiditate quae est praesentiu
-                cupiditate quae esta
-                
-                
-  
-                </p>
-              
-              
-              <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-left: 90px;">Especificaciones técnicas</button><!--BOTON-->
-              <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-top: 10px; margin-left: 90px;">Solicitar información</button><!--BOTON-->
-              <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px; margin-top: 10px; margin-left: 90px;">Cotizar vehículo</button><!--BOTON-->
-            </div><!--TÉRMINO DIV PARA ALMACENAR TEXTO-->
-  
+    <div class="carousel-item">
+      <img src="../Images/Modelos_auto/spyder22.jpg" class="d-block w-100" alt="...">
+      <div class="informacion_derecha">
+        <h5>Audi Spyder R8</h5>
+        <p></p>
+      </div>
+      <div class="botones">
+        <a href="#" class="boton1">Realizar cotización</a>
+        <a href="#" class="boton2">Descripción técnica</a>
+        <a href="#" class="boton3">Solicitar información</a>
 
+      
 
-
-
-
-
-          </div>
-          <div class="carousel-item">
-            <img src="../Images/Modelos_auto/coupe2.jpg" class="d-block w-100" alt="...">
-
-            <div class="carousel-caption" id="texto2"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
-             
-              <h3>Audi RS5 Coupé</h3>
-              
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-                piente nihil hic odio, in, dicta perferendis laudantium quide
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-                piente nihil hic odio, in, dicta perferendis laudantium quide
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.
-                piente nihil hic odio, in, dicta perferendis laudantium quide
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.cupiditate quae est praesentiu
-                cupiditate quae esta
-                
-                
-  
-                </p>
-              
-              
-              <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-left: 90px;">Especificaciones técnicas</button><!--BOTON-->
-              <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-top: 10px; margin-left: 90px;">Solicitar información</button><!--BOTON-->
-              <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px; margin-top: 10px; margin-left: 90px;">Cotizar vehículo</button><!--BOTON-->
-            </div><!--TÉRMINO DIV PARA ALMACENAR TEXTO-->
-
-
-
-
-
-
-          </div>
-          <div class="carousel-item">
-            <img src="../Images/Modelos_auto/coupe2222.jpg" class="d-block w-100" alt="...">
-
-
-            <div class="carousel-caption" id="texto2"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
-             
-              <h3>Audi RS5 Coupé</h3>
-              
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-                piente nihil hic odio, in, dicta perferendis laudantium quide
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-                piente nihil hic odio, in, dicta perferendis laudantium quide
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.
-                piente nihil hic odio, in, dicta perferendis laudantium quide
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.cupiditate quae est praesentiu
-                cupiditate quae esta
-                
-                
-  
-                </p>
-              
-              
-              <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-left: 90px;">Especificaciones técnicas</button><!--BOTON-->
-              <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-top: 10px; margin-left: 90px;">Solicitar información</button><!--BOTON-->
-              <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px; margin-top: 10px; margin-left: 90px;">Cotizar vehículo</button><!--BOTON-->
-            </div><!--TÉRMINO DIV PARA ALMACENAR TEXTO-->
-
-
-
-
-
-
-
-
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
 
-</div><!--TÉRMINO CARRUSEL2-->
+
+    </div>
+    <div class="carousel-item">
+      <img src="../Images/Modelos_auto/spyder222.jpg" class="d-block w-100" alt="...">
+      <div class="informacion_derecha">
+        <h5>Audi Spyder R8</h5>
+        <p></p>
+      </div>
+      <div class="botones">
+        <a href="#" class="boton1">Realizar cotización</a>
+        <a href="#" class="boton2">Descripción técnica</a>
+        <a href="#" class="boton3">Solicitar información</a>
+
+      
+
+      </div>
+
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 
 
 
-<div id="carrusel3"></div><!--INICIO CARRUSEL3-->
+
+</div>
+
+<!--CARRUSEL2-->
+
+
+
+<div id="carouselExampleFade2" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+  
+      <img src="../Images/Modelos_auto/blanco.jpg" class="d-block w-100" alt="...">
+      
+      <div class="informacion_derecha">
+        <h5>Audi blablaba 54</h5>
+        <p></p>
+      </div>
+      <div class="botones">
+        <a href="#" class="boton1">Realizar cotización</a>
+        <a href="#" class="boton2">Descripción técnica</a>
+        <a href="#" class="boton3">Solicitar información</a>
+
+      
+
+      </div>
+
+
+</div>
+
+
+
+
+
+    <div class="carousel-item">
+      <img src="../Images/Modelos_auto/blanco2.jpg" class="d-block w-100" alt="...">
+      <div class="informacion_derecha">
+        <h5>Audi blablaba 54</h5>
+        <p></p>
+      </div>
+      <div class="botones">
+        <a href="#" class="boton1">Realizar cotización</a>
+        <a href="#" class="boton2">Descripción técnica</a>
+        <a href="#" class="boton3">Solicitar información</a>
+
+      
+
+      </div>
+
+
+    </div>
+    <div class="carousel-item">
+      <img src="../Images/Modelos_auto/blanco22.jpg" class="d-block w-100" alt="...">
+      <div class="informacion_derecha">
+        <h5>Audi blablaba 54</h5>
+        <p></p>
+      </div>
+      <div class="botones">
+        <a href="#" class="boton1">Realizar cotización</a>
+        <a href="#" class="boton2">Descripción técnica</a>
+        <a href="#" class="boton3">Solicitar información</a>
+
+      
+
+      </div>
+
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+  </div>
+
+
+
+<!--CARRUSEL3-->
+
+
 
 <div id="carouselExampleFade3" class="carousel slide carousel-fade">
   <div class="carousel-inner">
-      <div class="carousel-item active">
-          <img src="../Images/Modelos_auto/q8.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
-             
-              <h3>Audi R8 Spyder</h3>
-              
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-                piente nihil hic odio, in, dicta perferendis laudantium quide
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-                piente nihil hic odio, in, dicta perferendis laudantium quide
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.
-                piente nihil hic odio, in, dicta perferendis laudantium quide
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.cupiditate quae est praesentiu
-                cupiditate quae esta
-                
-                
-
-                </p>
-              
-              
-              <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-left: 90px;">Especificaciones técnicas</button><!--BOTON-->
-              <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-top: 10px; margin-left: 90px;">Solicitar información</button><!--BOTON-->
-              <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px; margin-top: 10px; margin-left: 90px;">Cotizar vehículo</button><!--BOTON-->
-            </div><!--TÉRMINO DIV PARA ALMACENAR TEXTO-->
-      </div>
-      <div class="carousel-item">
-          <img src="../Images/Modelos_auto/q82.jpg" class="d-block w-100" alt="...">
-
-          <div class="carousel-caption"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
-             
-            <h3>Audi R8 Spyder</h3>
-            
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.cupiditate quae est praesentiu
-              cupiditate quae esta
-              
-              
-
-              </p>
-            
-            
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-left: 90px;">Especificaciones técnicas</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-top: 10px; margin-left: 90px;">Solicitar información</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px; margin-top: 10px; margin-left: 90px;">Cotizar vehículo</button><!--BOTON-->
-          </div><!--TÉRMINO DIV PARA ALMACENAR TEXTO-->
-
-
-      </div>
+    <div class="carousel-item active">
+  
+      <img src="../Images/Modelos_auto/q8.jpg" class="d-block w-100" alt="...">
       
+      <div class="informacion_derecha">
+        <h5>Audi blabla v16</h5>
+        <p></p>
+      </div>
+      <div class="botones">
+        <a href="#" class="boton1">Realizar cotización</a>
+        <a href="#" class="boton2">Descripción técnica</a>
+        <a href="#" class="boton3">Solicitar información</a>
+
       
-      <div class="carousel-item">
-          <img src="../Images/Modelos_auto/q822.jpg" class="d-block w-100" alt="...">
-
-          <div class="carousel-caption"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
-             
-            <h3>Audi R8 Spyder</h3>
-            
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.cupiditate quae est praesentiu
-              cupiditate quae esta
-              
-              
-
-              </p>
-            
-            
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-left: 90px;">Especificaciones técnicas</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-top: 10px; margin-left: 90px;">Solicitar información</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px; margin-top: 10px; margin-left: 90px;">Cotizar vehículo</button><!--BOTON-->
-          </div><!--TÉRMINO DIV PARA ALMACENAR TEXTO-->
-
-
-
 
       </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-  </button>
+
+
 </div>
 
-</div><!--TÉRMINO CARRUSEL 3-->
-
-
-
-<div id="carrusel4"><!--COMIENZO CARRUSEL4-->
-
-
-  <div id="carouselExampleFade4" class="carousel slide carousel-fade">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../Images/Modelos_auto/e-tron.jpg" class="d-block w-100" alt="...">
 
 
 
 
-          <div class="carousel-caption" id="texto2"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
-           
-            <h3>Audi RS5 Coupé</h3>
-            
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.cupiditate quae est praesentiu
-              cupiditate quae esta
-              
-              
-
-              </p>
-            
-            
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-left: 90px;">Especificaciones técnicas</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-top: 10px; margin-left: 90px;">Solicitar información</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px; margin-top: 10px; margin-left: 90px;">Cotizar vehículo</button><!--BOTON-->
-          </div><!--TÉRMINO DIV PARA ALMACENAR TEXTO-->
-
-
-
-
-
-
-
-        </div>
-        <div class="carousel-item">
-          <img src="../Images/Modelos_auto/e-tron2.jpg" class="d-block w-100" alt="...">
-
-          <div class="carousel-caption" id="texto2"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
-           
-            <h3>Audi RS5 Coupé</h3>
-            
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.cupiditate quae est praesentiu
-              cupiditate quae esta
-              
-              
-
-              </p>
-            
-            
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-left: 90px;">Especificaciones técnicas</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-top: 10px; margin-left: 90px;">Solicitar información</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px; margin-top: 10px; margin-left: 90px;">Cotizar vehículo</button><!--BOTON-->
-          </div><!--TÉRMINO DIV PARA ALMACENAR TEXTO-->
-
-
-
-
-
-
-        </div>
-        <div class="carousel-item">
-          <img src="../Images/Modelos_auto/e-tron222.jpg" class="d-block w-100" alt="...">
-
-
-          <div class="carousel-caption" id="texto2"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
-           
-            <h3>Audi RS5 Coupé</h3>
-            
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.cupiditate quae est praesentiu
-              cupiditate quae esta
-              
-              
-
-              </p>
-            
-            
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-left: 90px;">Especificaciones técnicas</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-top: 10px; margin-left: 90px;">Solicitar información</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px; margin-top: 10px; margin-left: 90px;">Cotizar vehículo</button><!--BOTON-->
-          </div><!--TÉRMINO DIV PARA ALMACENAR TEXTO-->
-
-
-
-
-
-
-
-
-        </div>
+    <div class="carousel-item">
+      <img src="../Images/Modelos_auto/q82.jpg" class="d-block w-100" alt="...">
+      <div class="informacion_derecha">
+        <h5>Audi blabla v16</h5>
+        <p></p>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <div class="botones">
+        <a href="#" class="boton1">Realizar cotización</a>
+        <a href="#" class="boton2">Descripción técnica</a>
+        <a href="#" class="boton3">Solicitar información</a>
+
+      
+
+      </div>
+
+
     </div>
+    <div class="carousel-item">
+      <img src="../Images/Modelos_auto/q822.jpg" class="d-block w-100" alt="...">
+      <div class="informacion_derecha">
+        <h5>Audi blabla v16</h5>
+        <p></p>
+      </div>
+      <div class="botones">
+        <a href="#" class="boton1">Realizar cotización</a>
+        <a href="#" class="boton2">Descripción técnica</a>
+        <a href="#" class="boton3">Solicitar información</a>
 
-</div><!--TÉRMINO CARRUSEL4-->
+      
+
+      </div>
+
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+  </div>
+
+
+  <!--CARRUSEL 4-->
+<div id="carouselExampleFade4" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+  
+      <img src="../Images/Modelos_auto/spyder.jpg" class="d-block w-100" alt="...">
+      
+      <div class="informacion_derecha">
+        <h5>Audi Spyder R8</h5>
+        <p></p>
+      </div>
+      <div class="botones">
+        <a href="#" class="boton1">Realizar cotización</a>
+        <a href="#" class="boton2">Descripción técnica</a>
+        <a href="#" class="boton3">Solicitar información</a>
+
+      
+
+      </div>
+
+
+</div>
 
 
 
-<div id="carrusel5"></div><!--INICIO CARRUSEL5-->
+
+
+    <div class="carousel-item">
+      <img src="../Images/Modelos_auto/spyder22.jpg" class="d-block w-100" alt="...">
+      <div class="informacion_derecha">
+        <h5>Audi Spyder R8</h5>
+        <p></p>
+      </div>
+      <div class="botones">
+        <a href="#" class="boton1">Realizar cotización</a>
+        <a href="#" class="boton2">Descripción técnica</a>
+        <a href="#" class="boton3">Solicitar información</a>
+
+      
+
+      </div>
+
+
+    </div>
+    <div class="carousel-item">
+      <img src="../Images/Modelos_auto/spyder222.jpg" class="d-block w-100" alt="...">
+      <div class="informacion_derecha">
+        <h5>Audi Spyder R8</h5>
+        <p></p>
+      </div>
+      <div class="botones">
+        <a href="#" class="boton1">Realizar cotización</a>
+        <a href="#" class="boton2">Descripción técnica</a>
+        <a href="#" class="boton3">Solicitar información</a>
+
+      
+
+      </div>
+
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+
+
+
+</div>
+
+<!--CARRUSEL5-->
+
+
 
 <div id="carouselExampleFade5" class="carousel slide carousel-fade">
   <div class="carousel-inner">
-      <div class="carousel-item active">
-          <img src="../Images/Modelos_auto/blanco.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
-             
-              <h3>Audi R8 Spyder</h3>
-              
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-                piente nihil hic odio, in, dicta perferendis laudantium quide
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-                piente nihil hic odio, in, dicta perferendis laudantium quide
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.
-                piente nihil hic odio, in, dicta perferendis laudantium quide
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.
-                m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-                m earum id? Voluptas, officiis.cupiditate quae est praesentiu
-                cupiditate quae esta
-                
-                
-
-                </p>
-              
-              
-              <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-left: 90px;">Especificaciones técnicas</button><!--BOTON-->
-              <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-top: 10px; margin-left: 90px;">Solicitar información</button><!--BOTON-->
-              <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px; margin-top: 10px; margin-left: 90px;">Cotizar vehículo</button><!--BOTON-->
-            </div><!--TÉRMINO DIV PARA ALMACENAR TEXTO-->
-      </div>
-      <div class="carousel-item">
-          <img src="../Images/Modelos_auto/blanco2.jpg" class="d-block w-100" alt="...">
-
-          <div class="carousel-caption"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
-             
-            <h3>Audi R8 Spyder</h3>
-            
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.cupiditate quae est praesentiu
-              cupiditate quae esta
-              
-              
-
-              </p>
-            
-            
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-left: 90px;">Especificaciones técnicas</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-top: 10px; margin-left: 90px;">Solicitar información</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px; margin-top: 10px; margin-left: 90px;">Cotizar vehículo</button><!--BOTON-->
-          </div><!--TÉRMINO DIV PARA ALMACENAR TEXTO-->
-
-
-      </div>
+    <div class="carousel-item active">
+  
+      <img src="../Images/Modelos_auto/blanco.jpg" class="d-block w-100" alt="...">
       
+      <div class="informacion_derecha">
+        <h5>Audi blablaba 54</h5>
+        <p></p>
+      </div>
+      <div class="botones">
+        <a href="#" class="boton1">Realizar cotización</a>
+        <a href="#" class="boton2">Descripción técnica</a>
+        <a href="#" class="boton3">Solicitar información</a>
+
       
-      <div class="carousel-item">
-          <img src="../Images/Modelos_auto/blanco22.jpg" class="d-block w-100" alt="...">
-
-          <div class="carousel-caption"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
-             
-            <h3>Audi R8 Spyder</h3>
-            
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.cupiditate quae est praesentiu
-              cupiditate quae esta
-              
-              
-
-              </p>
-            
-            
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-left: 90px;">Especificaciones técnicas</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-top: 10px; margin-left: 90px;">Solicitar información</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px; margin-top: 10px; margin-left: 90px;">Cotizar vehículo</button><!--BOTON-->
-          </div><!--TÉRMINO DIV PARA ALMACENAR TEXTO-->
-
-
-
 
       </div>
+
+
+</div>
+
+
+
+
+
+    <div class="carousel-item">
+      <img src="../Images/Modelos_auto/blanco2.jpg" class="d-block w-100" alt="...">
+      <div class="informacion_derecha">
+        <h5>Audi blablaba 54</h5>
+        <p></p>
+      </div>
+      <div class="botones">
+        <a href="#" class="boton1">Realizar cotización</a>
+        <a href="#" class="boton2">Descripción técnica</a>
+        <a href="#" class="boton3">Solicitar información</a>
+
+      
+
+      </div>
+
+
+    </div>
+    <div class="carousel-item">
+      <img src="../Images/Modelos_auto/blanco22.jpg" class="d-block w-100" alt="...">
+      <div class="informacion_derecha">
+        <h5>Audi blablaba 54</h5>
+        <p></p>
+      </div>
+      <div class="botones">
+        <a href="#" class="boton1">Realizar cotización</a>
+        <a href="#" class="boton2">Descripción técnica</a>
+        <a href="#" class="boton3">Solicitar información</a>
+
+      
+
+      </div>
+
+    </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade5" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade5" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
   </button>
-</div>
 
-</div><!--TÉRMINO CARRUSEL 5-->
-
-
-<div id="carrusel6"><!--COMIENZO CARRUSEL6-->
-
-
-  <div id="carouselExampleFade6" class="carousel slide carousel-fade">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../Images/Modelos_auto/plomo.jpg" class="d-block w-100" alt="...">
+  </div>
 
 
 
-
-          <div class="carousel-caption" id="texto2"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
-           
-            <h3>Audi RS5 Coupé</h3>
-            
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.cupiditate quae est praesentiu
-              cupiditate quae esta
-              
-              
-
-              </p>
-            
-            
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-left: 90px;">Especificaciones técnicas</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-top: 10px; margin-left: 90px;">Solicitar información</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px; margin-top: 10px; margin-left: 90px;">Cotizar vehículo</button><!--BOTON-->
-          </div><!--TÉRMINO DIV PARA ALMACENAR TEXTO-->
+<!--CARRUSEL6-->
 
 
 
-
-
-
-
-        </div>
-        <div class="carousel-item">
-          <img src="../Images/Modelos_auto/plomo2.jpg" class="d-block w-100" alt="...">
-
-          <div class="carousel-caption" id="texto2"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
-           
-            <h3>Audi RS5 Coupé</h3>
-            
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.cupiditate quae est praesentiu
-              cupiditate quae esta
-              
-              
-
-              </p>
-            
-            
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-left: 90px;">Especificaciones técnicas</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-top: 10px; margin-left: 90px;">Solicitar información</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px; margin-top: 10px; margin-left: 90px;">Cotizar vehículo</button><!--BOTON-->
-          </div><!--TÉRMINO DIV PARA ALMACENAR TEXTO-->
-
-
-
-
-
-
-        </div>
-        <div class="carousel-item">
-          <img src="../Images/Modelos_auto/plomo22.jpg" class="d-block w-100" alt="...">
-
-
-          <div class="carousel-caption" id="texto2"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
-           
-            <h3>Audi RS5 Coupé</h3>
-            
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sa
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              piente nihil hic odio, in, dicta perferendis laudantium quide
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.
-              m dolorem amet, illum rerum ex cupiditate quae est praesentiu
-              m earum id? Voluptas, officiis.cupiditate quae est praesentiu
-              cupiditate quae esta
-              
-              
-
-              </p>
-            
-            
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-left: 90px;">Especificaciones técnicas</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px;margin-top: 10px; margin-left: 90px;">Solicitar información</button><!--BOTON-->
-            <button type="button" class="btn btn-secondary btn-lg" style="background-color: #de5e08; width: 220px;font-size: 14px; margin-top: 10px; margin-left: 90px;">Cotizar vehículo</button><!--BOTON-->
-          </div><!--TÉRMINO DIV PARA ALMACENAR TEXTO-->
-
-
-
-
-
-
-
-
-        </div>
+<div id="carouselExampleFade6" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+  
+      <img src="../Images/Modelos_auto/q8.jpg" class="d-block w-100" alt="...">
+      
+      <div class="informacion_derecha">
+        <h5>Audi blabla v16</h5>
+        <p></p>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade6" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade6" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+      <div class="botones">
+        <a href="#" class="boton1">Realizar cotización</a>
+        <a href="#" class="boton2">Descripción técnica</a>
+        <a href="#" class="boton3">Solicitar información</a>
 
-</div><!--TÉRMINO CARRUSEL6-->
+      
+
+      </div>
 
 
-
-<div id="final2"><!--COMIENZO DIV FINAL 2-->
-
-  <ul style="list-style-type: none;">
-  
-  <li><a href="#" style="text-transform: uppercase;">Modelos</a></li>
-  <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-
-  
-</ul>
-  
-  
-  
-<ul style="list-style-type: none;">
-  
-  <li><a href="#" style="text-transform: uppercase">Accesorios</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-
-  
-</ul>
-<ul style="list-style-type: none;">
-  
-  <li><a href="#" style="text-transform: uppercase">Acerca de </a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-
-  
-</ul>
-  
-
-<ul style="list-style-type: none;">
-  
-  <li><a href="#" style="text-transform: uppercase">Carrito</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-
-  
-</ul>
-
-<ul style="list-style-type: none;">
-  
-  <li><a href="#" style="text-transform: uppercase">Mi cuenta</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-
-  
-</ul>
-
-<ul style="list-style-type: none;">
-  
-  <li><a href="#" style="text-transform: uppercase">Blabla</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-
-  
-</ul>
-
-
-<ul style="list-style-type: none;">
-  
-  <li><a href="#" style="text-transform: uppercase">Blabla</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-
-  
-</ul>
-
-
-<ul style="list-style-type: none;">
-  
-  <li><a href="#" style="text-transform: uppercase">Blabla</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-  <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-
- 
-</ul>
-
-
-
-
-</div><!--TÉRMINO DIV FINAL 2-->
-
-
-<div id="texto_ultimo">
-
-  <h6>Audi Santiago, Avenida José Alcalde 10237 - Lo Barnechea, Santiago <br> +56 (2) 2837-1640 - +569 64973750</h6>
-  <img src="../Icons/Home/instablanco.jpg" alt="instagram" id="instagram">
-  <img src="../Icons/Home/whatsapblanco.jpg" alt="whatsap" id="whatsap">
 </div>
 
 
 
 
 
+    <div class="carousel-item">
+      <img src="../Images/Modelos_auto/q82.jpg" class="d-block w-100" alt="...">
+      <div class="informacion_derecha">
+        <h5>Audi blabla v16</h5>
+        <p></p>
+      </div>
+      <div class="botones">
+        <a href="#" class="boton1">Realizar cotización</a>
+        <a href="#" class="boton2">Descripción técnica</a>
+        <a href="#" class="boton3">Solicitar información</a>
+
+      
+
+      </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script><!--ENLACE BOOSTRAP-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script><!--ENLACE BOOSTRAP-->  
+    </div>
+    <div class="carousel-item">
+      <img src="../Images/Modelos_auto/q822.jpg" class="d-block w-100" alt="...">
+      <div class="informacion_derecha">
+        <h5>Audi blabla v16</h5>
+        <p></p>
+      </div>
+      <div class="botones">
+        <a href="#" class="boton1">Realizar cotización</a>
+        <a href="#" class="boton2">Descripción técnica</a>
+        <a href="#" class="boton3">Solicitar información</a>
+
+      
+
+      </div>
+
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade6" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade6" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+  </div>
+<!------------------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- Nuevo contenedor fuera del carrusel -->
+<div class="contenedor_apy">
+      <div id="info">
+        <h4>Compra tu audi</h4>
+        <h5>Y lleva sus accesorios a mitad de precio</h5>
+      </div>
+
      
- </body><!--TÉRMINO BODY-->
- </html>
+        <div class="productos">
+       
+        </div>
+
+
+
+
+
+
+</div>
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script><!--ENLACE BOOSTRAP-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script><!--ENLACE BOOSTRAP-->
+    <script src="../Functions/funciones_index.js"></script>
+
+</body><!--TÉRMINO BODY-->
+
+</html>
