@@ -505,10 +505,19 @@ a{
     align-items: center;
 }
 
-#info h4,h5{
+#info h4{
     text-align: center;
     height: 12%;
    color: #ffffff;
+
+}
+
+#info h5{
+    text-align: center;
+    height: 12%;
+   color: #ffffff;
+
+ 
 
 }
 
@@ -517,19 +526,19 @@ a{
     flex-wrap: wrap;
     width: 100%;
     padding: 2%; /* Cambiar a un valor más pequeño para mantener el espacio entre los productos */
-    justify-content: space-around; /* Cambiar a 'space-around' para distribuir los productos uniformemente */
+    justify-content: space-evenly /* Cambiar a 'space-around' para distribuir los productos uniformemente */
 
 }
 
 .producto {
-    width: 30%; /* Ajustar el ancho para que los productos sean más pequeños */
-    max-width: 300px; /* Limitar el ancho máximo para evitar que los productos sean demasiado anchos en pantallas grandes */
-    height: 300px; /* Establecer una altura fija para los productos */
-    margin-bottom: 2%; /* Cambiar a un valor más pequeño para mantener el espacio entre los productos */
+    width: 30%;
+    max-width: 300px; 
+    height: 300px;
+    margin-bottom: 2%; 
 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .imagen {
