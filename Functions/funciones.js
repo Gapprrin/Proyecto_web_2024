@@ -1,74 +1,99 @@
 
 // APY DOLAR---------------------------------------------------------------------------------------------------------------------------
-
 let accesorios = [
     {
-        "nombre": "Neumático blabla",
+        "nombre": "puerta",
         "precio": "249000",
-        "imagen": "../neumatico3.jpg",
+        "imagen": "https://via.placeholder.com/300", // URL de la imagen del neumático
     },
-    {
-        "nombre": "blabla",
-        "precio": "200000",
-        "imagen": "",
-    },
-
     {
         "nombre": "Volante",
         "precio": "249000",
-        "imagen": "",
+        "imagen": "https://via.placeholder.com/300", // URL de la imagen del volante
     },
     {
         "nombre": "Asiento",
         "precio": "200000",
-        "imagen": "",
+        "imagen": "https://via.placeholder.com/300", // URL de la imagen del asiento
     },
+
+
+    {
+        "nombre": "neumatico",
+        "precio": "249000",
+        "imagen": "https://via.placeholder.com/300", // URL de la imagen del neumático
+    },
+
+    {
+        "nombre": "llantas",
+        "precio": "249000",
+        "imagen": "https://via.placeholder.com/300", // URL de la imagen del neumático
+    },
+    {
+        "nombre": "sksksen",
+        "precio": "249000",
+        "imagen": "https://via.placeholder.com/300", // URL de la imagen del volante
+    },
+    {
+        "nombre": "dmdnd",
+        "precio": "200000",
+        "imagen": "https://via.placeholder.com/300", // URL de la imagen del asiento
+    },
+
+
+    {
+        "nombre": "whssjj",
+        "precio": "249000",
+        "imagen": "https://via.placeholder.com/300", // URL de la imagen del neumático
+    },
+
+
+
 ];
 
 function getProductos() {
     let productos = document.querySelector(".productos");
 
-    // Hacer solicitud HTTP a la API de Mindicador para obtener el tipo de cambio de dólares
     fetch('https://mindicador.cl/api')
-    .then(response => response.json())
-    .then(data => {
-        let dolarPrice = data.dolar.valor; // Obtener el valor del dólar en pesos chilenos
+        .then(response => response.json())
+        .then(data => {
+            let dolarPrice = data.dolar.valor; // Obtener el valor del dólar en pesos chilenos
 
-        accesorios.forEach(t => {
-            let producto = document.createElement("div");
-            producto.classList.add("producto");
+            accesorios.forEach(t => {
+                let producto = document.createElement("div");
+                producto.classList.add("producto");
 
-            // Agregar imagen
-            let imagen = document.createElement("div");
-            imagen.classList.add("imagen");
-            imagen.style.backgroundImage = 'url(' + t.imagen + ')';
-            producto.appendChild(imagen);
+                // Agregar imagen
+                let imagen = document.createElement("div");
+                imagen.classList.add("imagen");
+                imagen.style.backgroundImage = 'url(' + t.imagen + ')';
+                producto.appendChild(imagen);
 
-            // Calcular precio en dólares
-            let precioEnDolares = parseFloat(t.precio) / dolarPrice;
+                // Calcular precio en dólares
+                let precioEnDolares = parseFloat(t.precio) / dolarPrice;
 
-            // Agregar precio en dólares
-            let precioDolares = document.createElement("div");
-            precioDolares.classList.add("precio");
-            precioDolares.innerHTML = `$${precioEnDolares.toFixed(2)} USD`; // Formatear el precio a 2 decimales
-            producto.appendChild(precioDolares);
+                // Agregar precio en dólares
+                let precioDolares = document.createElement("div");
+                precioDolares.classList.add("precio");
+                precioDolares.innerHTML = `$${precioEnDolares.toFixed(2)} USD`; // Formatear el precio a 2 decimales
+                producto.appendChild(precioDolares);
 
-            // Agregar precio en pesos chilenos
-            let precioPesos = document.createElement("div");
-            precioPesos.classList.add("precio");
-            precioPesos.innerHTML = `$${t.precio} CLP`;
-            producto.appendChild(precioPesos);
+                // Agregar precio en pesos chilenos
+                let precioPesos = document.createElement("div");
+                precioPesos.classList.add("precio");
+                precioPesos.innerHTML = `$${t.precio} CLP`;
+                producto.appendChild(precioPesos);
 
-            // Agregar el nombre
-            let nombre = document.createElement("div");
-            nombre.classList.add("nombre");
-            nombre.innerHTML = t.nombre;
-            producto.appendChild(nombre);
+                // Agregar el nombre
+                let nombre = document.createElement("div");
+                nombre.classList.add("nombre");
+                nombre.innerHTML = t.nombre;
+                producto.appendChild(nombre);
 
-            productos.appendChild(producto);
-        });
-    })
-    .catch(error => console.error('Error fetching data:', error));
+                productos.appendChild(producto);
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
 }
 
 getProductos();
