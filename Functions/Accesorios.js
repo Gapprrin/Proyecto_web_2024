@@ -1,50 +1,52 @@
-function productosget(){
+function productosget() {
     // variable con url
     let url = "https://api.escuelajs.co/api/v1/products/"
     // pide informacion a url
-    for(let i = 1; i <= 6; i++){
-    fetch(url + i)
+
+    fetch(url)
         .then(respuesta => {
-            if (!respuesta.ok){ throw new Error("error para conseguir datos") }
-            console.log('funca')  
+            if (!respuesta.ok) { throw new Error("error para conseguir datos") }
+
             return respuesta.json();
-        
-}    )
-.then(datos =>{
-    let titulo = datos.title;
-    console.log(titulo);
-    let imagen = datos.images[0];
-    let precio = datos.price;
-    let descripcion = datos.description;
 
-    let tituloProducto = document.getElementById(`tituloProducto${i}`);
-    tituloProducto.innerHTML = titulo;
+        })
+        .then(datos => {
+            console.log(datos)
+            let titulo = datos.title;
+            for (let i = 1; i < 7; i++) {
+                let titulo = datos[i].title;
+                let imagen = datos[i].images;
+                let precio = datos[i].price;
+                let descripcion = datos[i].description;
 
-    let imagenProducto = document.getElementById(`imagen${i}`);
-    imagenProducto.src = imagen;
+                let tituloProducto = document.getElementById(`tituloProducto${i}`);
+                tituloProducto.innerHTML = titulo;
 
-    let precioProducto = document.getElementById(`precio${i}`);
-    precioProducto.innerHTML = precio;
+                let imagenProducto = document.getElementById(`imagen${i}`);
+                imagenProducto.src = imagen;
 
-    let descripcionProducto = doument.getElementById(`descripcion${i}`);
-    descripcionProducto.innerHTML = descripcion;
+                let precioProducto = document.getElementById(`PrecioCambiar${i}`);
+                precioProducto.innerHTML = '$' +  precio;
 
-   // let tituloProducto = document.getElementById('tituloCambiar');
-    //tituloProducto.textContent = titulo;
+                // let descripcionProducto = doument.getElementById(`descripcion${i}`);
+                // descripcionProducto.innerHTML = descripcion;
 
-    //let PrecioProducto = document.getElementById("PrecioCambiar");
-    //PrecioProducto.textContent = precio;
+                // let tituloProducto = document.getElementById('tituloProducto1');
+                // tituloProducto.textContent = titulo;
+
+                // let PrecioProducto = document.getElementById("PrecioCambiar");
+                // PrecioProducto.textContent = precio;
+            }
 
 
- 
+        }
+
+        )
+        .catch(error => {
+            console.error("se produjo un error: ", error);
+        })
+
+
+
+
 }
-    
-)
-.catch(error => {
-    console.error("se produjo un error: ", error);
-})
-
-
-
-
-}}
