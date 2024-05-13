@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 
+
 * {
     font-family: "Open Sans", sans-serif; 
     margin: 0; 
@@ -10,7 +11,34 @@ background-color: #000000;
 display: flex;
 
 }
+@media(max-width:1248px){
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 200%;
+    justify-content: baseline;
+    padding-top: 10%;
+    padding-bottom: 8%;
 
+}
+.sidebar{
+    background-color: #007bff;
+    padding-bottom: 2%;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+
+.prefooter{
+
+    height: 700px;
+    width: 1730px;
+    background-color:#1b1b1b ;
+
+
+}
+    
 #logo {
     width: 130px;
     height: 70px;
@@ -24,10 +52,9 @@ display: flex;
 section{
     background-color:  #000000 ;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Images/Accesorios/Asientos\ deportivos.webp);
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 170vh;
+    height: 100vh;
 }
 
 nav {
@@ -49,6 +76,7 @@ a {
 body, html {
     margin: 0;
     padding: 0;
+    background-color:#1b1b1b ;
     
 }
 .articulos{
@@ -77,7 +105,7 @@ width: 20vh ;
 
 .container {
     display: flex;
-    width: 100%;
+    width: 100vw;
     min-height: 100vh; 
     justify-content: space-between;
     background-color: #b3000000
@@ -133,6 +161,7 @@ width: 20vh ;
 }
 .artventa{
     display: flex;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -148,7 +177,19 @@ width: 20vh ;
     flex-wrap: wrap; 
     justify-content: space-between; 
 }
+.titulo111{
+display: flex;
+align-items: center !important;
+justify-content: center !important;
 
+}
+.acer{
+display: flex;
+height: 630%;
+width: 100%;
+align-items: center!important;
+justify-content: center !important;
+}
 /* Estilos para las imágenes de los productos */
 .product img {
     width: 48%; 
@@ -219,7 +260,6 @@ color: #ffffff  ;
     color: #ffffff;
 }
   h3 {
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -233,13 +273,29 @@ color: #ffffff  ;
   background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
   border-radius: 10px; /* Bordes redondeados */
 }
+
+.tituloaudi{
+    align-items: center !important;
+    justify-content: center !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efecto de sombra al texto */
+    width: 90%; /* Ajuste del ancho del texto */
+    max-width: 600px; /* Máximo ancho del texto */
+    padding: 20px; /* Espacio alrededor del texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    border-radius: 10px; /* Bordes redondeados */
+  }
 h4{
 color: #0e0e0e;
     
 
 }
 h5 {
-    position: absolute;
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -324,3 +380,161 @@ flex-direction: column;
     margin-top: -40px;
      
   }
+  @media  (max-width: 600px){
+    .sidebar{
+        display: none;
+    }
+    .articulos{
+        padding: 0px;
+        margin: 0px;
+        height: 100%;
+    }
+ .artventa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}b
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: baseline;
+    background-color: #5a5a5a;
+}
+.btn-primary{
+    margin-left: 25px !important;
+}
+.informacion{
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+}
+.informacion h2{
+    margin: 0px;
+    width: 100% !important;
+}
+.informacion p{
+    margin: 0px !important;
+}
+  }
+
+  @media (max-width: 555px) {
+    .prefooter{
+
+        height: 7000;
+        width: 1730px;
+        background-color:#1b1b1b ;
+    
+    
+    }
+
+    nav {
+        height: 60px;
+    }
+
+    #logotipo>img {
+        margin-top: 2px;
+        margin-left: 15px;
+        width: 83px;
+        /* Cambiado a un valor porcentual para que sea proporcional al tamaño del logo */
+        height: 25px;
+        /* Usando 'auto' para mantener la proporción del logotipo */
+
+
+    }
+
+
+    #home {
+        .text_home {
+            display: none;
+        }
+    }
+
+    #carrito {
+        .text_carrito {
+            display: none;
+        }
+    }
+
+    #iniciarsesion {
+        .text_sesion {
+            display: none;
+        }
+    }
+
+    #modelos {
+        .text_modelos {
+            display: none;
+        }
+    }
+
+    #accesorios {
+        .text_accesorios {
+            display: none;
+        }
+    }
+
+    #acercade {
+        .text_acerca {
+            display: none;
+        }
+    }
+
+
+    #final2 {
+        display: none;
+    }
+
+
+    #final>h2 {
+        font-size: medium;
+        margin-left: 12px;
+
+    }
+
+    #final>h3 {
+        font-size: small;
+        margin-left: 12px;
+
+    }
+
+    .boton_mantencion {
+        display: none;
+    }
+
+
+
+    .btn-outline-secondary {
+        width: 120px;
+        font-size: 10px;
+        margin: 20px;
+
+    }
+
+
+    #texto_ultimo {
+
+
+        width: 100%;
+
+
+
+    }
+
+    #instagram {
+        display: none;
+
+    }
+
+    #whatsap {
+        display: none;
+    }
+
+    #texto_ultimo>h6 {
+        font-size: 11px;
+    }
+
+
+}

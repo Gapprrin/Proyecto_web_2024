@@ -9,23 +9,25 @@
   <!--ENLACE BOOSTRAP-->
   <link rel="stylesheet" href="../Style/estilo_accesorios.css"><!--ENLACE STYLE-->
   <link rel="website icon" type="png"   href="../Icons/Home/audilogo.png" >
+  <script src="../Functions/Accesorios.js"></script>
 </head>
 
-<body>
+<body onload="productosget()">
+
   <section>
     <header><!--COMIENZO HEADER-->
       <nav>
     
-        <a href="../index.html" id="home" style="display: flex; align-items: center;">
-          <img src="../Icons/Home/home.png" alt="home" style="width: 15px; height: 15px; margin-right: 5px;"> <!-- Añadido margen a la derecha -->
-          <span class="text_home">Home</span>
-      </a>
+       <!-- <!-- <!-- -->
+        <a href="../index.html" id="home" style="display: flex; align-items: center;"> 
+          <img src="../Icons/Home/home.png" alt="home" style="width: 15px; height: 15px; margin-right: 5px;"> 
+      </a> 
       <a href="../Pages/modelos.html" id="modelos">
         <img src="../Icons/Home/auto.png" alt="home" style="width: 15px; height: 15px; margin-right: 5px;">
         <span class="text_modelos">Modelos</span>
       </a>
           <a href="../Pages/accesorios.html" id="accesorios">
-            <img src="../Icons/Home/llanta.png" alt="home" style="width: 15px; height: 15px; margin-right: 5px;"> <!-- Añadido margen a la derecha -->
+            <img src="../Icons/Home/llanta.png" alt="home" style="width: 15px; height: 15px; margin-right: 5px;"> 
             <span class="text_accesorios">Accesorios</span>
           </a>
           <div id="logotipo">
@@ -34,7 +36,7 @@
             </a>
           </div>
           <a href="../Pages/acerca_de.html" id="acercade">
-            <img src="../Icons/Home/nosotros.png" alt="acerca de" style="width: 15px; height: 15px; margin-right: 5px;"> <!-- Añadido margen a la derecha -->
+            <img src="../Icons/Home/nosotros.png" alt="acerca de" style="width: 15px; height: 15px; margin-right: 5px;"> 
             <span class="text_acerca">Acerca de nosotros</span>
           </a>
          
@@ -117,10 +119,10 @@
       </div>
         <div class="artventa">
           <div class="producto">
-            <img src="../Images/Accesorios/neumatico1.jpg" alt="neumatico" class="neumatico">
+            <img id="imagen1" src="../Images/Accesorios/neumatico1.jpg" alt="neumatico" class="neumatico">
             <div class="informacion">
-              <h2 class="nombre" style="font-size:20px; width: 218px; margin-left: 17px; text-align: center;">Neumático Michelin 2i 3435 Energy Saber</h2>
-              <p class="precio" style="color: rgb(168, 167, 167); margin-left: 70px">$15.000</p>
+              <h2 id= "tituloProducto1" class="nombre" style="font-size:20px; width: 218px; margin-left: 17px; text-align: center;">Neumático Michelin 2i 3435 Energy Saber</h2>
+              <p  id="PrecioCambiar" class="precio" style="color: rgb(168, 167, 167); margin-left: 70px">$15.000</p>
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
               style="background-color: #de5e08; border: none; width: 205px; margin-left: 20px">
                 Ver más información
@@ -154,7 +156,7 @@
             style="margin-left: 35px; background-color: #de5e08; outline: none; border: none; width: 205px;">Añadir al
               carrito</button><!--boton añadir al carro-->
 
-
+ 
           </div><!---CIERRE DIV ARTICULOS-->
           <!--AQUI CIERRA-------------------------------------------------------------------------------------------------------------------------------------------------->
 
@@ -162,9 +164,9 @@
 
 
           <div class="producto">
-            <img src="../Images/Accesorios/neumatico2.jpg" alt="neumatico 2" class="neumatico">
+            <img id="imagen2" src="../Images/Accesorios/neumatico2.jpg" alt="neumatico 2" class="neumatico">
             <div class="informacion">
-              <h2 class="nombre" style="font-size:20px; width: 218px; margin-left: 17px; text-align: center;">Neumático R16 4594958584</h2>
+              <h2 id="tituloProducto2" class="nombre" style="font-size:20px; width: 218px; margin-left: 17px; text-align: center;">Neumático R16 4594958584</h2>
               <p class="precio" style="color: rgb(168, 167, 167); margin-left: 70px">$185.000</p>
 
               <!--ESTO ES PARA LOS BOTONES----------------------------------------------------------------------------------------------------------->
@@ -222,9 +224,9 @@
 
 
           <div class="producto">
-            <img src="../Images/Accesorios/neumatico3.jpg" alt="neumatico 3" class="neumatico">
+            <img id="imagen3" src="../Images/Accesorios/neumatico3.jpg" alt="neumatico 3" class="neumatico">
             <div class="informacion">
-              <h2 class="nombre" style="font-size:20px; width: 218px; margin-left: 17px; text-align: center;">Eagle Sport Nuevo 56/45 </h2>
+              <h2 id="tituloProducto3" class="nombre" style="font-size:20px; width: 218px; margin-left: 17px; text-align: center;">Eagle Sport Nuevo 56/45 </h2>
               <p class="precio" style="color: rgb(168, 167, 167); margin-left: 70px">$56.000</p>
 
               <!--ESTO ES PARA LOS BOTONES----------------------------------------------------------------------------------------------------------->
@@ -273,14 +275,14 @@
       
 
           <div class="producto">
-            <img src="../Images/Accesorios/gorroblan.jpg" alt="gorro audi blanco" class="neumatico">
+            <img id="imagen4" src="../Images/Accesorios/gorroblan.jpg" alt="gorro audi blanco" class="neumatico">
             <div class="informacion">
-              <h2 class="nombre" style="font-size:20px; width: 218px; margin-left: 17px; text-align: center;">Gorra de Béisbol con protector solar</h2>
-              <p class="precio" style="color: rgb(168, 167, 167); margin-left: 70px">$38.000</p>
+              <h2 id="tituloProducto4" class="nombre" style="font-size:20px; width: 218px; margin-left: 17px; text-align: center;">Gorra de Béisbol con protector solar</h2>
+              <p id="precio4" class="precio" style="color: rgb(168, 167, 167); margin-left: 70px">$38.000</p>
 
               <!--ESTO ES PARA LOS BOTONES----------------------------------------------------------------------------------------------------------->
               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4"
+              <button id="descripcionProducto1" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4"
               style="background-color: #de5e08; border: none; width: 205px; margin-left: 20px">
                 Ver más información
               </button>
@@ -323,9 +325,9 @@
 
 
           <div class="producto">
-            <img src="../Images/Accesorios/gorroneg.jpg" alt="neumatico" class="neumatico">
+            <img id="imagen5" src="../Images/Accesorios/gorroneg.jpg" alt="neumatico" class="neumatico">
             <div class="informacion">
-              <h2 class="nombre" style="font-size:20px; width: 218px; margin-left: 17px; text-align: center;">Gorra de Béisbol Audi color negro</h2>
+              <h2 id="tituloProducto5" class="nombre" style="font-size:20px; width: 218px; margin-left: 17px; text-align: center;">Gorra de Béisbol Audi color negro</h2>
               <p class="precio" style="color: rgb(168, 167, 167); margin-left: 70px">$35.000</p>
 
               <!--ESTO ES PARA LOS BOTONES----------------------------------------------------------------------------------------------------------->
@@ -371,9 +373,9 @@
 
 
           <div class="producto">
-            <img src="../Images/Accesorios/neumatico1.jpg" alt="neumatico" class="neumatico" width="80px"   height="100px">
+            <img id="imagen6" src="../Images/Accesorios/neumatico1.jpg" alt="neumatico" class="neumatico" width="80px"   height="100px">
             <div class="informacion">
-              <h2 class="nombre" style="font-size:20px; width: 218px; margin-left: 17px; text-align: center;">Neumático Michelin 2i 3435 Energy Saber</h2>
+              <h2 id="tituloProducto6" class="nombre" style="font-size:20px; width: 218px; margin-left: 17px; text-align: center;">Neumático Michelin 2i 3435 Energy Saber</h2>
               <p class="precio" style="color: rgb(168, 167, 167); margin-left: 70px">$145.000</p>
 
               <!--ESTO ES PARA LOS BOTONES----------------------------------------------------------------------------------------------------------->
@@ -426,8 +428,11 @@
 
     </div>
   </section>
+  <div class = "prefooter">
+    
+  </div>
   <footer>
-    <div id="final2"><!--COMIENZO DIV FINAL 2-->
+     <div id="final2">
 
       <ul style="list-style-type: none;">
 
@@ -556,7 +561,7 @@
 
 
 
-    </div><!--TÉRMINO DIV FINAL 2-->
+    </div>
 
 
     <div id="texto_ultimo">
@@ -564,7 +569,7 @@
       <h6>Audi Santiago, Avenida José Alcalde 10237 - Lo Barnechea, Santiago <br> +56 (2) 2837-1640 - +569 64973750</h6>
       <img src="../Icons/Home/instablanco.jpg" alt="instagram" id="instagram">
       <img src="../Icons/Home/whatsapblanco.jpg" alt="whatsap" id="whatsap">
-    </div>
+    </div> 
 
   </footer>
 
