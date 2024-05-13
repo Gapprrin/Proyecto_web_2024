@@ -534,7 +534,7 @@ a{
 
 .imagen {
     width: 100%;
-    height: 70%; /* Ajustar la altura de la imagen según sea necesario */
+    height: 70%;     /* Ajustar la altura de la imagen según sea necesario */
     background-size: cover;
     background-position: center;
     margin-bottom: 10px;

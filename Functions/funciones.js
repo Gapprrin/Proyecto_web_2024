@@ -4,47 +4,47 @@ let accesorios = [
     {
         "nombre": "puerta",
         "precio": "249000",
-        "imagen": "https://via.placeholder.com/300", // URL de la imagen del neumático
+        "imagen": "../images/Accesorios/volante.jpg", // URL de la imagen del neumático
     },
     {
         "nombre": "Volante",
         "precio": "249000",
-        "imagen": "https://via.placeholder.com/300", // URL de la imagen del volante
+        "imagen": "../images/Accesorios/llantas.jpg", // URL de la imagen del volante
     },
     {
         "nombre": "Asiento",
         "precio": "200000",
-        "imagen": "https://via.placeholder.com/300", // URL de la imagen del asiento
+        "imagen": "../images/Accesorios/neumatico.jpg", // URL de la imagen del asiento
     },
 
 
     {
         "nombre": "neumatico",
         "precio": "249000",
-        "imagen": "https://via.placeholder.com/300", // URL de la imagen del neumático
+        "imagen": "../images/Accesorios/focos.jpg", // URL de la imagen del neumático
     },
 
     {
         "nombre": "llantas",
         "precio": "249000",
-        "imagen": "https://via.placeholder.com/300", // URL de la imagen del neumático
+        "imagen": "../images/Accesorios/parachoque.jpg", // URL de la imagen del neumático
     },
     {
         "nombre": "sksksen",
         "precio": "249000",
-        "imagen": "https://via.placeholder.com/300", // URL de la imagen del volante
+        "imagen": "../images/Accesorios/espejo.jpg", // URL de la imagen del volante
     },
     {
         "nombre": "dmdnd",
         "precio": "200000",
-        "imagen": "https://via.placeholder.com/300", // URL de la imagen del asiento
+        "imagen": "../images/Accesorios/espejo2.jpg", // URL de la imagen del asiento
     },
 
 
     {
         "nombre": "whssjj",
         "precio": "249000",
-        "imagen": "https://via.placeholder.com/300", // URL de la imagen del neumático
+        "imagen": "../images/Accesorios/cambios.jpg", // URL de la imagen del neumático
     },
 
 
