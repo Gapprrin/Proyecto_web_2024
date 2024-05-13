@@ -969,21 +969,23 @@ a {
 }
 
 .botones{
-    margin-left: 1%;
+    margin-left: 7%
 }
 
 
 #botonnuevo{
-    width: 20%;
+    width: 24%;
     font-size: small;
 }
 
 #botonnuevo1{
-    width: 20%;
+    width: 24%;
     font-size: small;
 }
 
-
+#autoblanco>h4{
+   font-size: small; 
+}
 
 }
 

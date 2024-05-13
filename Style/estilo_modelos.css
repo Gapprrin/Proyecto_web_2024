@@ -134,7 +134,71 @@ a{
 
 
 
+  #final2 {
+    height: 40vh;
+    width: 100%;
+    background-color: #161616;
+    margin-top: 0px;
+    display: flex;
+    padding-left: 50px;
 
+
+}
+
+#final2>ul {
+    width: 1000px;
+    background-color: #161616;
+    padding-left: 2px;
+    margin-left: 40px;
+    height: 220px;
+    padding-top: 30px;
+
+
+}
+
+#texto_ultimo {
+
+    height: 12vh;
+    background-color: #161616;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+
+
+
+
+}
+
+#texto_ultimo>h6 {
+    color: #cecece;
+    text-align: center;
+    display: flex;
+    font-size: 14px;
+    margin-top: 30px;
+    background-color: #161616;
+}
+
+#instagram {
+
+    width: 40px;
+    height: 40px;
+    margin-left: 550px;
+    display: flex;
+    margin-top: -50px;
+
+}
+
+
+#whatsap {
+
+    width: 40px;
+    height: 40px;
+    margin-left: 700px;
+    display: flex;
+    margin-top: -40px;
+
+}
 
 
 
@@ -250,6 +314,17 @@ a{
 
 
   }
+
+
+  @media (max-width: 1018px) {
+
+    #final2{
+        display: none;
+    }
+
+  }
+
+
 
 
   @media (max-width: 950px) {
@@ -384,6 +459,15 @@ a{
 .botones{
    margin-top: -3%;
 }
+
+#instagram{
+    display: none;
+}
+
+#whatsap{
+    display: none;
+}
+
 }
 
 @media (max-width: 600px) {
