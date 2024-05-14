@@ -235,13 +235,45 @@ justify-content: center !important;
 }
 @media only screen and (max-width: 1020px){
     .articulos{
-        background-color: #751010;
-        width: 100px;
-        height: 100px;
+        background-color: #c9c9c985;
+        width: 430px;
+        height: 110px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30px !important;
 
 
     }
+    .prefooter{
+
+
+        height: 3400px;
+    }
+    .articulos{
+        height: 3220px !important;
+
+    }
+    h6{ 
+        color: #000000 !important;
+
+    }
+    .artventa{ 
+align-items: center !important;
+justify-content: center !important;
+
+    }
+.producto { 
+justify-content: center !important;
+align-items: center !important;
+
+}
+
+
+
+
     
+
+ 
 
 
 
