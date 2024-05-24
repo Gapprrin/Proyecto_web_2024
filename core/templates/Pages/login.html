@@ -1,0 +1,36 @@
+<!-- git config --global core.autocrlf true -->
+{% extends 'planilla_header_footer.html' %}
+{% load static %}
+
+{% block estilo %}
+    <link rel="stylesheet" href="{% static 'Style/estilo_login.css' %}">
+{% endblock %}
+
+{% block content %}
+
+  <section id="login_banner">
+    <div class="wrapper">
+      <form action="{% url 'home'% }">
+        <h1>Iniciar sesión</h1>
+        <div class="input-box">
+          <input type="email" placeholder="Correo" required>
+          <img src="{% static 'Icons/login/Mail-logo.png'%}" alt="User icon">
+        </div>
+        <div class="input-box" id="Password">
+          <input type="password" placeholder="Contraseña" maxlength="20" required>
+          <img src="{% static 'Icons/login/Password-logo.png'%}" alt="Password icon">
+        </div>
+        <div class="remember-me">
+          <label>
+            <input type="checkbox">Recuerdame
+          </label>
+        </div>
+        <button type="submit" class="login-button">Iniciar sesión</button>
+        <div class="dont-have-acount">
+          <a id="login-words" href="{% url 'create_account' %}">No tengo una cuenta</a>
+        </div>
+      </form>
+
+    </div>
+  </section>
+  {% endblock %}

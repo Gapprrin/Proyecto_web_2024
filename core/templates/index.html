@@ -1,3 +1,6 @@
+{% load static %}
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,45 +10,45 @@
   <title>Audi Chile</title>
   <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <!--ENLACE BOOSTRAP-->
-  <link rel="stylesheet" href="Style/estilo.css"><!--ENLACE STYLE-->
-  <link rel="website icon" type="png" href="Icons/Home/audilogo.png">
+  <link rel="stylesheet" href="{% static 'Style/estilo.css'%}"><!--ENLACE STYLE-->
+  <link rel="website icon" type="png" href="{% static 'Icons/Home/audilogo.png' %}">
 </head>
 
 <body><!--COMIENZO BODY-->
   <header><!--COMIENZO HEADER-->
     <nav>
 
-      <a href="index.html" id="home" style="display: flex; align-items: center;">
-        <img src="Icons/Home/home.png" alt="home" style="width: 15px; height: 15px; margin-right: 5px;">
+      <a href="http://127.0.0.1:8000" id="home" style="display: flex; align-items: center;">
+        <img src="{% static 'Icons/Home/home.png'%}" alt="home" style="width: 15px; height: 15px; margin-right: 5px;">
         <!-- Añadido margen a la derecha -->
         <span class="text_home">Home</span>
       </a>
       <a href="Pages/modelos.html" id="modelos">
-        <img src="Icons/Home/auto.png" alt="home" style="width: 15px; height: 15px; margin-right: 5px;">
+        <img src="{% static 'Icons/Home/auto.png'%}" alt="home" style="width: 15px; height: 15px; margin-right: 5px;">
         <span class="text_modelos">Modelos</span>
       </a>
       <a href="Pages/accesorios.html" id="accesorios">
-        <img src="Icons/Home/llanta.png" alt="home" style="width: 15px; height: 15px; margin-right: 5px;">
+        <img src="{% static 'Icons/Home/llanta.png'%}" alt="home" style="width: 15px; height: 15px; margin-right: 5px;">
         <!-- Añadido margen a la derecha -->
         <span class="text_accesorios">Accesorios</span>
       </a>
       <div id="logotipo">
-        <a href="index.html">
-          <img src="Icons/logotipo.png" style="width: 100px; height: 30px;">
+        <a href="http://127.0.0.1:8000">
+          <img src="{% static 'Icons/logotipo.png'%}" style="width: 100px; height: 30px;">
         </a>
       </div>
       <a href="Pages/acerca_de.html" id="acercade">
-        <img src="Icons/Home/nosotros.png" alt="acerca de" style="width: 15px; height: 15px; margin-right: 5px;">
+        <img src="{% static 'Icons/Home/nosotros.png'%}" alt="acerca de" style="width: 15px; height: 15px; margin-right: 5px;">
         <!-- Añadido margen a la derecha -->
         <span class="text_acerca">Acerca de nosotros</span>
       </a>
 
       <a href="Pages/Carrito.html" id="carrito">
-        <img src="Icons/Home/carrito.png" alt="carrito" style="width: 15px; height: 15px; margin-right: 5px;">
+        <img src="{% static 'Icons/Home/carrito.png'%}" alt="carrito" style="width: 15px; height: 15px; margin-right: 5px;">
         <span class="text_carrito">Carrito</span>
       </a>
-      <a href="Pages/login.html" id="iniciarsesion">
-        <img src="Icons/Home/sesion.png" alt="iniciarsesion" style="width: 15px; height: 15px;margin-right: 5px;">
+      <a href="http://127.0.0.1:8000/login/" id="iniciarsesion">
+        <img src="{% static 'Icons/Home/sesion.png'%}" alt="iniciarsesion" style="width: 15px; height: 15px;margin-right: 5px;">
         <span class="text_sesion">Iniciar sesión</span></a>
 
     </nav>
@@ -59,7 +62,7 @@
 
 
         <div class="carousel-item active"><!--COMIENZO DIV PRIMERA IMAGEN DE CARRUSEL_PRINCIPAL-->
-          <img src="Images/Home/img1_carruselPrincipal.jpg" class="d-block w-100" alt="imagen1">
+          <img src="{% static 'Images/Home/img1_carruselPrincipal.jpg'%}" class="d-block w-100" alt="imagen1">
           <div class="carousel-caption"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
 
 
@@ -73,7 +76,7 @@
         </div><!--TÉRMINO DIV PRIMERA IMAGEN DE CARRUSEL_PRINCIPAL-->
 
         <div class="carousel-item"><!--COMIENZO DIV SEGUNDA IMAGEN DE CARRUSEL_PRINCIPAL-->
-          <img src="Images/Home/img4_carruselPrincipal.jpg" class="d-block w-100" alt="imagen2">
+          <img src="{% static 'Images/Home/img4_carruselPrincipal.jpg'%}" class="d-block w-100" alt="imagen2">
           <div class="carousel-caption"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
             <h1>Diseños únicos, <br>exclusivos <br> e incomparables</h1>
             <h2>Audi R8 Spyder 2024</h2>
@@ -84,7 +87,7 @@
         </div><!--TÉRMINO DIV SEGUNDA IMAGEN DE CARRUSEL_PRINCIPAL-->
 
         <div class="carousel-item"><!--COMIENZO DIV TERCERA IMAGEN DE CARRUSEL_PRINCIPAL-->
-          <img src="Images/Home/img3_carruselPrincipal.jpg" class="d-block w-100" alt="imagen3">
+          <img src="{% static 'Images/Home/img3_carruselPrincipal.jpg'%}" class="d-block w-100" alt="imagen3">
           <div class="carousel-caption"><!--COMIENZO DIV PARA ALMACENAR TEXTO-->
             <h1>Conduce con toda la confianza<br>y seguridad</h1>
             <h2>Audi R8 Spyder 2024</h2>
