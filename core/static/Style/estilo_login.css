@@ -332,41 +332,40 @@ No sé como cambiar el color del mostrar contraseña
             height: 25px; /* Usando 'auto' para mantener la proporción del logotipo */
         }
         
-        #home{
-            .text_home{
-                display: none;
-            }
+    }
+    #home{
+        .text_home{
+            display: none;
         }
-        
-        #carrito{
-            .text_carrito{
-                display: none;
-            }
+    }
+    
+    #carrito{
+        .text_carrito{
+            display: none;
         }
-        
-        #iniciarsesion{
-            .text_sesion{
-                display: none;
-            }
+    }
+    
+    #iniciarsesion{
+        .text_sesion{
+            display: none;
         }
-        
-        #modelos{
-            .text_modelos{
-                display: none;
-            }
+    }
+    
+    #modelos{
+        .text_modelos{
+            display: none;
         }
-        #accesorios{
-            .text_accesorios{
-                display: none;
-            }
+    }
+    #accesorios{
+        .text_accesorios{
+            display: none;
         }
-        
-        #acercade{
-            .text_acerca{
-                display: none;
-            }
+    }
+    
+    #acercade{
+        .text_acerca{
+            display: none;
         }
-        
     }
     
     
