@@ -20,5 +20,8 @@ def shopKart(request):
 def accesories(request):
     return render(request, 'Pages/accesorios.html')
 
+def AboutUs(request):
+    return render(request , 'Pages/acerca_de.html' )
+
 
 
