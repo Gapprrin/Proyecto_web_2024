@@ -76,6 +76,32 @@
         <h6>Lo mas vendido   -------------&gt;</h6>
       </div>
         <div class="artventa">
+
+
+
+<!-- -------------------------------------------------------------------------------
+codigo para hacer el select e imprimirlo directamente desde la base de datos
+-------------------------------------------------------------------------------
+
+          <div id = "productos">
+
+            {% for item in productos %}
+            <div class = "producto">
+              <img src="{{ item.imagen }}" alt="">
+              <div class="nombre">{{ item.nombre }}</div>
+              <div class="descripcion">{{ item.descripcion }}</div>
+              <div class="numeros">
+                <div class="stock"> {{ item.stock }} </div>
+                <div class="precio"> {{ item.precio }} </div>
+              </div>
+            </div>
+            {% endfor%}
+
+          </div>
+
+------------------------------------------------------------------------------- -->
+
+
           <div class="producto">
             <img id="imagen1" src="../Images/Accesorios/neumatico1.jpg" alt="neumatico" class="neumatico">
             <div class="informacion">
