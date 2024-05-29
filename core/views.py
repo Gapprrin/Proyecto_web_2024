@@ -7,7 +7,8 @@ def home(request):
     return render(request, 'index.html', {'producto':productos})
 
 def login(request):
-    return render(request, 'Pages/login.html')
+    user = User.objects.all()
+    return render(request, 'Pages/login.html', {'user':user})
 
 def createAccount(request):
     return render(request, 'Pages/Create_account.html')

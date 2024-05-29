@@ -1,4 +1,5 @@
 
+
 // Funciones extras
 
 function capitalize(texto){
@@ -93,7 +94,11 @@ function validarNombre(){
             user.classList.add("valido");
             user.classList.remove("invalido");
             document.querySelector("#error-usuario").innerHTML = "";
+            {for (var usuario in user){
+                console.log(usuario.user_name)
+            }}
         }
+        
     }else if(user.value.trim() == ""){
         user.classList.remove("invalido");
         user.classList.remove("valido");
