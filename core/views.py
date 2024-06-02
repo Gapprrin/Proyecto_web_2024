@@ -6,6 +6,10 @@ def home(request):
     productos = Producto.objects.all()
     return render(request, 'index.html', {'producto':productos})
 
+
+def modelos(request):
+    return render(request, 'Pages/modelos.html')
+
 def login(request):
     user = User.objects.all()
     return render(request, 'Pages/login.html', {'user':user})

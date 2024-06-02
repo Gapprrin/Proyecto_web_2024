@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audi Chile</title>
     {% block estilo %}
-
+    <link rel="stylesheet" href="{% static 'Style/estilo.css'%}"><!--ENLACE STYLE-->
+   
     {% endblock %}
     <link rel="website icon" type="png" href="{% static 'Icons/Home/audilogo.png'%}">
 </head>
@@ -18,18 +19,18 @@
     <header><!--COMIENZO HEADER-->
         <nav>
 
-            <a href="{% url 'home' %}" id="home" style="display: flex; align-items: center;">
+            <a href="{% url 'home' %}" id="home" style="display: flex; align-items: center; color: rgb(255, 255, 255); text-decoration: none; text-transform: uppercase;">
                 <img src="{% static 'Icons/Home/home.png'%}" alt="home"
                     style="width: 15px; height: 15px; margin-right: 5px;">
                 <!-- Añadido margen a la derecha -->
                 <span class="text_home">Home</span>
             </a>
-            <a href="Pages/modelos.html" id="modelos">
+            <a href="{% url 'modelos' %}" id="modelos" style="color: rgb(255, 255, 255); text-decoration: none;text-transform: uppercase;">
                 <img src="{% static 'Icons/Home/auto.png'%}" alt="home"
                     style="width: 15px; height: 15px; margin-right: 5px;">
                 <span class="text_modelos">Modelos</span>
             </a>
-            <a href="Pages/accesorios.html" id="accesorios">
+            <a href="Pages/accesorios.html" id="accesorios" style="color: rgb(255, 255, 255); text-decoration: none;text-transform: uppercase;">
                 <img src="{% static 'Icons/Home/llanta.png'%}" alt="home"
                     style="width: 15px; height: 15px; margin-right: 5px;">
                 <!-- Añadido margen a la derecha -->
@@ -40,19 +41,19 @@
                     <img src="{% static 'Icons/logotipo.png'%}" style="width: 100px; height: 30px;">
                 </a>
             </div>
-            <a href="Pages/acerca_de.html" id="acercade">
+            <a href="Pages/acerca_de.html" id="acercade" style="color: rgb(255, 255, 255); text-decoration: none;text-transform: uppercase;">
                 <img src="{% static 'Icons/Home/nosotros.png'%}" alt="acerca de"
                     style="width: 15px; height: 15px; margin-right: 5px;">
                 <!-- Añadido margen a la derecha -->
                 <span class="text_acerca">Acerca de nosotros</span>
             </a>
 
-            <a href="{% url 'Carrito' %}" id="carrito">
+            <a href="{% url 'Carrito' %}" id="carrito" style="color: rgb(255, 255, 255); text-decoration: none;text-transform: uppercase;">
                 <img src="{% static 'Icons/Home/carrito.png'%}" alt="carrito"
                     style="width: 15px; height: 15px; margin-right: 5px;">
                 <span class="text_carrito">Carrito</span>
             </a>
-            <a href="{% url 'login' %}" id="iniciarsesion">
+            <a href="{% url 'login' %}" id="iniciarsesion" style="color: rgb(255, 255, 255); text-decoration: none;text-transform: uppercase;">
                 <img src="{% static 'Icons/Home/sesion.png'%}" alt="iniciarsesion"
                     style="width: 15px; height: 15px;margin-right: 5px;">
                 <span class="text_sesion">Iniciar sesión</span></a>
@@ -67,94 +68,48 @@
     <footer>
         <div id="final2"><!--COMIENZO DIV FINAL 2-->
 
-            <ul style="list-style-type: none;">
+            <ul style="list-style-type: none;" >
 
-                <li><a href="#" style="text-transform: uppercase;">Modelos</a></li>
-                <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-
-
-            </ul>
-
-
-
-            <ul style="list-style-type: none;">
-
-                <li><a href="#" style="text-transform: uppercase">Accesorios</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-
-
-            </ul>
-            <ul style="list-style-type: none;">
-
-                <li><a href="#" style="text-transform: uppercase">Acerca de </a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: uppercase; color: rgb(255, 255, 255); text-decoration: none;">Modelos</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
 
 
             </ul>
 
 
-            <ul style="list-style-type: none;">
 
-                <li><a href="#" style="text-transform: uppercase">Carrito</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
+            <ul style="list-style-type: none;" >
 
-
-            </ul>
-
-            <ul style="list-style-type: none;">
-
-                <li><a href="#" style="text-transform: uppercase">Mi cuenta</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: uppercase; color: rgb(255, 255, 255); text-decoration: none;">Accesorios</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>>
 
 
             </ul>
-
             <ul style="list-style-type: none;">
 
-                <li><a href="#" style="text-transform: uppercase">Blabla</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: uppercase; color: rgb(255, 255, 255); text-decoration: none;">Acerca de</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
 
 
             </ul>
@@ -162,15 +117,45 @@
 
             <ul style="list-style-type: none;">
 
-                <li><a href="#" style="text-transform: uppercase">Blabla</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: uppercase; color: rgb(255, 255, 255); text-decoration: none;">Carrito</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+
+
+            </ul>
+
+            <ul style="list-style-type: none;">
+
+                <li><a href="#" style="text-transform: uppercase; color: rgb(255, 255, 255); text-decoration: none;">Mi Cuenta</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+
+
+            </ul>
+
+            <ul style="list-style-type: none;">
+
+                <li><a href="#" style="text-transform: uppercase; color: rgb(255, 255, 255); text-decoration: none;">Blabla</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
 
 
             </ul>
@@ -178,15 +163,30 @@
 
             <ul style="list-style-type: none;">
 
-                <li><a href="#" style="text-transform: uppercase">Blabla</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-                <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: uppercase; color: rgb(255, 255, 255); text-decoration: none;">Blabla</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+
+            </ul>
+
+
+            <ul style="list-style-type: none;">
+
+                <li><a href="#" style="text-transform: uppercase; color: rgb(255, 255, 255); text-decoration: none;">Blabla</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
+                <li><a href="#" style="text-transform: lowercase; color: rgb(255, 255, 255); text-decoration: none;">Lorem ipsum</a></li>
 
 
             </ul>
@@ -200,8 +200,8 @@
         <div id="texto_ultimo">
             <h6>Audi Santiago, Avenida José Alcalde 10237 - Lo Barnechea, Santiago <br> +56 (2) 2837-1640 - +569
                 64973750</h6>
-            <img src="../Icons/Home/instablanco.jpg" alt="instagram" id="instagram">
-            <img src="../Icons/Home/whatsapblanco.jpg" alt="whatsap" id="whatsap">
+                <img src="{% static '/Icons/Home/instablanco.jpg'%}" alt="instagram" id="instagram">
+                <img src="{% static '/Icons/Home/whatsapblanco.jpg'%}" alt="whatsap" id="whatsap">   
         </div>
 
     </footer>
