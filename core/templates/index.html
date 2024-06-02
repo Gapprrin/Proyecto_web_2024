@@ -93,66 +93,16 @@
   </div>
 
 
-  <div id="contenedor"><!--COMIENZO DIV CONTENEDOR-->
-
-    <div id="imagenes">
-
-      <div id="imagen">
-        <img src="{% static 'Images/Home/card1.jpg'%}" alt="imagen1">    
-        <h4>Audi R8 Spyder</h4>
-        <p></p>
-        <button type="button" class="btn btn-secondary btn-lg" id="boton_images">Conocer más</button><!--BOTON-->
-      </div>
-      <div id="imagen">
-        <img src="{% static 'Images/Home/card2.jpg'%}" alt="imagen1">
-        <h4>Audi R8 Spyder</h4>
-        <p></p>
-        <button type="button" class="btn btn-secondary btn-lg" id="boton_images">Conocer más</button><!--BOTON-->
-      </div>
-      <div id="imagen">
-        <img src="{% static 'Images/Home/card3.jpg'%}" alt="imagen1">
-        <h4>Audi R8 Spyder</h4>
-        <p></p>
-        <button type="button" class="btn btn-secondary btn-lg" id="boton_images">Conocer más</button><!--BOTON-->
-      </div>
-      <div id="imagen">
-        <img src="{% static 'Images/Home/card1.jpg'%}" alt="imagen1">
-        <h4>Audi R8 Spyder</h4>
-        <p></p>
-        <button type="button" class="btn btn-secondary btn-lg" id="boton_images">Conocer más</button><!--BOTON-->
-      </div>
-      <div id="imagen">
-        <img src="{% static 'Images/Home/card2.jpg'%}" alt="imagen1">
-        <h4>Audi R8 Spyder</h4>
-        <p></p>
-        <button type="button" class="btn btn-secondary btn-lg" id="boton_images">Conocer más</button><!--BOTON-->
-      </div>
-      <div id="imagen">
-        <img src="{% static 'Images/Home/card3.jpg'%}" alt="imagen1">
-        <h4>Audi R8 Spyder</h4>
-        <p></p>
-        <button type="button" class="btn btn-secondary btn-lg" id="boton_images">Conocer más</button><!--BOTON-->
-      </div>
-      <div id="imagen">
-        <img src="{% static 'Images/Home/card4.jpg'%}" alt="imagen1">
-        <h4>Audi R8 Spyder</h4>
-        <p></p>
-        <button type="button" class="btn btn-secondary btn-lg" id="boton_images">Conocer más</button><!--BOTON-->
-      </div>
-      <div id="imagen">
-        <img src="{% static 'Images/Home/card1.jpg'%}" alt="imagen1">
-        <h4>Audi R8 Spyder</h4>
-        <p></p>
-        <button type="button" class="btn btn-secondary btn-lg" id="boton_images">Conocer más</button><!--BOTON-->
-      </div>
-
-    </div><!--TERMINO DIV IMAGENES-->
-
-
-
-
-  </div><!--TERMINO DIV CONTENEDOR-->
-
+  <div id="nueva_coleccion"><!--COMIENZO DIV CONTENEDOR-->
+    {% for item in nueva_coleccion %}
+    <div class="autos">
+        <div class="nombre_auto">{{ item.nombre_auto }}</div>
+        <div class="descripcion_auto">{{ item.descripcion_auto }}</div>
+        <div class="stock_auto">{{ item.stock_auto }}</div>
+        <div class="imagen_auto" style="background-image: url('{{ item.imagen_auto }}');"></div>
+    </div>
+    {% endfor %}
+</div><!--TERMINO DIV NUEVA COLECCION-->
 
 
 

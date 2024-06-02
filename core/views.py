@@ -1,10 +1,13 @@
 from django.shortcuts import render
 from .models import *
+
 # Create your views here.
 
+from .models import NuevaColeccion
+
 def home(request):
-    productos = Producto.objects.all()
-    return render(request, 'index.html', {'producto':productos})
+    nueva_coleccion = NuevaColeccion.objects.all()
+    return render(request, 'index.html', {'nueva_coleccion': nueva_coleccion})
 
 
 def modelos(request):

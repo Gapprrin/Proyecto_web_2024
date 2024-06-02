@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 class Producto(models.Model):
     id = models.CharField(max_length=4,primary_key=True)
@@ -22,3 +23,19 @@ class User(models.Model):
     
     def __str__(self):
         return self.user_name
+
+
+
+class NuevaColeccion(models.Model):
+    id = models.AutoField(primary_key=True)
+    nombre_auto = models.CharField(max_length=40)
+    descripcion_auto = models.CharField(max_length=200)
+    stock_auto = models.IntegerField()
+    imagen_auto = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.nombre_auto
+
+    class Meta:
+        db_table = 'nueva_coleccion'  # Especifica el nombre de la tabla
+    
