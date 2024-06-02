@@ -367,17 +367,12 @@ a {
 
 
 
-#nueva_coleccion{
-width: 100%;
-height: 50vh;
-display: flex;
-background-color: #de5e08;
+
  
 
 
 
 
-}
 
 #imagenes {
     width: 100%;
@@ -996,23 +991,34 @@ background-color: #de5e08;
     display: flex;
     flex-wrap: wrap;
     height: 100%;
+    background-color: #616161;
+  
+
+  
 }
 
 .autos {
-    width: 300px;
-    margin: 20px;
+    width: 340px;
+    margin: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    margin-bottom: 30px;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    background-color: #000000;
+    text-align: center; /* Alinea el texto al centro */
+    color: #ffffff;
 }
 
 .nombre_auto {
     font-weight: bold;
+    color: #cecece;
+    
 }
 
 .descripcion_auto {
     margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 12px;
+    color: #727272;
 }
 
 .stock_auto {
@@ -1029,7 +1035,23 @@ background-color: #de5e08;
     border-radius: 5px;
 }
 
+.botonesAuto {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
 
+}
+.botoncito {
+    padding: 5px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #cb5c0c;
+}
+.botoncito:hover {
+    background-color: #ef7b37;
+}
 
 
 
