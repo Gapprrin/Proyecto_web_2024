@@ -11,4 +11,4 @@ urlpatterns = [
     path('shopKart/', shopKart, name= 'Carrito'),
     path('accesorios/' , accesories , name= 'accesorios'),
     path('acerca_de/', AboutUs , name="acerca_de"),
-]
+]  

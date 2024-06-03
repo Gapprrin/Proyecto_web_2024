@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audi Chile</title>
     {% block estilo %}
-    <link rel="stylesheet" href="{% static 'Style/estilo.css'%}"><!--ENLACE STYLE-->
-   
+
     {% endblock %}
     <link rel="website icon" type="png" href="{% static 'Icons/Home/audilogo.png'%}">
 </head>
@@ -30,7 +29,7 @@
                     style="width: 15px; height: 15px; margin-right: 5px;">
                 <span class="text_modelos">Modelos</span>
             </a>
-            <a href="Pages/accesorios.html" id="accesorios" style="color: rgb(255, 255, 255); text-decoration: none;text-transform: uppercase;">
+            <a href="{% url 'accesorios' %}" id="accesorios" style="color: rgb(255, 255, 255); text-decoration: none;text-transform: uppercase;">
                 <img src="{% static 'Icons/Home/llanta.png'%}" alt="home"
                     style="width: 15px; height: 15px; margin-right: 5px;">
                 <!-- Añadido margen a la derecha -->
