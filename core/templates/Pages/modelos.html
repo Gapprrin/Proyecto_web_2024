@@ -51,11 +51,12 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+              Categorias
             </a>
             <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Lo último</a></li>
+              <li><a class="dropdown-item" href="#">Deportivos</a></li>
+              <li><a class="dropdown-item" href="#">Familiar</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -81,16 +82,18 @@
 
 </div>
 
-<div id="nueva_coleccion"><!--COMIENZO DIV CONTENEDOR-->
+<div id="nueva_coleccion" class="carousel"><!--COMIENZO DIV CONTENEDOR-->
   {% for item in nueva_coleccion %}
   <div class="autos">
-      <div class="nombre_auto">{{ item.nombre_auto }}</div>
-      <div class="descripcion_auto">{{ item.descripcion_auto }}</div>
-      <div class="stock_auto">{{ item.stock_auto }}</div>
       <div class="imagen_auto" style="background-image: url('{{ item.imagen_auto }}');"></div>
-      <div class="botonesAuto">
-          <button class="botoncito">Más información</button>
-          <button class="botoncito">Cotizar vehículo</button>
+      <div class="info_auto">
+          <div class="nombre_auto">{{ item.nombre_auto }}</div>
+          <div class="descripcion_auto">{{ item.descripcion_auto }}</div>
+          <div class="stock_auto">{{ item.stock_auto }}</div>
+          <div class="botonesAuto">
+              <button class="botoncito">Más información</button>
+              <button class="botoncito">Cotizar vehículo</button>
+          </div>
       </div>
   </div>
   {% endfor %}
