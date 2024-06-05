@@ -44,10 +44,7 @@ a{
 
 
 
-.navbar-brand{
-    font-size: small;
-    margin-left: 12px;
-}
+
 
 
 .informacion_derecha {
@@ -648,3 +645,125 @@ color: #000000;
 #correo{
     font-size: small;
 }
+
+
+
+#imagenVolante {
+    background-image: url("../Images/Modelos_auto/volante2.jpg");
+    width: 100%;
+    height: 45vh;
+    background-size: cover;
+ 
+}
+
+/* Hacer que la barra de navegación superior sea transparente */
+.navbar.navbar-dark.bg-dark {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Hacer que el fondo del offcanvas sea negro desde el principio */
+.offcanvas {
+    background-color: #000 !important;
+}
+
+/* Hacer que el área del contenido del offcanvas sea transparente */
+.offcanvas-body {
+    background-color: transparent !important;
+}
+
+/* Cambiar el color del icono de hamburguesa a negro */
+.navbar-toggler-icon {
+    color: #000 !important;
+}
+
+
+#textoNuevaColeccion{
+    width: 100%;
+    height: 5vh;
+    background-color: #ec7926;
+}
+
+#textoNuevaColeccion>h4{
+
+width: 100%;
+background-color: aqua;
+font-size: medium;
+height: 5vh;
+
+
+}
+
+
+
+
+
+
+
+#nueva_coleccion {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: #2a2929;
+  
+
+  
+}
+
+.autos {
+    width: 900px;
+    height: 500px;
+    margin: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background-color: #161616;
+    text-align: center;
+    color: #ffffff;
+ 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.nombre_auto {
+    font-weight: bold;
+    color: #cecece;
+    
+}
+
+.descripcion_auto {
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 12px;
+    color: #727272;
+}
+
+.stock_auto {
+    font-style: italic;
+    color: #666;
+}
+
+.imagen_auto {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.botonesAuto {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+
+}
+.botoncito {
+    padding: 5px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #cb5c0c;
+}
+.botoncito:hover {
+    background-color: #ef7b37;
+}
+

@@ -23,542 +23,88 @@
   {% block content %}
 <body>
   
+
+
+
+
+
+<div id="imagenVolante">
 <!--INICIO CATEGORIAS-->
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Revisa aquí todos los modelos disponibles</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-success" type="submit">Search</button>
-          </form>
-        </div>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="font-size: small; margin-left: auto;">Revisa los modelos disponibles por categoría</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
 <!--TÉRMINO CATEGORIAS-->
-
-
-
-
-
-<!--CARRUSEL 1-->
-<div id="carouselExampleFade" class="carousel slide carousel-fade">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-  
-      <img src="{% static 'Images/Modelos_auto/spyder.jpg'%}" class="d-block w-100" alt="...">
-      
-      
-      <div class="informacion_derecha">
-        <h5>Audi Spyder R8</h5>
-        <p></p>
-      </div>
-      <div class="botones">
-        <a href="https://www.audi.es/dam/nemo/es/modelos/Catalogo_precios/precios_MY2024/r8/MY24_01_24_R8.pdf" class="boton1">Realizar cotización</a>
-        <a href="https://www.audi.es/es/web/es/modelos/r8/r8-spyder-v10-performance-quattro.html#layer=/content/es/web/es/modelos/r8/r8-spyder-v10-performance-quattro/layer/dimensiones.html" class="boton2">Descripción técnica</a>
-        <a href="https://formularios.audi.es/contacto-particulares/?p=MAS_INFORMACION&m=35760_02&utm_source=audies&utm_medium=web&utm_campaign=r8spyderv10quattroperf&utm_term=oferta&utm_content=main_page" class="boton3">Solicitar información</a>
-
-      
-
-      </div>
-
-
 </div>
 
 
+<div id="textoNuevaColeccion">
 
-
-
-    <div class="carousel-item">
-      <img src="{% static 'Images/Modelos_auto/spyder22.jpg'%}" class="d-block w-100" alt="...">
-      <div class="informacion_derecha">
-        <h5>Audi Spyder R8</h5>
-        <p></p>
-      </div>
-      <div class="botones">
-        <a href="https://www.audi.es/dam/nemo/es/modelos/Catalogo_precios/precios_MY2024/r8/MY24_01_24_R8.pdf" class="boton1">Realizar cotización</a>
-        <a href="https://www.audi.es/es/web/es/modelos/r8/r8-spyder-v10-performance-quattro.html#layer=/content/es/web/es/modelos/r8/r8-spyder-v10-performance-quattro/layer/dimensiones.html" class="boton2">Descripción técnica</a>
-        <a href="https://formularios.audi.es/contacto-particulares/?p=MAS_INFORMACION&m=35760_02&utm_source=audies&utm_medium=web&utm_campaign=r8spyderv10quattroperf&utm_term=oferta&utm_content=main_page" class="boton3">Solicitar información</a>
-
-      
-
-      </div>
-
-
-    </div>
-    <div class="carousel-item">
-      <img src="{% static 'Images/Modelos_auto/spyder222.jpg'%}" class="d-block w-100" alt="...">
-      <div class="informacion_derecha">
-        <h5>Audi Spyder R8</h5>
-        <p></p>
-      </div>
-      <div class="botones">
-        <a href="https://www.audi.es/dam/nemo/es/modelos/Catalogo_precios/precios_MY2024/r8/MY24_01_24_R8.pdf" class="boton1">Realizar cotización</a>
-        <a href="https://www.audi.es/es/web/es/modelos/r8/r8-spyder-v10-performance-quattro.html#layer=/content/es/web/es/modelos/r8/r8-spyder-v10-performance-quattro/layer/dimensiones.html" class="boton2">Descripción técnica</a>
-        <a href="https://formularios.audi.es/contacto-particulares/?p=MAS_INFORMACION&m=35760_02&utm_source=audies&utm_medium=web&utm_campaign=r8spyderv10quattroperf&utm_term=oferta&utm_content=main_page" class="boton3">Solicitar información</a>
-
-      
-
-      </div>
-
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-
-
-
+<h4>NUEVA COLECCIÓN "ELITE VELOCITY EDITION</h4>
 
 </div>
 
-<!--CARRUSEL2-->
-
-
-
-<div id="carouselExampleFade2" class="carousel slide carousel-fade">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-  
-      <img src="{% static 'Images/Modelos_auto/blanco.jpg'%}" class="d-block w-100" alt="...">
-      
-      <div class="informacion_derecha">
-        <h5>Audi blablaba 54</h5>
-        <p></p>
+<div id="nueva_coleccion"><!--COMIENZO DIV CONTENEDOR-->
+  {% for item in nueva_coleccion %}
+  <div class="autos">
+      <div class="nombre_auto">{{ item.nombre_auto }}</div>
+      <div class="descripcion_auto">{{ item.descripcion_auto }}</div>
+      <div class="stock_auto">{{ item.stock_auto }}</div>
+      <div class="imagen_auto" style="background-image: url('{{ item.imagen_auto }}');"></div>
+      <div class="botonesAuto">
+          <button class="botoncito">Más información</button>
+          <button class="botoncito">Cotizar vehículo</button>
       </div>
-      <div class="botones">
-        <a href="#" class="boton1">Realizar cotización</a>
-        <a href="#" class="boton2">Descripción técnica</a>
-        <a href="#" class="boton3">Solicitar información</a>
-
-      
-
-      </div>
-
-
-</div>
-
-
-
-
-
-    <div class="carousel-item">
-      <img src="{% static 'Images/Modelos_auto/blanco2.jpg'%} "class="d-block w-100" alt="...">
-      <div class="informacion_derecha">
-        <h5>Audi blablaba 54</h5>
-        <p></p>
-      </div>
-      <div class="botones">
-        <a href="#" class="boton1">Realizar cotización</a>
-        <a href="#" class="boton2">Descripción técnica</a>
-        <a href="#" class="boton3">Solicitar información</a>
-
-      
-
-      </div>
-
-
-    </div>
-    <div class="carousel-item">
-      <img src="{% static 'Images/Modelos_auto/blanco22.jpg'%}" class="d-block w-100" alt="...">
-      <div class="informacion_derecha">
-        <h5>Audi blablaba 54</h5>
-        <p></p>
-      </div>
-      <div class="botones">
-        <a href="#" class="boton1">Realizar cotización</a>
-        <a href="#" class="boton2">Descripción técnica</a>
-        <a href="#" class="boton3">Solicitar información</a>
-
-      
-
-      </div>
-
-    </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+  {% endfor %}
+</div><!--TERMINO DIV NUEVA COLECCION-->
 
-  </div>
 
 
 
-<!--CARRUSEL3-->
 
 
 
-<div id="carouselExampleFade3" class="carousel slide carousel-fade">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-  
-      <img src="{% static 'Images/Modelos_auto/q8.jpg'%}" class="d-block w-100" alt="...">
-      
-      <div class="informacion_derecha">
-        <h5>Audi blabla v16</h5>
-        <p></p>
-      </div>
-      <div class="botones">
-        <a href="#" class="boton1">Realizar cotización</a>
-        <a href="#" class="boton2">Descripción técnica</a>
-        <a href="#" class="boton3">Solicitar información</a>
 
-      
 
-      </div>
 
-
-</div>
-
-
-
-
-
-    <div class="carousel-item">
-      <img src="{% static 'Images/Modelos_auto/q82.jpg'%}" class="d-block w-100" alt="...">
-      <div class="informacion_derecha">
-        <h5>Audi blabla v16</h5>
-        <p></p>
-      </div>
-      <div class="botones">
-        <a href="#" class="boton1">Realizar cotización</a>
-        <a href="#" class="boton2">Descripción técnica</a>
-        <a href="#" class="boton3">Solicitar información</a>
-
-      
-
-      </div>
-
-
-    </div>
-    <div class="carousel-item">
-      <img src="{% static 'Images/Modelos_auto/q822.jpg'%}" class="d-block w-100" alt="...">
-      <div class="informacion_derecha">
-        <h5>Audi blabla v16</h5>
-        <p></p>
-      </div>
-      <div class="botones">
-        <a href="#" class="boton1">Realizar cotización</a>
-        <a href="#" class="boton2">Descripción técnica</a>
-        <a href="#" class="boton3">Solicitar información</a>
-
-      
-
-      </div>
-
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-
-  </div>
-
-
-  <!--CARRUSEL 4-->
-<div id="carouselExampleFade4" class="carousel slide carousel-fade">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-  
-      <img src="{% static 'Images/Modelos_auto/spyder.jpg'%}" class="d-block w-100" alt="...">
-      
-      <div class="informacion_derecha">
-        <h5>Audi Spyder R8</h5>
-        <p></p>
-      </div>
-      <div class="botones">
-        <a href="#" class="boton1">Realizar cotización</a>
-        <a href="#" class="boton2">Descripción técnica</a>
-        <a href="#" class="boton3">Solicitar información</a>
-
-      
-
-      </div>
-
-
-</div>
-
-
-
-
-
-    <div class="carousel-item">
-      <img src="{% static 'Images/Modelos_auto/spyder22.jpg'%}" class="d-block w-100" alt="...">
-      <div class="informacion_derecha">
-        <h5>Audi Spyder R8</h5>
-        <p></p>
-      </div>
-      <div class="botones">
-        <a href="#" class="boton1">Realizar cotización</a>
-        <a href="#" class="boton2">Descripción técnica</a>
-        <a href="#" class="boton3">Solicitar información</a>
-
-      
-
-      </div>
-
-
-    </div>
-    <div class="carousel-item">
-      <img src="{% static 'Images/Modelos_auto/spyder222.jpg'%}" class="d-block w-100" alt="...">
-      <div class="informacion_derecha">
-        <h5>Audi Spyder R8</h5>
-        <p></p>
-      </div>
-      <div class="botones">
-        <a href="#" class="boton1">Realizar cotización</a>
-        <a href="#" class="boton2">Descripción técnica</a>
-        <a href="#" class="boton3">Solicitar información</a>
-
-      
-
-      </div>
-
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-
-
-
-
-</div>
-
-<!--CARRUSEL5-->
-
-
-
-<div id="carouselExampleFade5" class="carousel slide carousel-fade">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-  
-      <img src="{% static 'Images/Modelos_auto/blanco.jpg'%}" class="d-block w-100" alt="...">
-      
-      <div class="informacion_derecha">
-        <h5>Audi blablaba 54</h5>
-        <p></p>
-      </div>
-      <div class="botones">
-        <a href="#" class="boton1">Realizar cotización</a>
-        <a href="#" class="boton2">Descripción técnica</a>
-        <a href="#" class="boton3">Solicitar información</a>
-
-      
-
-      </div>
-
-
-</div>
-
-
-
-
-
-    <div class="carousel-item">
-      <img src="{% static 'Images/Modelos_auto/blanco2.jpg'%}" class="d-block w-100" alt="...">
-      <div class="informacion_derecha">
-        <h5>Audi blablaba 54</h5>
-        <p></p>
-      </div>
-      <div class="botones">
-        <a href="#" class="boton1">Realizar cotización</a>
-        <a href="#" class="boton2">Descripción técnica</a>
-        <a href="#" class="boton3">Solicitar información</a>
-
-      
-
-      </div>
-
-
-    </div>
-    <div class="carousel-item">
-      <img src="{% static 'Images/Modelos_auto/blanco22.jpg'%}" class="d-block w-100" alt="...">
-      <div class="informacion_derecha">
-        <h5>Audi blablaba 54</h5>
-        <p></p>
-      </div>
-      <div class="botones">
-        <a href="#" class="boton1">Realizar cotización</a>
-        <a href="#" class="boton2">Descripción técnica</a>
-        <a href="#" class="boton3">Solicitar información</a>
-
-      
-
-      </div>
-
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade5" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade5" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-
-  </div>
-
-
-
-<!--CARRUSEL6-->
-
-
-
-<div id="carouselExampleFade6" class="carousel slide carousel-fade">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-  
-      <img src="{% static 'Images/Modelos_auto/q8.jpg'%}" class="d-block w-100" alt="...">
-      
-      <div class="informacion_derecha">
-        <h5>Audi blabla v16</h5>
-        <p></p>
-      </div>
-      <div class="botones">
-        <a href="#" class="boton1">Realizar cotización</a>
-        <a href="#" class="boton2">Descripción técnica</a>
-        <a href="#" class="boton3">Solicitar información</a>
-
-      
-
-      </div>
-
-
-</div>
-
-
-
-
-
-    <div class="carousel-item">
-      <img src="{% static 'Images/Modelos_auto/q82.jpg'%}" class="d-block w-100" alt="...">
-      <div class="informacion_derecha">
-        <h5>Audi blabla v16</h5>
-        <p></p>
-      </div>
-      <div class="botones">
-        <a href="#" class="boton1">Realizar cotización</a>
-        <a href="#" class="boton2">Descripción técnica</a>
-        <a href="#" class="boton3">Solicitar información</a>
-
-      
-
-      </div>
-
-
-    </div>
-    <div class="carousel-item">
-      <img src="{% static 'Images/Modelos_auto/q822.jpg'%}" class="d-block w-100" alt="...">
-      <div class="informacion_derecha">
-        <h5>Audi blabla v16</h5>
-        <p></p>
-      </div>
-      <div class="botones">
-        <a href="#" class="boton1">Realizar cotización</a>
-        <a href="#" class="boton2">Descripción técnica</a>
-        <a href="#" class="boton3">Solicitar información</a>
-
-      
-
-      </div>
-
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade6" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade6" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-
-  </div>
-<!------------------------------------------------------------------------------------------------------------------------------------------->
-
-<div class="contenedor_apy">
-  <div id="info">
-    <h4>Por la compra de tu Audi</h4>
-    <h5>¡Lleva accesorios con 50% de descuento!</h5>
-  </div>
-
- 
-    <div class="productos">
-   
-    </div>
-
-</div>
-
-<div id="usuarios_registrados">
-
-  <h2>Testimonio de Socios</h2>
-  
-  
-  <div class="contenedor_apy_users">
-    <img id="foto" src="" alt="imagen">
-    <h2><span id="nombre"></span></h2>
-    <p id="nacionalidad"></p>
-    <div class="datos">
-        <p id="testimonio"></p>
-    </div>
-</div>
-
-<div class="boton_apy">
-    <button id="boton">Ver más</button>
-</div>
-        </div>
 
 
 

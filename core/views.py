@@ -11,7 +11,8 @@ def home(request):
 
 
 def modelos(request):
-    return render(request, 'Pages/modelos.html')
+    nueva_coleccion = NuevaColeccion.objects.all()
+    return render(request, 'Pages/modelos.html',{'nueva_coleccion': nueva_coleccion})
 
 def login(request):
     user = User.objects.all()
