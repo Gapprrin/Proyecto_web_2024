@@ -203,6 +203,12 @@ No sé como cambiar el color del mostrar contraseña
     font-weight: 600;
 }
 
+/* .input-box>#label-contrasenia{
+    position: absolute;
+    margin-left: 21px;
+    transform: translateY(80%);
+    color: #727272;
+} */
 
 /* Página de creación de cuentas */
 
