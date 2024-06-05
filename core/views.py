@@ -1,3 +1,5 @@
+
+from django.contrib.auth.views import logout_then_login
 from django.shortcuts import render
 from .models import *
 
@@ -17,6 +19,9 @@ def modelos(request):
 def login(request):
     user = User.objects.all()
     return render(request, 'Pages/login.html', {'user':user})
+
+def logout(request):
+    return logout_then_login(request, 'login')
 
 def createAccount(request):
     return render(request, 'Pages/Create_account.html')
