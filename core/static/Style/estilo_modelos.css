@@ -656,6 +656,13 @@ color: #000000;
  
 }
 
+
+
+
+#imagenVolante>h3{
+    font-size: 40px;
+}
+
 /* Hacer que la barra de navegación superior sea transparente */
 .navbar.navbar-dark.bg-dark {
     background-color: rgba(0, 0, 0, 0.5) !important;
@@ -773,21 +780,24 @@ text-align: center;
 
 .botonesAuto {
     display: flex;
-    justify-content: space-between;
+   justify-content: space-between;
     padding: auto;
     align-items: center;
 }
 
 .botoncito {
-    background-color: #007bff;
+    background-color: #d76010;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    padding: 5px 10px;
+    width: 140px;
+    font-size: small;
 }
 
 .botoncito:hover {
-    background-color: #0056b3;
+    background-color: #e5902f;
 }
 
 #imagenVolante>h3 {
