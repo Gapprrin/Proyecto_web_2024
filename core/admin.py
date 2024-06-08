@@ -9,4 +9,6 @@ admin.site.register(Producto)
 
 admin.site.register(User)
 
-admin.site.register(NuevaColeccion) 
+admin.site.register(Categoria) 
+
+admin.site.register(Vehiculo) 

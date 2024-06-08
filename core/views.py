@@ -13,8 +13,15 @@ def home(request):
 
 
 def modelos(request):
+ 
     nueva_coleccion = NuevaColeccion.objects.all()
-    return render(request, 'Pages/modelos.html',{'nueva_coleccion': nueva_coleccion})
+    categoria_deportivo = Vehiculo.objects.all()
+    contexto = {
+        'nueva_coleccion': nueva_coleccion,
+        'categoriaDeportivo': categoria_deportivo
+    }
+    return render(request, 'Pages/modelos.html', contexto)
+
 
 def login(request):
     user = User.objects.all()

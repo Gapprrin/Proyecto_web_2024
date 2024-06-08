@@ -90,7 +90,7 @@
 
 </div>
 
-<div id="nueva_coleccion" class="carousel"><!--COMIENZO DIV CONTENEDOR-->
+<div id="nueva_coleccion" class="carousel"><!--COMIENZO DIV NUEVA COLECCION-->
   {% for item in nueva_coleccion %}
   <div class="autos">
       <div class="imagen_auto" style="background-image: url('{{ item.imagen_auto }}');"></div>
@@ -108,10 +108,35 @@
   {% endfor %}
 </div><!--TERMINO DIV NUEVA COLECCION-->
 
+<div id="textoNuevaColeccion">
+
+  <h4>MODELOS DEPORTIVOS</h4>
+  
+  
+  </div>
 
 
+<!--QUIERO SEPARARLOS POR CATEGORIA- Y NO QUE LOS MUESTRE TODOS JUNTOS-->
+<div id="categoriaDeportivo" class="carousel"><!--COMIENZO DIV CATEGORIA DEPORTIVOS-->
+  {% for item in categoriaDeportivo %}
 
+  <div class="autos">
+      <div class="imagen_auto" style="background-image: url('{{ item.imagen_vehiculo }}');"></div>
+      <div class="info_auto">
+          <div class="nombre_auto">{{ item.nombre_vehiculo }}</div>
+          <div class="descripcion_auto">{{ item.descripcion_vehiculo }}</div>
+          <div class="stock_auto">{{ item.stock_vehiculo }}</div>
+          <div class="categoria">{{ item.categoria.nombrecategoria }}</div>
+          <div class="botonesAuto">
+              <button class="botoncito">Cotizar vehículo</button>
+              <button class="botoncito">Solicitar asesoría</button>
+              <button class="botoncito">Descripción general</button>
+          </div>
+      </div>
+  </div>
 
+  {% endfor %}
+</div><!--TERMINO DIV CATEGORIA DEPORTIVOS-->
 
 
 
