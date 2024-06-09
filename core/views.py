@@ -15,10 +15,10 @@ def home(request):
 def modelos(request):
  
     nueva_coleccion = NuevaColeccion.objects.all()
-    categoria_deportivo = Vehiculo.objects.all()
+    vehiculo = Vehiculo.objects.all()
     contexto = {
         'nueva_coleccion': nueva_coleccion,
-        'categoriaDeportivo': categoria_deportivo
+        'vehiculo': vehiculo
     }
     return render(request, 'Pages/modelos.html', contexto)
 
