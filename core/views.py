@@ -11,14 +11,16 @@ def home(request):
     nueva_coleccion = NuevaColeccion.objects.all()
     return render(request, 'index.html', {'nueva_coleccion': nueva_coleccion})
 
-
 def modelos(request):
- 
     nueva_coleccion = NuevaColeccion.objects.all()
-    vehiculo = Vehiculo.objects.all()
+    vehiculos_deportivos = Vehiculo.objects.filter(categoria__nombreCategoria='Deportivo')
+    vehiculos_familiares = Vehiculo.objects.filter(categoria__nombreCategoria='Familiar') 
+    
     contexto = {
         'nueva_coleccion': nueva_coleccion,
-        'vehiculo': vehiculo
+        'vehiculos_deportivos': vehiculos_deportivos,
+        'vehiculos_familiares': vehiculos_familiares,
+     
     }
     return render(request, 'Pages/modelos.html', contexto)
 
