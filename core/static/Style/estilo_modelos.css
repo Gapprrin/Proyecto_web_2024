@@ -686,24 +686,37 @@ color: #000000;
 
 #textoNuevaColeccion {
     width: 100%;
-    height: 5vh;
-background-color: #161616;
+    height: 54vh;
+background-image: url(../Images/Modelos_auto/otroo.jpg);
+background-size:cover;
     display: flex; /* Hace que el contenedor sea un contenedor flexible */
-    align-items: center; /* Alinea los elementos hijos verticalmente en el centro */
-    justify-content: center; /* Alinea los elementos hijos horizontalmente en el centro */
+    
 }
 
-#textoNuevaColeccion>h4{
-
-width: 100%;
-padding-top: 20px;
-font-size: medium;
-color: #ffffff;
-text-align: center;
 
 
+#textoNuevaColeccion > h4 {
+    width: 600px;
+    height: 40px;
+
+    float: left;
+    font-size: medium;
+    color: #ffffff;
+    margin-top: 5px;
+    margin-left: 200px;
+}
+
+#textoNuevaColeccion > p {
+   float: left;
+    width: 750px;
+    color: #fff;
+    margin-top: 60px; /* Ajusta el margen superior según tu diseño */
+    display: flex;
+    margin-left: -750px;
+    text-align: justify;
 
 }
+
 /* Estilos para el contenedor del carrusel */
 .carousel {
     display: flex;
