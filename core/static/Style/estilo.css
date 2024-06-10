@@ -1053,6 +1053,25 @@ a {
     background-color: #ef7b37;
 }
 
+#descuentos_accesorios{
+    width: 100%;
+    height: 4vh;
+    background-color: #222222;
+}
 
 
+#descuentos_accesorios>h5{
+
+    color: #cecece;
+    width: 100%;
+    background-color: #099c07;
+    text-align: center;
+
+}
+
+#contenedor_descuentos_acc{
+    width: 100%;
+    height: 60vh;
+    background-color: #2a2929;
+}
 
