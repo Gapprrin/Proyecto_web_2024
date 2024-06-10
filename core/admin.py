@@ -12,3 +12,5 @@ admin.site.register(User)
 admin.site.register(Categoria) 
 
 admin.site.register(Vehiculo) 
+
+admin.site.register(NuevaColeccion) 
