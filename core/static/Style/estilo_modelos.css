@@ -775,9 +775,29 @@ background-size:cover;
 
 
 
+.imagen_b {
+    width: 100%;
+    height: 100%;
+    background-color: #e5902f;
+    background-image: url('../Images/Modelos_auto/wwww.jpg');
+    background-size: cover;
+    position: relative;
+}
 
+.imagen_b::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+}
 
-
+.imagen-container:hover .imagen_b::after {
+    background-color: rgba(0, 0, 0, 0.7); /* Oscurece la imagen un poco más */
+}
 
 
 /* Estilos para el contenedor del carrusel */
