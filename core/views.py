@@ -15,11 +15,13 @@ def modelos(request):
     nueva_coleccion = NuevaColeccion.objects.all()
     vehiculos_deportivos = Vehiculo.objects.filter(categoria__nombreCategoria='Deportivo')
     vehiculos_familiares = Vehiculo.objects.filter(categoria__nombreCategoria='Familiar') 
+    vehiculos_electricos = Vehiculo.objects.filter(categoria__nombreCategoria='Electrico') 
     
     contexto = {
         'nueva_coleccion': nueva_coleccion,
         'vehiculos_deportivos': vehiculos_deportivos,
         'vehiculos_familiares': vehiculos_familiares,
+        'vehiculos_electricos': vehiculos_electricos,
      
     }
     return render(request, 'Pages/modelos.html', contexto)
