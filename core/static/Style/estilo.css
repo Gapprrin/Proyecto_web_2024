@@ -153,33 +153,35 @@ a {
     background-color: #f64813db;
 }
 
-#autoblanco>h2 {
+#mantencion>h2 {
 
     font-size: 30px;
-    padding-top: 40px;
+    padding-top: 230px;
     display: flex;
-    margin-left: 50px;
+    margin-left: 500px;
+    color: #ffffff;
 
 }
 
-#autoblanco>h3 {
+#mantencion>h3 {
 
     font-size: 20px;
     padding-top: 1px;
     display: flex;
     margin-top: 5px;
-    margin-left: 50px;
+    margin-left: 610px;
+    color: #ffffff;
 
 }
 
-#autoblanco>h4 {
+#mantencion>h4 {
 
     font-size: 16px;
     padding-top: 1px;
     display: flex;
-    margin-top: 30px;
-    margin-left: 50px;
-    color: #000000;
+    margin-top: 20px;
+    margin-left: 530px;
+    color: #ffffff;
 
 }
 
@@ -1106,3 +1108,11 @@ a {
     background-color: #2a2929;
 }
 
+#mantencion{
+
+background-image: url(../Images/Home/aeiou.jpg);
+width: 100%;
+height: 60vh;
+background-size: cover;
+
+}
