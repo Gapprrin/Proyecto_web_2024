@@ -1046,7 +1046,7 @@ a {
 }
 
 .autos {
-    width: 340px;
+    width: 320px;
     margin: 10px;
     padding: 10px;
     margin-bottom: 30px;
@@ -1054,6 +1054,7 @@ a {
     background-color: #161616;
     text-align: center; /* Alinea el texto al centro */
     color: #ffffff;
+    align-items: center;
 }
 
 .nombre_auto {
@@ -1081,21 +1082,25 @@ a {
     background-position: center;
     margin-bottom: 10px;
     border-radius: 5px;
+
 }
 
 .botonesAuto {
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
+    
+
 
 }
 .botoncito {
-    padding: 5px 18px;
+   
     border: none;
     border-radius: 5px;
     cursor: pointer;
     color: #ffffff;
     background-color: #cb5c0c;
+    margin: 5px;
 }
 .botoncito:hover {
     background-color: #ef7b37;
