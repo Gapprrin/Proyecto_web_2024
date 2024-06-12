@@ -26,7 +26,7 @@
 .botones{
     display: flex;
     column-gap: 20px;
-    margin-left: 50px;
+    margin-left: 630px;
     margin-top: 30px;
 }
 
@@ -134,13 +134,28 @@ a {
 
 #autoblanco {
     background-image: url(../Images/Backgrounds/Home/fondoblanco.jpg);
-    background-size: cover;
+    background-size: contain;
+  
+    background-repeat: no-repeat;
     width: 100%;
-    height: 360px;
+    height: 400px;
     margin-top: 0px;
-
-
+    padding: 0;
 }
+
+/* Media Queries para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    #autoblanco {
+        height: 360px;
+    }
+}
+
+@media (max-width: 480px) {
+    #autoblanco {
+        height: 300px;
+    }
+}
+
 
 
 /* Estilos al pasar el cursor por encima */
