@@ -14,3 +14,6 @@ admin.site.register(Categoria)
 admin.site.register(Vehiculo) 
 
 admin.site.register(NuevaColeccion) 
+
+admin.site.register(Accesorios_desc) 
+

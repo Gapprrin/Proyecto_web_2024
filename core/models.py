@@ -61,7 +61,15 @@ class Vehiculo(models.Model):
         return self.nombre_vehiculo
 
 
-    
+class Accesorios_desc(models.Model):
+    id = models.AutoField(primary_key=True)
+    nombre_accesorio = models.CharField(max_length=50)
+    descripcion_accesorio = models.CharField(max_length=200)
+    stock_accesorio = models.IntegerField()
+    imagen_accesorio= models.CharField(max_length=255)
+  
 
+    def __str__(self):
+        return self.nombre_accesorio
     
     

@@ -127,7 +127,23 @@
 
 <div id ="contenedor_descuentos_acc">
 
-</div>
+
+    {% for item in accesorios_desc %}
+    <div class="desc">
+        <div class="nombre_acc">{{ item.nombre_accesorio}}</div>
+        <div class="descripcion_acc">{{ item.descripcion_accesorio }}</div>
+        <div class="stock_acc">{{ item.stock_accesorio}}</div>
+        <div class="imagen_acc" style="background-image: url('{{ item.imagen_accesorio }}');"></div>
+        <div class="botonesAuto">
+            <button class="botoncito">Más información</button>
+            <button class="botoncito">Añadir al carrito</button>
+        </div>
+    </div>
+    {% endfor %}
+</div><!--TERMINO DIV DESCUENTOS-->
+
+
+
 
 <div id="mantencion">
   <h2>ASESÓRATE CON NUESTROS EXPERTOS</h2>
