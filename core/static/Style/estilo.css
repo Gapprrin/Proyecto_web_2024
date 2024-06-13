@@ -66,8 +66,7 @@ a {
 
 #boton1:hover {
     border-color:#cb5c0c ;
-    background-color: #cb5c0c ;
-    transition: all 0.1s; }
+    background-color: #cb5c0c; }
 
 #lomasnuevo {
     width: 100%;
@@ -103,17 +102,12 @@ a {
     
 #boton_icono {
     background-color: transparent;
-    border: none;
-
-
-}
+    border: none;}
     
-    #boton_icono img {
-        display: block;
-        margin: 25px;
-    }
+#boton_icono img {
+    display: block;
+    margin: 25px;}
     
-
 
 #nueva_coleccion {
     display: flex;
