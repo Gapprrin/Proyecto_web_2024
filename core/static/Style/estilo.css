@@ -116,69 +116,76 @@ a {
     background-color: #2a2929;
     justify-content: center;}
     
-    .autos {
-        width: 320px;
-        margin: 10px;
-        padding: 10px;
-        margin-bottom: 30px;
-        border-radius: 5px;
-        background-color: #161616;
-        text-align: center; /* Alinea el texto al centro */
-        color: #ffffff;
-        align-items: center;
+.autos {
+    width: 320px;
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background-color: #161616;
+    text-align: center; /* Alinea el texto al centro */
+    color: #ffffff;
+    align-items: center;
     }
     
-    .nombre_auto {
-        font-weight: bold;
+.nombre_auto {
+    font-weight: bold;
+    color: #cecece;}
+    
+.descripcion_auto {
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 12px;
+    color: #727272;}
+    
+.stock_auto {
+    font-style: italic;
+    color: #666;}
+    
+.imagen_auto {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+    border-radius: 5px;}
+    
+.botonesAuto {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;}
+    
+.botoncito {
+    border-color: #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: transparent;
+    margin: 5px;}
+    
+.botoncito:hover {
+    background-color: #cb5c0c;
+    border-color: #cb5c0c;}
+    
+#descuentos_accesorios{
+    width: 100%;
+    height: 4vh;
+    background-color: #222222;}
+    
+    
+ #descuentos_accesorios>h5{
+    
         color: #cecece;
-        
-    }
-    
-    .descripcion_auto {
-        margin-bottom: 10px;
-        font-weight: normal;
-        font-size: 12px;
-        color: #727272;
-    }
-    
-    .stock_auto {
-        font-style: italic;
-        color: #666;
-    }
-    
-    .imagen_auto {
         width: 100%;
-        height: 200px;
-        background-size: cover;
-        background-position: center;
-        margin-bottom: 10px;
-        border-radius: 5px;
+        background-color: #099c07;
+        text-align: center;
     
     }
     
-    .botonesAuto {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 10px;
-        
-    
-    
-    }
-    .botoncito {
-       
-     border-color: #ffffff;
-        border-radius: 5px;
-        
-        color: #ffffff;
-        background-color: transparent;
-        margin: 5px;
-    }
-    .botoncito:hover {
-        background-color: #cb5c0c;
-        border-color: #cb5c0c;
-    }
-    
-    
+    #contenedor_descuentos_acc{
+        width: 100%;
+        height: 60vh;
+        background-color: #2a2929;
+    }   
 
 
 
@@ -1055,27 +1062,7 @@ a {
 
 
 
-#descuentos_accesorios{
-    width: 100%;
-    height: 4vh;
-    background-color: #222222;
-}
 
-
-#descuentos_accesorios>h5{
-
-    color: #cecece;
-    width: 100%;
-    background-color: #099c07;
-    text-align: center;
-
-}
-
-#contenedor_descuentos_acc{
-    width: 100%;
-    height: 60vh;
-    background-color: #2a2929;
-}
 
 #mantencion{
 
