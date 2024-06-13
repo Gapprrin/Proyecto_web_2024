@@ -1,5 +1,6 @@
 
 from django.contrib.auth.views import logout_then_login
+from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render
 from .models import *
 

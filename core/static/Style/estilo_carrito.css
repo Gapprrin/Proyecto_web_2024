@@ -224,6 +224,11 @@ div{
     color: #cecece;
 }
 
+.objeto:hover{
+    background-color: #454545;
+    border-radius: 10px;
+    transition-duration: .3s;
+}
 
 .div-precio{
     display: flex;
