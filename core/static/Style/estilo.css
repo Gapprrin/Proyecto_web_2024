@@ -94,10 +94,10 @@ a {
     width: 8%;
     bottom: 0;
     position: fixed;
-    right: 0; /* Alinea el elemento al lado derecho de la pantalla */
+    right: 0;
     display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; 
+    align-items: center;
     padding: 40px 0;}
     
 #boton_icono {
@@ -166,15 +166,16 @@ a {
     }
     .botoncito {
        
-        border: none;
+     border-color: #ffffff;
         border-radius: 5px;
-        cursor: pointer;
+        
         color: #ffffff;
-        background-color: #cb5c0c;
+        background-color: transparent;
         margin: 5px;
     }
     .botoncito:hover {
-        background-color: #ef7b37;
+        background-color: #cb5c0c;
+        border-color: #cb5c0c;
     }
     
     
