@@ -190,7 +190,7 @@ a {
     
 .desc{
 
-    width: 200px;
+    width: 250px;
     margin: 10px;
     padding: 10px;
     margin-bottom: 30px;
@@ -223,8 +223,30 @@ a {
         margin-bottom: 10px;
         border-radius: 5px;}
         
+        .botonesAcc {
+            display: flex;
+            flex-direction: column; /* Cambiamos la dirección del flexbox a columna */
+            align-items: center; /* Centramos los elementos horizontalmente */
+            margin-top: 10px;
+       
+        }
 
+        .botoncitoacc{
+            border-color: #ffffff;
+            border-radius: 5px;
+            color: #ffffff;
+            background-color: transparent;
+            margin: 5px;
+        width: 100%;}
+        
 
+        
+
+  
+    
+.botoncitoacc:hover {
+    background-color: #cb5c0c;
+    border-color: #cb5c0c;}
 
 
 
