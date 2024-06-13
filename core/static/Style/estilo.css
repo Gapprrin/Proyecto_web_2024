@@ -91,27 +91,30 @@ a {
     margin-top: 60px;
     margin-left: -720px;}
 
-#iconos_fijos {
-    background-color: #b22222;
-    width: 100%;
-    bottom: 0;
-    position: fixed;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    padding: 10px 0; 
+    #iconos_fijos {
+     
+        width: 8%;
+        bottom: 0;
+        position: fixed;
+        right: 0; /* Alinea el elemento al lado derecho de la pantalla */
+        display: flex;
+        justify-content: center; /* Centra el contenido horizontalmente */
+        align-items: center; /* Centra el contenido verticalmente */
+        padding: 40px 0;
+  
+        
     }
     
 #boton_icono {
     background-color: transparent;
     border: none;
-    cursor: pointer;
-    padding: 0;
-    outline: none; /* Para eliminar el borde del botón al hacer clic */
+
+
 }
     
     #boton_icono img {
         display: block;
+        margin: 25px;
     }
     
 
