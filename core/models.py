@@ -65,6 +65,7 @@ class Accesorios_desc(models.Model):
     id = models.AutoField(primary_key=True)
     nombre_accesorio = models.CharField(max_length=50)
     descripcion_accesorio = models.CharField(max_length=200)
+    precio_accesorio = models.IntegerField()
     stock_accesorio = models.IntegerField()
     imagen_accesorio= models.CharField(max_length=255)
   

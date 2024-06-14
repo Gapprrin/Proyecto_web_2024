@@ -139,8 +139,10 @@ a {
     color: #727272;}
     
 .stock_auto {
-    font-style: italic;
-    color: #666;}
+    font-size: small;
+    color: #c1bfbf;
+    padding: 5px;
+}
     
 .imagen_auto {
     width: 100%;
@@ -210,10 +212,15 @@ a {
         font-weight: normal;
         font-size: 12px;
         color: #727272;}
+    .precio_acc {
+        font-size: medium;
+        color: #b8b7b7;}
         
     .stock_acc {
-        font-style: italic;
-        color: #666;}
+        font-style: normal;
+        font-size: small;
+        color: #bfbebe;
+        padding: 5px;}
         
     .imagen_acc {
         width: 100%;
