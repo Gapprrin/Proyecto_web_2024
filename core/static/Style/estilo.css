@@ -167,6 +167,16 @@ a {
 .botoncito:hover {
     background-color: #cb5c0c;
     border-color: #cb5c0c;}
+
+#estilos{
+    background-image: url(../Images/Home/ii.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+}
+
+
     
 #descuentos_accesorios{
     width: 100%;
