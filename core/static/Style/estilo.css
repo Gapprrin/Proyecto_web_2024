@@ -173,9 +173,32 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 50vh;
+    height: 52vh;
+ justify-content: center;
+    
 }
 
+#estilos>h3{
+    color: #ffffff;
+    font-size: 20px;
+   padding-top: 40px;
+    margin-left: 400px;
+}
+
+.botoncitoE{
+    border-color: #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: transparent;
+    margin: 5px;
+    display: block;
+    margin-left: 630px;
+    margin-top: 20px;
+}
+
+.botoncitoE:hover {
+    background-color: #cb5c0c;
+    border-color: #cb5c0c;}
 
     
 #descuentos_accesorios{
