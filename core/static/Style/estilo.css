@@ -637,10 +637,18 @@ border-color: #cb5c0c;
 
 @media (max-width: 1055px) {
     .imagenesautoblanco{
-        width: 40%;
+        width: 70%;
+}
+.imagenesautoblanco>img{
 
-      
-    }
+    width: 60px;
+    height: 60px;
+}
+
+
+#texto_ultimo{
+    margin-top: 250px;
+}
 
 }
 
@@ -723,16 +731,35 @@ border-color: #cb5c0c;
  
 
     .imagenesautoblanco{
-        width: 48%;
+        width: 74%;
+        background-color: #cb5c0c;
 
       
     }
 
+}
+@media (max-width: 828px) {
 
 
 
+
+    .imagenesautoblanco{
+        width: 70%;
+    }
+
+        .imagenesautoblanco>img{
+
+            width: 52px;
+            height: 52px;
+        }
+        .imagenesautoblanco>button{
+            width: 100px;
+            height: 70px;
+    
+    }
 
 }
+
 
 /*Medida 2 */
 
@@ -874,14 +901,6 @@ border-color: #cb5c0c;
     }
 
 
-    #texto_ultimo {
-
-
-        width: 100%;
-
-
-
-    }
 
     #instagram {
         display: none;
@@ -945,7 +964,7 @@ border-color: #cb5c0c;
 
 
     .imagenesautoblanco{
-        width: 67%;
+        width: 80%;
 
     }
 
@@ -961,7 +980,20 @@ border-color: #cb5c0c;
 
 
 
+@media (max-width: 600px) {
+    .imagenesautoblanco > button {
+        font-size: 14px;
+      
+      
+    }
 
+    .imagenesautoblanco{
+        width: 100%;
+    }
+
+  
+
+}
 
 
 @media (max-width: 555px) {
@@ -1022,12 +1054,6 @@ border-color: #cb5c0c;
 
 
 
-
-    #texto_ultimo {
-
-        margin-top: 0px;
-    }
-
     #botonnuevo {
         margin-left: 5px;
 
@@ -1070,13 +1096,23 @@ border-color: #cb5c0c;
 
 
 .imagenesautoblanco{
-    width: 80%;
+    width: 100%;
 
   
 }
 
 
 }
+
+@media (max-width: 530px) {
+
+    .imagenesautoblanco>button{
+        width: 300px;
+        height: 30px;
+    }
+}
+
+
 
 
 
