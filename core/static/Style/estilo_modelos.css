@@ -818,6 +818,30 @@ background-color: #161616;
     height: 100%;
 }
 
+/* Estilos para WebKit */
+.carousel::-webkit-scrollbar {
+    height: 12px; /* Cambia el tamaño de la barra de desplazamiento */
+}
+
+.carousel::-webkit-scrollbar-track {
+    background: #161616; /* Color de fondo de la barra de desplazamiento */
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background: #292929; /* Color del pulgar de la barra de desplazamiento */
+    border-radius: 10px; /* Redondea los bordes del pulgar */
+}
+
+.carousel::-webkit-scrollbar-thumb:hover {
+    background: #292929; /* Color del pulgar al pasar el ratón */
+}
+
+/* Estilos para Firefox */
+.carousel {
+    scrollbar-width: thin; /* Tamaño de la barra de desplazamiento */
+    scrollbar-color: #292929 #161616; /* Color del pulgar y del fondo de la barra de desplazamiento */
+}
+
 /* Estilos para los elementos del carrusel */
 .autos {
     flex: 0 0 auto;
@@ -887,9 +911,9 @@ background-color: #161616;
 }
 
 .botoncito {
-    background-color: #d76010;
+    background-color:transparent;
     color: #fff;
-    border: none;
+    border-color: #fff;
     border-radius: 5px;
     cursor: pointer;
     padding: 5px 10px;
@@ -898,7 +922,8 @@ background-color: #161616;
 }
 
 .botoncito:hover {
-    background-color: #e5902f;
+    background-color: #cb5c0c;
+    border-color: #cb5c0c;
 }
 
 #imagenVolante>h3 {
@@ -923,4 +948,13 @@ background-color: #161616;
     margin-left: 10%;
    
 }
+.custom-btn:hover {
+    background-color: #cb5c0c !important;
+    border-color: #cb5c0c !important;
+}
 
+.categoria{
+    font-size: small;
+    color: #5f5f5f;
+    padding-block-end: 20px;
+}

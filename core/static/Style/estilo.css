@@ -356,7 +356,8 @@ a {
 .imagenesautoblanco > img {
     width: 80px;
     height: 80px;
-    margin: 20px; /* Ajusta los márgenes para que se junten al reducir el tamaño */
+    margin: 20px; 
+    margin-left: 60px;
 }
 
 .imagenesautoblanco > button {
@@ -372,24 +373,6 @@ a {
 background-color: #cb5c0c;
 border-color: #cb5c0c;
 }
-
-
-/*-------------hasta aqui tengo ordenado------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -472,7 +455,7 @@ border-color: #cb5c0c;
 
 }
 
-
+/*-------------hasta aqui tengo ordenado------------------------------------------------------------------------------*/
 
 
 
