@@ -342,6 +342,38 @@ a {
     margin-top: -0.1%;
 }
 
+
+.imagenesautoblanco {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    width: 40%;
+    height: auto;
+    margin: 40px;
+
+}
+
+.imagenesautoblanco > img {
+    width: 80px;
+    height: 80px;
+    margin: 20px; /* Ajusta los márgenes para que se junten al reducir el tamaño */
+}
+
+.imagenesautoblanco > button {
+    width: 130px;
+    height: 110px;
+    border-color: #000000;
+    border-radius: 5px;
+    color: #000000;
+    background-color: transparent;
+  text-align: center;
+}
+.imagenesautoblanco > button:hover {
+background-color: #cb5c0c;
+border-color: #cb5c0c;
+}
+
+
 /*-------------hasta aqui tengo ordenado------------------------------------------------------------------------------*/
 
 
