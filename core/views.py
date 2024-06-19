@@ -56,7 +56,9 @@ def shopKart(request):
 
 #Lui
 def accesories(request):
-    return render(request, 'Pages/accesorios.html')
+    accesorios = Productos.objects.all()
+
+    return render(request, 'Pages/accesorios.html' , {'accesorios':accesorios})
 
 def AboutUs(request):
     return render(request , 'Pages/acerca_de.html' )
