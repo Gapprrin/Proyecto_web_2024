@@ -338,6 +338,10 @@ No sé como cambiar el color del mostrar contraseña
     color: #727272;
 }
 
+#nombre-usuario{
+    width: 35%;
+}
+
 
 @media only screen and (max-width: 1050px){
     #wrapper-create-account{

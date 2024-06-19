@@ -1,8 +1,9 @@
 
 from django.contrib.auth.views import logout_then_login
 from django.contrib.auth.forms import UserCreationForm
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import *
+from .forms import *
 
 # Create your views here.
 
@@ -47,11 +48,17 @@ def logout(request):
     return logout_then_login(request, 'login')
 
 def createAccount(request):
-    return render(request, 'Pages/Create_account.html')
+    if request.method == "POST":
+        registro = Registro(request.POST)
+        if registro.is_valid():
+            registro.save()
+            return redirect(to="login")
+    else:
+        registro = Registro()
+    return render(request, 'Pages/Create_account.html', {'form' : registro})
 
 def shopKart(request):
     return render(request, 'Pages/Carrito.html')
-
 
 
 #Lui
