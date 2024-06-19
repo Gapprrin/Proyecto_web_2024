@@ -60,21 +60,21 @@
                     <!-- <input type="email" id="input-correo" placeholder="Correo*" onkeyup="validarCorreo()" required> -->
                     {{ form.email }}
                     <img src="{% static 'Icons/login/Mail-logo.png'%}" alt="User icon">
-                    <p id="error-correo"></p>
+                    <p id="error-correo">{{form.errors.email}}</p>
                 </div>
                 <div class="input-box" id="Password">
                     <!-- <input type="password" id="pass" placeholder="Contraseña*" maxlength="20" onkeyup="validarContrasenia()" required> -->
                     {{ form.password1 }}
                     <img src="{% static 'Icons/login/Password-logo.png'%}" alt="Password icon">
-                    <p id="error-contrasenia"></p>
+                    <p id="error-contrasenia">{{form.errors.password1}}</p>
                 </div>
                 <div class="input-box" id="val-pass">
                     <!-- <input type="password" id="repass" placeholder="Repetir Contraseña*" maxlength="20" onkeyup="validarRepetirContrasenia()" disabled required> -->
                     {{ form.password2 }}
                     <img src="{% static 'Icons/login/Password-logo.png'%}" alt="Password icon">
-                    <p id="error-repcontrasenia"></p>
+                    <p id="error-repcontrasenia">{{form.errors.password2}}</p>
                 </div>
-                <button type="submit" class="login-button" onclick="return validarFormulario()" >Crear cuenta</button>
+                <button type="submit" class="login-button">Crear cuenta</button>
                 <div class="dont-have-acount">
                     <a id="login-words" href="{% url 'login' %}">Ya tengo una cuenta</a>
                 </div>

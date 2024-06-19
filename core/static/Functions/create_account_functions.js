@@ -85,7 +85,7 @@ function validarComuna(){
 
 function validarNombre(){
 
-    let user = document.querySelector("#input-nombre-usuario");
+    let user = document.querySelector("#id_username");
 
     if(user.value.trim().length >= 5){
         if(capitalize(user.value) == usuario.userName){
@@ -111,30 +111,30 @@ function validarNombre(){
 }
 
 function validarContrasenia(){
-    let user = document.querySelector("#pass");
+    let user = document.querySelector("#id_password1");
     if(user.value.length >= 8){
         user.classList.add("valido");
         user.classList.remove("invalido");
         document.querySelector("#error-contrasenia").innerHTML = "";
-        document.querySelector("#repass").removeAttribute("disabled");
+        document.querySelector("#id_password2").removeAttribute("disabled");
     }else if(user.value == ""){
         user.classList.remove("invalido");
         user.classList.remove("valido");
         document.querySelector("#error-contrasenia").innerHTML = "Debe rellenar el campo.";
-        document.querySelector("#repass").value = "";
-        document.querySelector("#repass").setAttribute("disabled", "");
+        document.querySelector("#id_password2").value = "";
+        document.querySelector("#id_password2").setAttribute("disabled", "");
     }else{
         user.classList.add("invalido");
         user.classList.remove("valido");
-        document.querySelector("#repass").setAttribute("disabled", "");
+        document.querySelector("#id_password2").setAttribute("disabled", "");
         document.querySelector("#error-contrasenia").innerHTML = "Debe tener un largo mínimo de 8 caracteres.";
     }
 }
 
 
 function validarRepetirContrasenia(){
-    let userPass = document.querySelector("#pass");
-    let user = document.querySelector("#repass");
+    let userPass = document.querySelector("#id_password1");
+    let user = document.querySelector("#id_password2");
 
     if(user.value == userPass.value){
         user.classList.add("valido");
@@ -149,7 +149,7 @@ function validarRepetirContrasenia(){
 
 
 function validarCorreo(){
-    let correo = document.querySelector("#input-correo");
+    let correo = document.querySelector("#id_email");
     if(correo.value == usuario.userEmail){
         correo.classList.add("invalido");
         correo.classList.remove("valido");
