@@ -25,7 +25,7 @@
                         <!-- <input type="text" placeholder="Usuario*" id="input-nombre-usuario" onkeyup="validarNombre()" required> -->
                         {{ form.username }}
                         <img src="{% static 'Icons/login/User-logo.png'%}" alt="User logo icon">
-                        <p id="error-usuario"></p>
+                        <p id="error-usuario">{{ form.errors.username }}</p>
                     </div>
                     <div class="input-box" id="comuna-usuario">
                         <!-- <input type="text" placeholder="Comuna*" id="input-comuna" onkeyup="validarComuna()" required> -->
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 
-                <div class="input-box">
+                <div class="input-box" id="correo">
                     <!-- <input type="email" id="input-correo" placeholder="Correo*" onkeyup="validarCorreo()" required> -->
                     {{ form.email }}
                     <img src="{% static 'Icons/login/Mail-logo.png'%}" alt="User icon">
@@ -74,7 +74,7 @@
                     <img src="{% static 'Icons/login/Password-logo.png'%}" alt="Password icon">
                     <p id="error-repcontrasenia">{{form.errors.password2}}</p>
                 </div>
-                <button type="submit" class="login-button">Crear cuenta</button>
+                <button type="submit" class="login-button" onclick="validarFormulario()">Crear cuenta</button>
                 <div class="dont-have-acount">
                     <a id="login-words" href="{% url 'login' %}">Ya tengo una cuenta</a>
                 </div>

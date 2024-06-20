@@ -162,11 +162,11 @@ function validarCorreo(){
 }
 
 function validarFormulario(){
-    let contrasenia = document.querySelector("#pass");
-    let usuario = document.querySelector("#input-nombre-usuario");
+    let contrasenia = document.querySelector("#id_password1");
+    let usuario = document.querySelector("#id_username");
     let comuna = document.querySelector("#input-comuna");
-    let correo = document.querySelector("#input-correo");
-    let repcontrasenia = document.querySelector("#repass");
+    let correo = document.querySelector("#id_email");
+    let repcontrasenia = document.querySelector("#id_password2");
     
     if(contrasenia.classList.contains("invalido") || usuario.classList.contains("invalido") || 
     comuna.classList.contains("invalido") || correo.classList.contains("invalido") || 
@@ -175,6 +175,7 @@ function validarFormulario(){
     }else if(contrasenia.value == "" || usuario.value == "" || 
     comuna.value == 0 || correo.value == "" || 
     repcontrasenia.value == "" ){
+        comuna.classList.add("invalido")
         return false;
     }else{
         return true;

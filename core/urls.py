@@ -12,6 +12,8 @@ urlpatterns = [
     path('logon/', createAccount, name= "create_account"),
     path('logout', logout, name="logout"),
     path('shopKart/', shopKart, name= 'Carrito'),
+    path('addToShopKart/<id>', addToShopKart, name= 'addToShopKart'),
+    path('removeFromShopKart/<id>', removeFromShopKart, name= 'removeFromShopKart'),
     path('accesorios/' , accesories , name= 'accesorios'),
     path('acerca_de/', AboutUs , name="acerca_de"),
 ]  

@@ -249,6 +249,16 @@ div{
     cursor: pointer;
 }
 
+#borrar-producto{
+    background-color: transparent;
+    border: none;
+    background-image: url("../Icons/Carrito/borrar-producto.png");
+    height: 100%;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .objeto-imagen{
     display: flex;
     height: 80%;
@@ -348,6 +358,22 @@ div{
     height: 40px;
     width: 45%;
 }
+
+#sin-accesorios{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-object{
+    color: #CECECE;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
 
 
 /**FOOTER**/
