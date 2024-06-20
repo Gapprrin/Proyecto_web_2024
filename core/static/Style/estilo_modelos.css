@@ -488,16 +488,21 @@ a{
 .botones{
    margin-top: -3%;
 }
-
-#instagram{
-    display: none;
 }
 
-#whatsap{
-    display: none;
+@media (max-width: 800px) {
+   
+
+   
+   
+    #texto_ultimo>img{
+        display: none;
+    }
+      
 }
 
-}
+
+
 
 @media (max-width: 600px) {
 .boton1{
@@ -948,19 +953,36 @@ display: flex;
 
 #imagenFinal{
  background-image: url(../Images/Modelos_auto/6.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 64vh;
+ width: 100%;
+ height: 63vh;
+ background-size: cover;
+ background-repeat: no-repeat;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
 
 }
+
+
+
 
 #imagenFinal>h4{
     color: #fff;
-    font-size: 30px;
+    font-size: 18px;
     padding-top: 50px;
-    margin-left: 10%;
+
    
 }
+
+#botonUltimo:hover{
+    background-color: #cb5c0c !important;
+    border-color: #cb5c0c !important; 
+}
+
+
+
+
 .custom-btn:hover {
     background-color: #cb5c0c !important;
     border-color: #cb5c0c !important;
@@ -1067,3 +1089,36 @@ display: flex;
         font-size: small;
     }
 }
+
+
+@media (max-width: 700px) {
+    #imagenFinal>h4{
+   
+        font-size: 14px;
+    }
+    
+    #botonUltimo{
+     
+     font-size: 14px;
+    }
+}   
+
+@media (max-width: 1060px) {
+
+    #imagenFinal{
+        background-image: url(../Images/Modelos_auto/6.jpg);
+        width: 100%;
+        height: 45vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+       
+       }
+#final2{
+    display: none;
+}
+}
+
