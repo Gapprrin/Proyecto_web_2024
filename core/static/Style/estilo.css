@@ -171,13 +171,14 @@ a {
 #estilos {
     background-image: url(../Images/Home/ii.jpg);
     width: 100%;
-    height: 56vh;
-    background-size: contain;
+    height: 57vh;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+
 }
     
 #estilos > h3 {
@@ -205,14 +206,17 @@ a {
     
 #descuentos_accesorios{
     width: 100%;
-    height: 10vh;
-    background-color: #000000;}
+    height: 30px;
+    background-color: #000000;
+
+}
+    
     
     
 #descuentos_accesorios>h5{
     
     color: #cecece;
-    padding: 10px;
+
     text-align: center;}
     
 #contenedor_descuentos_acc{
@@ -220,7 +224,8 @@ a {
     flex-wrap: wrap;
     height: 100%;
     background-color: #000000;
-    justify-content: center;}
+    justify-content: center;
+}
     
 .desc{
 
@@ -1022,7 +1027,16 @@ border-color: #cb5c0c;
 .botoncito{
     font-size: 10px;
 }
+#estilos {
+  
+    width: 100%;
+    height: 25vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
 
+}
+    
 
 }
 @media (max-width: 600px) {
