@@ -718,7 +718,7 @@ color: #000000;
 
 #textoNuevaColeccion {
 width: 100%;
-height: 5vh;
+height: 6vh;
 
 background-color: #161616;
  
@@ -729,7 +729,8 @@ background-color: #161616;
    padding-top: 20px;
     color: #ffffff;
     font-size: medium;
-    margin-left: 33%;
+justify-content: center;
+display: flex;
 
 
 }
@@ -921,6 +922,18 @@ background-color: #161616;
     font-size: small;
 }
 
+.botoncitoBorrar {
+    background-color:transparent;
+    color: #fff;
+    border-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    width: 140px;
+    font-size: small;
+ 
+   }
+
 .botoncito:hover {
     background-color: #cb5c0c;
     border-color: #cb5c0c;
@@ -997,3 +1010,60 @@ background-color: #161616;
   
     }
     }
+    @media (max-width: 550px) {
+
+    #textoNuevaColeccion>h4 {
+     
+         font-size: small;
+  
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .autos {
+      
+        width: 60%; /* Ancho de cada elemento */
+        max-width: 300px; /* Ancho máximo para mantener la escala en pantallas más grandes */
+        margin: 5px;
+   
+  
+
+    }
+    
+    /* Estilos para la imagen del auto */
+    .imagen_auto {
+   
+        height: 30vh;
+ 
+    }
+
+    
+    /* Ajustar la descripción para que se vea completa y centrada */
+    .descripcion_auto {
+  display: none;
+    }
+    
+    /* Otros estilos de información del auto */
+    .nombre_auto {
+        font-size: 15px;
+   
+    }
+
+    
+    .botoncitoBorrar {
+     display: none;
+  
+    }
+
+    
+    .botoncito {
+        background-color:transparent;
+        color: #fff;
+        border-color: #fff;
+       margin: 3px;
+      
+        width: 140px;
+        font-size: small;
+    }
+}
