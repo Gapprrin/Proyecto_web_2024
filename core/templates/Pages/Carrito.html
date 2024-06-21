@@ -63,16 +63,17 @@
         {% for item in request.session.monto %}
           <div class="valor-monto">
             <div class="texto-monto" id="valor-subtotal">${{ item.subtotal }}</div>
-            <div class="texto-monto" id="valor-descuento">$0</div>
+            <div class="texto-monto" id="valor-descuento">0%</div>
             <div class="texto-monto" id="valor-total">${{ item.total }}</div>
           </div>
         {% endfor %}
       </div>
       <div class="pay-desc-container">
         <div class="cod-descuento">
-          <input type="text" name="input-code" class="input-code" placeholder="Cupón de descuento">
-          <button type="button" class="buttons">Aplicar</button>
+          <input type="text" name="input-code" id="input-desc-code" class="input-code" placeholder="Cupón de descuento" maxlength="15">
+          <button type="button" class="buttons" onclick="validarCodigo()">Aplicar</button>
         </div>
+        <p id="no_valido"></p>
         <div class="pay-btn">
           <button type="submit" class="buttons">Pagar</button>
         </div>
@@ -80,5 +81,5 @@
     </div>
   </div>
 </section>
-
+<script src="{% static 'Functions/kart_functions.js' %}"></script>
 {% endblock %}

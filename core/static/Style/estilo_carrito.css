@@ -373,7 +373,13 @@ div{
     font-weight: bold;
 }
 
-
+#no_valido{
+    color: #4697d1;
+    text-align: center;
+    font-size: .7rem;
+    position: absolute;
+    transform: translate(20%, 425%);
+}
 
 
 /**FOOTER**/
