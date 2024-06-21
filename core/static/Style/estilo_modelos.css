@@ -686,9 +686,9 @@ color: #000000;
 
 /*NUEVOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO*/
 #imagenVolante {
-    background-image: url("../Images/Modelos_auto/luces3.jpg");
+    background-image: url("../Images/Modelos_auto/luces7.jpg");
     width: 100%;
-    height: 83vh;
+    height: 51vh;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -703,12 +703,14 @@ color: #000000;
     text-shadow: 2px 2px 5px #000000; 
     margin-left: 2%;
  
+ 
 }
 
 
 #botonporfiao{
-    margin-left: 10%;
+    margin-left: 7%;
 margin-top: 5px;
+width: 480px;
 }
 
 
@@ -752,9 +754,9 @@ background-color: #161616;
 }
 
 #textoNuevaColeccion>h4 {
-   padding-top: 20px;
+   padding-top: 10px;
     color: #ffffff;
-    font-size: medium;
+    font-size: 25px;
 justify-content: center;
 display: flex;
 
@@ -873,7 +875,7 @@ display: flex;
 .autos {
     flex: 0 0 auto;
     width: 100%; /* Ancho de cada elemento */
-    max-width: 470px; /* Ancho máximo para mantener la escala en pantallas más grandes */
+    max-width: 440px; /* Ancho máximo para mantener la escala en pantallas más grandes */
     margin: 0 10px;
     border-radius: 10px;
     background-color: #191919;
@@ -887,7 +889,7 @@ display: flex;
 /* Estilos para la imagen del auto */
 .imagen_auto {
     width: 100%;
-    height: 35vh;
+    height: 220px;
     background-size: cover;
     background-position: center;
 }
@@ -946,6 +948,7 @@ display: flex;
     padding: 5px 10px;
     width: 140px;
     font-size: small;
+    margin: 7px;
 }
 
 .botoncitoBorrar {
@@ -959,6 +962,12 @@ display: flex;
     font-size: small;
  
    }
+
+   .botoncitoBorrar:hover {
+    background-color: #cb5c0c;
+    border-color: #cb5c0c;
+}
+  
 
 .botoncito:hover {
     background-color: #cb5c0c;
