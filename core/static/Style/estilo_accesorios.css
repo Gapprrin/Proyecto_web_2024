@@ -75,8 +75,14 @@ a {
 #contenedor_principal{
     width: 100%;
     height: auto;
-    background-color: #cb5c0c;
+    background-color: #1b1b1b;
 
+}
+
+#contenedor_principal>h2{
+color: #ffffff;
+font-size: 20px;
+margin-left: 200px;
 }
 
 .dropdown{
@@ -95,7 +101,7 @@ a {
     width: 240px;
   
     margin: 10px;
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 30px;
     border-radius: 5px;
     background-color: #1c1c1c;
@@ -109,7 +115,7 @@ a {
     color: #cecece;}
         
 .descripcion_acc {
-    margin-bottom: 10px;
+
     font-weight: normal;
     font-size: 12px;
     color: #727272;}
@@ -126,10 +132,10 @@ a {
         
 .imagen_acc {
     width: 100%;
-    height: 140px;
+    height: 130px;
     background-size: cover;
     background-position: center;
-    margin-bottom: 10px;
+
     border-radius: 5px;}
         
 .botonesAcc {
@@ -149,3 +155,85 @@ a {
 .botoncitoacc:hover {
     background-color: #cb5c0c;
     border-color: #cb5c0c;}
+
+
+
+
+    #final>h2 {
+        margin-left: 25px;
+        padding-top: 20px;
+    
+    }
+    
+    #final>h3 {
+        font-size: 18px;
+        margin-left: 25px;
+    }
+    
+    
+    
+    #final2 {
+        height: 40vh;
+        width: 100%;
+        background-color: #161616;
+        margin-top: 0px;
+        display: flex;
+        padding-left: 50px;
+    
+    
+    }
+    
+    #final2>ul {
+        width: 1000px;
+        background-color: #161616;
+        padding-left: 2px;
+        margin-left: 40px;
+        height: 220px;
+        padding-top: 30px;
+    
+    
+    }
+    
+    #texto_ultimo {
+    
+        height: 12vh;
+        background-color: #161616;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+    
+    
+    
+    
+    }
+    
+    #texto_ultimo>h6 {
+        color: #cecece;
+        text-align: center;
+        display: flex;
+        font-size: 14px;
+        margin-top: 30px;
+        background-color: #161616;
+    }
+    
+    #instagram {
+    
+        width: 40px;
+        height: 40px;
+        margin-left: 550px;
+        display: flex;
+        margin-top: -50px;
+    
+    }
+    
+    
+    #whatsap {
+    
+        width: 40px;
+        height: 40px;
+        margin-left: 700px;
+        display: flex;
+        margin-top: -40px;
+    
+    }
