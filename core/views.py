@@ -117,14 +117,21 @@ def removeFromShopKart(request, id):
     return redirect(to="Carrito")
 
 
-#Lui
-def accesories(request):
-    accesorios = Productos.objects.all()
+def accesorios(request):
+    accesorios = Accesorios.objects.all()
+    interior = Accesorios.objects.filter(categoria__nombre_categoria_acc='Interior')
+    exterior = Accesorios.objects.filter(categoria__nombre_categoria_acc='Exterior')
+    ruedas_neumaticos = Accesorios.objects.filter(categoria__nombre_categoria_acc='Ruedas y neumáticos')
+   
+    contexto = {
+        'accesorios': accesorios,
+        'interior': interior,
+        'exterior': exterior,
+        'ruedas_neumaticos': ruedas_neumaticos,
+    }
+    return render(request, 'Pages/accesorios.html', contexto)
 
-    return render(request, 'Pages/accesorios.html' , {'accesorios':accesorios})
 
-def AboutUs(request):
-    return render(request , 'Pages/acerca_de.html' )
-
-
+def acerca_de(request):
+    return render(request, 'Pages/acerca_de.html') 
 

@@ -1,248 +1,122 @@
-<!-- git config --global core.autocrlf true -->
 {% extends 'planilla_header_footer.html' %}
 {% load static %}
 
+
+
+
+  <!--ENLACE BOOSTRAP-->
+ 
 {% block estilo %}
-    <link rel="stylesheet" href="{% static 'Style/estilo_accesorios.css' %}">
+<link rel="stylesheet" href="{% static 'Style/estilo_accesorios.css'%}"><!--ENLACE STYLE-->
+<link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 {% endblock %}
 
+
 {% block content %}
+<div id="imagen_fondo">
 
+  <div id="texto_luces">
+  <h3>NUEVO VOLANTE LED EDITION FULL</h3>
 
-    <div class="container">
-
-      <div class="sidebar">
-        <div class="lstp">
-          <h4><u>Filtros</u></h4>
-         
-        </div>
-        <!-- Opción 1 -->
-        <input type="checkbox" id="interior">
-        <label for="interior">Interior</label>
-        <div class="dropdown-content">
-          <a href="#">Asientos deportivos</a>
-          <a href="#">Volantes de alto rendimiento</a>
-          <a href="#">Paneles de fibra de carbono</a>
-          <a href="#">Iluminación interior LED</a>
-          <a href="#">Sistemas de sonido premium</a>
-        </div>
-
-        <!-- Opción 2 -->
-        <input type="checkbox" id="exterior">
-        <label for="exterior">Exterior</label>
-        <div class="dropdown-content">
-          <a href="#">Kits de carrocería aerodinámica</a>
-          <a href="#">Llantas de aleación ligera</a>
-          <a href="#">Spoilers y alerones</a>
-          <a href="#">Calcomanías y vinilos deportivos</a>
-          <a href="#">Parrillas deportivas</a>
-        </div>
-
-        <!-- Opción 3 -->
-        <input type="checkbox" id="rendimiento">
-        <label for="rendimiento">Rendimiento</label>
-        <div class="dropdown-content">
-          <a href="#">Filtros de aire de alto flujo</a>
-          <a href="#">Sistemas de escape deportivos</a>
-          <a href="#">Suspensión ajustable</a>
-          <a href="#">Kits de frenos de alto rendimiento</a>
-          <a href="#">Chiptuning y reprogramación de la ECU</a>
-        </div>
-
-        <!-- Opción 4 -->
-        <input type="checkbox" id="electronica">
-        <label for="electronica">Electrónica</label>
-        <div class="dropdown-content">
-          <a href="#">Sistemas de navegación GPS de última generación</a>
-          <a href="#">Cámaras de retroceso y sensores de estacionamiento</a>
-          <a href="#">Monitores de rendimiento del vehículo</a>
-          <a href="#">Alarmas y sistemas de seguridad avanzados</a>
-          <a href="#">Accesorios de conectividad Bluetooth y USB</a>
-        </div>
-        <div class="filtro">
-          <label for="minPrecio">Precio mínimo:</label>
-          <input type="number" id="minPrecio" name="minPrecio" min="0">
-      </div>
-      <div class="filtro">
-          <label for="maxPrecio">Precio máximo:</label>
-          <input type="number" id="maxPrecio" name="maxPrecio" min="0">
-      </div>
-      </div>
-
-
-
-      <div class="articulos">
-        <div>
-        <h6>Lo mas vendido   -------------&gt;</h6>
-      </div>
-
-          <div id = "productos">
-
-            {% for item in productos %}
-            <div class = "producto">
-              <img src="{{ item.imagen }}" alt="">
-              <div class="Nombre">{{ item.Nombre }}</div>
-              <div class="Descripcion">{{ item.Descripcion }}</div>
-              <div class="numeros">
-                <div class="Stock"> {{ item.Stock }} </div>
-                <div class="Precio"> {{ item.Precio }} </div>
-              </div>
-            </div>
-            {% endfor%}
-
-          </div>
-
-
-
-
-
-
-    </div>
-  </section>
-  <div class = "prefooter">
-    
+   <h3>$259.990</h3>
+   <button type="button" class="btn btn-secondary btn-lg" id="boton1">Añadir al carrito</button><!--BOTON-->
   </div>
-  <footer>
-     <div id="final2">
-
-      <ul style="list-style-type: none;">
-
-        <li><a href="#" style="text-transform: uppercase;">Modelos</a></li>
-        <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-
-
-      </ul>
+</div>
 
 
 
-      <ul style="list-style-type: none;">
 
-        <li><a href="#" style="text-transform: uppercase">Accesorios</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
+<div id="contenedor_principal">
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Buscar por categoría
+    </button>
+    <ul class="dropdown-menu">
+      <li><button class="dropdown-item" type="button">Interior</button></li>
+      <li><button class="dropdown-item" type="button">Exterior</button></li>
+      <li><button class="dropdown-item" type="button">Ruedas y neumáticos</button></li>
+    </ul>
+  </div>
 
+  <h2>Interior</h2>
 
-      </ul>
-      <ul style="list-style-type: none;">
+  <div id="contenedor_interior">
 
-        <li><a href="#" style="text-transform: uppercase">Acerca de </a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase;">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-
-
-      </ul>
-
-
-      <ul style="list-style-type: none;">
-
-        <li><a href="#" style="text-transform: uppercase">Carrito</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-
-
-      </ul>
-
-      <ul style="list-style-type: none;">
-
-        <li><a href="#" style="text-transform: uppercase">Mi cuenta</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-
-
-      </ul>
-
-      <ul style="list-style-type: none;">
-
-        <li><a href="#" style="text-transform: uppercase">Blabla</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-
-
-      </ul>
-
-
-      <ul style="list-style-type: none;">
-
-        <li><a href="#" style="text-transform: uppercase">Blabla</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-
-
-      </ul>
-
-
-      <ul style="list-style-type: none;">
-
-        <li><a href="#" style="text-transform: uppercase">Blabla</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-        <li><a href="#" style="text-transform: lowercase">Lorem ipsum</a></li>
-
-
-      </ul>
-
-
-
+    {% for item in interior %}
+    <div class="accesorio">
+        <div class="nombre_acc">{{ item.nombre_acc}}</div>
+        <div class="descripcion_acc">{{ item.descripcion_acc }}</div>
+        <div class="precio_acc">${{ item.precio_acc }}</div>
+        <div class="stock_acc">Stock Disponible : {{ item.stock_acc}} Productos</div>
+        <div class="imagen_acc" style="background-image: url('{{ item.imagen_acc}}');"></div>
+        <div class="botonesAcc">
+            <button class="botoncitoacc">Más información</button>
+            <button class="botoncitoacc">Añadir al carrito</button>
+        </div>
+    </div>
+    {% endfor %}
 
     </div>
 
 
-    <div id="texto_ultimo">
+    <h2>Exterior</h2>
 
-      <h6>Audi Santiago, Avenida José Alcalde 10237 - Lo Barnechea, Santiago <br> +56 (2) 2837-1640 - +569 64973750</h6>
-      <img src="../Icons/Home/instablanco.jpg" alt="instagram" id="instagram">
-      <img src="../Icons/Home/whatsapblanco.jpg" alt="whatsap" id="whatsap">
-    </div> 
 
-  </footer>
+    <div id="contenedor_interior">
+
+      {% for item in exterior %}
+      <div class="accesorio">
+          <div class="nombre_acc">{{ item.nombre_acc}}</div>
+          <div class="descripcion_acc">{{ item.descripcion_acc }}</div>
+          <div class="precio_acc">${{ item.precio_acc }}</div>
+          <div class="stock_acc">Stock Disponible : {{ item.stock_acc}} Productos</div>
+          <div class="imagen_acc" style="background-image: url('{{ item.imagen_acc}}');"></div>
+          <div class="botonesAcc">
+              <button class="botoncitoacc">Más información</button>
+              <button class="botoncitoacc">Añadir al carrito</button>
+          </div>
+      </div>
+      {% endfor %}
+  
+      </div>
+
+
+      <h2>Ruedas y neumáticos</h2>
+
+      <div id="contenedor_interior">
+
+        {% for item in ruedas_neumaticos%}
+        <div class="accesorio">
+            <div class="nombre_acc">{{ item.nombre_acc}}</div>
+            <div class="descripcion_acc">{{ item.descripcion_acc }}</div>
+            <div class="precio_acc">${{ item.precio_acc }}</div>
+            <div class="stock_acc">Stock Disponible : {{ item.stock_acc}} Productos</div>
+            <div class="imagen_acc" style="background-image: url('{{ item.imagen_acc}}');"></div>
+            <div class="botonesAcc">
+                <button class="botoncitoacc">Más información</button>
+                <button class="botoncitoacc">Añadir al carrito</button>
+            </div>
+        </div>
+        {% endfor %}
+    
+        </div>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+          
+
+         
+  
+   
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

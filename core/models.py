@@ -73,4 +73,25 @@ class Accesorios_desc(models.Model):
     def __str__(self):
         return self.nombre_accesorio
     
+
+class CategoriaAccesorios(models.Model):
+    id = models.AutoField(primary_key=True)
+    nombre_categoria_acc = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.nombre_categoria_acc
+    
+class Accesorios(models.Model):
+    id = models.AutoField(primary_key=True)
+    nombre_acc = models.CharField(max_length=50)
+    precio_acc= models.IntegerField()
+    descripcion_acc = models.CharField(max_length=200)
+    stock_acc = models.IntegerField()
+    imagen_acc = models.CharField(max_length=255)
+    categoria = models.ForeignKey(to=CategoriaAccesorios, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.nombre_acc
+    
+    
     

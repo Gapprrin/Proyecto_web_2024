@@ -14,6 +14,7 @@ urlpatterns = [
     path('shopKart/', shopKart, name= 'Carrito'),
     path('addToShopKart/<id>', addToShopKart, name= 'addToShopKart'),
     path('removeFromShopKart/<id>', removeFromShopKart, name= 'removeFromShopKart'),
-    path('accesorios/' , accesories , name= 'accesorios'),
-    path('acerca_de/', AboutUs , name="acerca_de"),
+   path('accesorios/', accesorios, name='accesorios'),
+    path('acerca_de/', acerca_de, name="acerca_de"),
+
 ]  

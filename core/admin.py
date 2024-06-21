@@ -17,3 +17,6 @@ admin.site.register(NuevaColeccion)
 
 admin.site.register(Accesorios_desc) 
 
+admin.site.register(CategoriaAccesorios) 
+
+admin.site.register(Accesorios) 

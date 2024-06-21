@@ -1305,7 +1305,45 @@ border-color: #cb5c0c;
     }
 }
 
+/*QUIENES SOMOSSSSSSSSSSSSS--------------------------------------------------------------------------------------------*/
 
+#imagen_quienes{
+    background-image: url(../Images/Acerca_de/audii.jpg);
+    background-size: cover;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#imagen_quienes>h3{
+    color: #ffffff;
+    font-size: 24px;
+    padding-top: 410px;
+}
+
+#contenedor_texto{
+    background-color: #cb0c82;
+    width:  100%;
+    height: auto;
+    display: flex;
+}
+
+#caja_texto{
+    float: left;
+    background-color: #0ccb55;
+    width: 50%;
+    height: auto;
+}
+
+#derecha{
+    float: right;
+    width: 50%;
+    height: auto;
+    display: flex;
+    background-color: #2a2929;
+}
 
 
 
