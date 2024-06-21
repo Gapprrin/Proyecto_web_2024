@@ -39,7 +39,7 @@ a {
 
 #texto_luces{
     float: right;
- 
+ margin-right: 140px;
     margin-top: 100px;
     justify-content: center;
     align-items: center;
