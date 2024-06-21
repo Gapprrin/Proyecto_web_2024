@@ -1308,23 +1308,24 @@ border-color: #cb5c0c;
 /*QUIENES SOMOSSSSSSSSSSSSS--------------------------------------------------------------------------------------------*/
 
 #imagen_quienes{
-    background-image: url(../Images/Acerca_de/audii.jpg);
+    background-image: url(../Images/Modelos_auto/6.jpg);
     background-size: cover;
     height: 70vh;
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
 }
 
 
 #imagen_quienes>h3{
     color: #ffffff;
-    font-size: 24px;
-    padding-top: 410px;
+    font-size: 30px;
+ padding-top: 20px;
 }
 
 #contenedor_texto{
-    background-color: #cb0c82;
+   
     width:  100%;
     height: auto;
     display: flex;
@@ -1332,10 +1333,22 @@ border-color: #cb5c0c;
 
 #caja_texto{
     float: left;
-    background-color: #0ccb55;
+  background-color: #161616;
     width: 50%;
     height: auto;
 }
+
+#caja_texto>h6{
+    color: #ffffff;
+    font-weight: lighter;
+    text-align: justify;
+    width: 90%;
+    margin-left: 4%;
+ 
+}
+
+
+
 
 #derecha{
     float: right;
@@ -1343,10 +1356,21 @@ border-color: #cb5c0c;
     height: auto;
     display: flex;
     background-color: #2a2929;
+    flex-direction: column;
 }
 
 
+#derecha>img{
+   
+    width: 100%;
+    height: 50vh;
+   
+  
+}
 
-
-
+#botonQuienes:hover {
+    background-color: #cb5c0c !important;
+    border-color: #cb5c0c !important; 
+}
+    
 
